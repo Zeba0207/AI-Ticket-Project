@@ -29,20 +29,21 @@ The goal is to automatically analyze user messages and generate structured ticke
 
 ## 📂 Project Structure
 AI-Ticket-Project/
+```bash
+AI-Ticket-Project/
+│── data/
+│   ├── raw/
+│   ├── cleaned/
+│   └── annotated/
 │
-├── data/
-│ ├── raw
-│ ├── cleaned
-│ ├── annotated
+│── scripts/
+│   └── clean_text.py
 │
-├── scripts/
-│ ├── clean_text.py
-│ ├── sample_for_annotation.py
-│
-├── annotation_guidelines/
-├── notebooks/
-├── models/
-├── docs/
+│── annotation_guidelines/
+│── notebooks/
+│── models/
+│── docs/
+
 
 ---
 

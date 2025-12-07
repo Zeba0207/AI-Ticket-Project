@@ -28,7 +28,7 @@ The goal is to automatically analyze user messages and generate structured ticke
 ---
 
 ## 📂 Project Structure
-```md
+
 ```bash
 AI-Ticket-Project/
 │── data/
@@ -43,9 +43,8 @@ AI-Ticket-Project/
 │── notebooks/
 │── models/
 │── docs/
+```
 
-
----
 
 ## 📊 Dataset
 The dataset contains real support text such as:

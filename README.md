@@ -28,7 +28,7 @@ The goal is to automatically analyze user messages and generate structured ticke
 ---
 
 ## 📂 Project Structure
-AI-Ticket-Project/
+```md
 ```bash
 AI-Ticket-Project/
 │── data/

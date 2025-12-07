@@ -1,0 +1,16 @@
+annotation_id,annotator,category,clean_text,created_at,id,lead_time,priority,text,updated_at
+18.0,1.0,Hardware Issue,log wifi desktop return err,2025-12-06T14:18:34.638118Z,884.0,21.989,high,I can't log into WiFi from my desktop. It returns ERR-9999.,2025-12-06T14:18:34.638169Z
+46.0,1.0,Account/Access Issue,outlook fails load desktop showing fail,2025-12-06T14:26:43.803320Z,278.0,12.558,high,Outlook fails to load on my desktop showing FAIL-101.,2025-12-06T14:26:43.803400Z
+20.0,1.0,Service Request,database fails load mobile showing err,2025-12-06T14:19:16.113359Z,320.0,17.254,high,Database fails to load on my mobile showing ERR-9999.,2025-12-06T14:19:16.113426Z
+29.0,1.0,Security,problem email desktop error err,2025-12-06T14:22:39.680376Z,903.0,15.664,low,There is a problem with Email on the desktop. Error: ERR-9999.,2025-12-06T14:22:39.680423Z
+55.0,1.0,Software Bug,printer stopped working tried use wifi error displayed fail,2025-12-06T14:29:25.997593Z,24.0,14.474,high,My printer stopped working when I tried to use WiFi. Error displayed: FAIL-101.,2025-12-06T14:29:25.997667Z
+26.0,1.0,Account/Access Issue,wifi fails load router showing x,2025-12-06T14:21:26.127418Z,236.0,41.974,high,WiFi fails to load on my router showing 0x80070005.,2025-12-06T14:21:26.127442Z
+66.0,1.0,Security,log team tablet return net,2025-12-06T14:32:58.678066Z,693.0,11.18,critical,I can't log into Teams from my tablet. It returns NET-503.,2025-12-06T14:32:58.678113Z
+3.0,1.0,Service Request,problem database server error err,2025-12-05T15:23:51.060077Z,741.0,110.486,high,There is a problem with Database on the server. Error: ERR-9999.,2025-12-05T15:23:51.060111Z
+9.0,1.0,Network Problem,log database laptop return auth,2025-12-06T14:14:35.892500Z,860.0,18.181,medium,I can't log into Database from my laptop. It returns AUTH-007.,2025-12-06T14:14:35.892528Z
+27.0,1.0,Service Request,log salesforce desktop return x,2025-12-06T14:22:06.511828Z,102.0,39.333,high,I can't log into Salesforce from my desktop. It returns 0x80070005.,2025-12-06T14:22:06.511905Z
+16.0,1.0,Hardware Issue,problem crm portal mobile error fail,2025-12-06T14:17:38.291367Z,900.0,16.664,high,There is a problem with CRM Portal on the mobile. Error: FAIL-101.,2025-12-06T14:17:38.291441Z
+28.0,1.0,Hardware Issue,log email mobile return err,2025-12-06T14:22:23.173125Z,987.0,15.806,critical,I can't log into Email from my mobile. It returns ERR-9999.,2025-12-06T14:22:23.173201Z
+57.0,1.0,Other,problem wifi desktop error xc f,2025-12-06T14:29:53.388963Z,618.0,13.765,high,There is a problem with WiFi on the desktop. Error: 0xC004F012.,2025-12-06T14:29:53.389014Z
+68.0,1.0,Software Bug,problem salesforce printer error x,2025-12-06T14:33:23.539314Z,867.0,11.748,high,There is a problem with Salesforce on the printer. Error: 0x80070005.,2025-12-06T14:33:23.539371Z
+40.0,1.0,Network Problem,unable access outlook mobile show error err,2025-12-06T14:25:25.678802Z,60.0,12.462,critical,"I am unable to access Outlook on my mobile, it shows error ERR-9999.",2025-12-06T14:25:25.678884Z

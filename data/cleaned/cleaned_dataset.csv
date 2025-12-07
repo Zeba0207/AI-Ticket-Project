@@ -1,0 +1,149 @@
+annotation_id,annotator,category,clean_text,created_at,id,lead_time,priority,text,updated_at
+,,,nan,,,,,,
+1.0,1.0,Other,printer stopped working tried use team error displayed x,2025-12-03T14:11:44.826165Z,522.0,159.122,high,My printer stopped working when I tried to use Teams. Error displayed: 0x80070005.,2025-12-03T14:11:44.826182Z
+,,,nan,,,,,,
+2.0,1.0,Service Request,log active directory laptop return fail,2025-12-03T14:13:06.711689Z,738.0,81.144,high,I can't log into Active Directory from my laptop. It returns FAIL-101.,2025-12-03T14:13:06.711723Z
+,,,nan,,,,,,
+3.0,1.0,Service Request,problem database server error err,2025-12-05T15:23:51.060077Z,741.0,110.486,high,There is a problem with Database on the server. Error: ERR-9999.,2025-12-05T15:23:51.060111Z
+,,,nan,,,,,,
+4.0,1.0,Account/Access Issue,log salesforce server return x,2025-12-05T15:24:01.800666Z,661.0,9.882,high,I can't log into Salesforce from my server. It returns 0x80070005.,2025-12-05T15:24:01.800798Z
+,,,nan,,,,,,
+5.0,1.0,Hardware Issue,unable access email printer show error xc f,2025-12-06T14:13:06.541088Z,412.0,43.149,high,"I am unable to access Email on my printer, it shows error 0xC004F012.",2025-12-06T14:13:06.541170Z
+,,,nan,,,,,,
+6.0,1.0,Security,server stopped working tried use database error displayed err,2025-12-06T14:13:40.439823Z,679.0,32.708,critical,My server stopped working when I tried to use Database. Error displayed: ERR42.,2025-12-06T14:13:40.439973Z
+,,,nan,,,,,,
+7.0,1.0,Service Request,email fails load printer showing err,2025-12-06T14:14:01.246674Z,627.0,19.976,low,Email fails to load on my printer showing ERR-9999.,2025-12-06T14:14:01.246696Z
+,,,nan,,,,,,
+8.0,1.0,Network Problem,problem zoom router error net,2025-12-06T14:14:16.790325Z,514.0,14.623,critical,There is a problem with Zoom on the router. Error: NET-503.,2025-12-06T14:14:16.790455Z
+,,,nan,,,,,,
+9.0,1.0,Network Problem,log database laptop return auth,2025-12-06T14:14:35.892500Z,860.0,18.181,medium,I can't log into Database from my laptop. It returns AUTH-007.,2025-12-06T14:14:35.892528Z
+,,,nan,,,,,,
+10.0,1.0,Service Request,wifi fails load printer showing fail,2025-12-06T14:14:52.549877Z,137.0,15.702,high,WiFi fails to load on my printer showing FAIL-101.,2025-12-06T14:14:52.549929Z
+,,,nan,,,,,,
+11.0,1.0,Network Problem,server stopped working tried use zoom error displayed err,2025-12-06T14:15:18.675811Z,812.0,25.303,low,My server stopped working when I tried to use Zoom. Error displayed: ERR42.,2025-12-06T14:15:18.675884Z
+,,,nan,,,,,,
+12.0,1.0,Service Request,problem outlook mobile error net,2025-12-06T14:16:17.247856Z,77.0,57.33,critical,There is a problem with Outlook on the mobile. Error: NET-503.,2025-12-06T14:16:17.247885Z
+,,,nan,,,,,,
+13.0,1.0,Hardware Issue,zoom keep crashing server code net,2025-12-06T14:16:41.714759Z,637.0,23.368,critical,Zoom keeps crashing on my server. Code NET-503.,2025-12-06T14:16:41.714839Z
+,,,nan,,,,,,
+14.0,1.0,Hardware Issue,unable access database router show error timeout,2025-12-06T14:17:02.994178Z,974.0,20.215,critical,"I am unable to access Database on my router, it shows error TIMEOUT-22.",2025-12-06T14:17:02.994254Z
+,,,nan,,,,,,
+15.0,1.0,Service Request,log wifi laptop return auth,2025-12-06T14:17:20.771869Z,939.0,16.084,medium,I can't log into WiFi from my laptop. It returns AUTH-007.,2025-12-06T14:17:20.771942Z
+,,,nan,,,,,,
+16.0,1.0,Hardware Issue,problem crm portal mobile error fail,2025-12-06T14:17:38.291367Z,900.0,16.664,high,There is a problem with CRM Portal on the mobile. Error: FAIL-101.,2025-12-06T14:17:38.291441Z
+,,,nan,,,,,,
+17.0,1.0,Account/Access Issue,unable access zoom server show error err,2025-12-06T14:18:11.686519Z,281.0,32.527,low,"I am unable to access Zoom on my server, it shows error ERR-9999.",2025-12-06T14:18:11.686553Z
+,,,nan,,,,,,
+18.0,1.0,Hardware Issue,log wifi desktop return err,2025-12-06T14:18:34.638118Z,884.0,21.989,high,I can't log into WiFi from my desktop. It returns ERR-9999.,2025-12-06T14:18:34.638169Z
+,,,nan,,,,,,
+19.0,1.0,Hardware Issue,problem zoom mobile error err,2025-12-06T14:18:57.990905Z,762.0,22.518,medium,There is a problem with Zoom on the mobile. Error: ERR42.,2025-12-06T14:18:57.990971Z
+,,,nan,,,,,,
+20.0,1.0,Service Request,database fails load mobile showing err,2025-12-06T14:19:16.113359Z,320.0,17.254,high,Database fails to load on my mobile showing ERR-9999.,2025-12-06T14:19:16.113426Z
+,,,nan,,,,,,
+21.0,1.0,Software Bug,problem database printer error auth,2025-12-06T14:19:34.001342Z,550.0,17.018,medium,There is a problem with Database on the printer. Error: AUTH-007.,2025-12-06T14:19:34.001393Z
+,,,nan,,,,,,
+22.0,1.0,Service Request,problem outlook laptop error timeout,2025-12-06T14:19:50.144960Z,175.0,15.331,critical,There is a problem with Outlook on the laptop. Error: TIMEOUT-22.,2025-12-06T14:19:50.145016Z
+,,,nan,,,,,,
+23.0,1.0,Hardware Issue,salesforce fails load printer showing net,2025-12-06T14:20:08.446070Z,372.0,17.473,critical,Salesforce fails to load on my printer showing NET-503.,2025-12-06T14:20:08.446145Z
+,,,nan,,,,,,
+24.0,1.0,Security,zoom keep crashing router code timeout,2025-12-06T14:20:24.037234Z,528.0,14.678,critical,Zoom keeps crashing on my router. Code TIMEOUT-22.,2025-12-06T14:20:24.037320Z
+,,,nan,,,,,,
+25.0,1.0,Account/Access Issue,database fails load desktop showing err,2025-12-06T14:20:43.315838Z,211.0,18.384,high,Database fails to load on my desktop showing ERR42.,2025-12-06T14:20:43.315915Z
+,,,nan,,,,,,
+26.0,1.0,Account/Access Issue,wifi fails load router showing x,2025-12-06T14:21:26.127418Z,236.0,41.974,high,WiFi fails to load on my router showing 0x80070005.,2025-12-06T14:21:26.127442Z
+,,,nan,,,,,,
+27.0,1.0,Service Request,log salesforce desktop return x,2025-12-06T14:22:06.511828Z,102.0,39.333,high,I can't log into Salesforce from my desktop. It returns 0x80070005.,2025-12-06T14:22:06.511905Z
+,,,nan,,,,,,
+28.0,1.0,Hardware Issue,log email mobile return err,2025-12-06T14:22:23.173125Z,987.0,15.806,critical,I can't log into Email from my mobile. It returns ERR-9999.,2025-12-06T14:22:23.173201Z
+,,,nan,,,,,,
+29.0,1.0,Security,problem email desktop error err,2025-12-06T14:22:39.680376Z,903.0,15.664,low,There is a problem with Email on the desktop. Error: ERR-9999.,2025-12-06T14:22:39.680423Z
+,,,nan,,,,,,
+30.0,1.0,Service Request,unable access crm portal desktop show error err,2025-12-06T14:22:53.141476Z,948.0,12.608,high,"I am unable to access CRM Portal on my desktop, it shows error ERR-9999.",2025-12-06T14:22:53.141533Z
+,,,nan,,,,,,
+31.0,1.0,Account/Access Issue,crm portal keep crashing printer code err,2025-12-06T14:23:09.585662Z,347.0,15.563,high,CRM Portal keeps crashing on my printer. Code ERR42.,2025-12-06T14:23:09.585717Z
+,,,nan,,,,,,
+32.0,1.0,Service Request,unable access email tablet show error err,2025-12-06T14:23:22.144693Z,140.0,11.708,critical,"I am unable to access Email on my tablet, it shows error ERR42.",2025-12-06T14:23:22.144817Z
+,,,nan,,,,,,
+33.0,1.0,Software Bug,email fails load desktop showing err,2025-12-06T14:23:36.473254Z,622.0,13.463,low,Email fails to load on my desktop showing ERR42.,2025-12-06T14:23:36.473327Z
+,,,nan,,,,,,
+34.0,1.0,Account/Access Issue,tablet stopped working tried use email error displayed err,2025-12-06T14:23:49.197199Z,500.0,11.843,critical,My tablet stopped working when I tried to use Email. Error displayed: ERR42.,2025-12-06T14:23:49.197252Z
+,,,nan,,,,,,
+35.0,1.0,Service Request,problem email laptop error x,2025-12-06T14:24:02.493745Z,371.0,12.45,high,There is a problem with Email on the laptop. Error: 0x80070005.,2025-12-06T14:24:02.493802Z
+,,,nan,,,,,,
+36.0,1.0,Software Bug,log outlook tablet return auth,2025-12-06T14:24:18.361244Z,199.0,14.945,medium,I can't log into Outlook from my tablet. It returns AUTH-007.,2025-12-06T14:24:18.361459Z
+,,,nan,,,,,,
+37.0,1.0,Hardware Issue,database keep crashing mobile code timeout,2025-12-06T14:24:32.926029Z,688.0,13.736,critical,Database keeps crashing on my mobile. Code TIMEOUT-22.,2025-12-06T14:24:32.926211Z
+,,,nan,,,,,,
+38.0,1.0,Hardware Issue,wifi keep crashing laptop code x,2025-12-06T14:24:52.048871Z,585.0,18.353,high,WiFi keeps crashing on my laptop. Code 0x80070005.,2025-12-06T14:24:52.048921Z
+,,,nan,,,,,,
+39.0,1.0,Hardware Issue,desktop stopped working tried use team error displayed auth,2025-12-06T14:25:12.321668Z,902.0,19.353,medium,My desktop stopped working when I tried to use Teams. Error displayed: AUTH-007.,2025-12-06T14:25:12.321740Z
+,,,nan,,,,,,
+40.0,1.0,Network Problem,unable access outlook mobile show error err,2025-12-06T14:25:25.678802Z,60.0,12.462,critical,"I am unable to access Outlook on my mobile, it shows error ERR-9999.",2025-12-06T14:25:25.678884Z
+,,,nan,,,,,,
+41.0,1.0,Security,vpn fails load mobile showing auth,2025-12-06T14:25:38.852604Z,329.0,12.256,medium,VPN fails to load on my mobile showing AUTH-007.,2025-12-06T14:25:38.852669Z
+,,,nan,,,,,,
+42.0,1.0,Hardware Issue,unable access zoom desktop show error err,2025-12-06T14:25:50.681162Z,97.0,10.89,low,"I am unable to access Zoom on my desktop, it shows error ERR-9999.",2025-12-06T14:25:50.681234Z
+,,,nan,,,,,,
+43.0,1.0,Network Problem,vpn keep crashing mobile code fail,2025-12-06T14:26:03.469279Z,313.0,11.925,high,VPN keeps crashing on my mobile. Code FAIL-101.,2025-12-06T14:26:03.469328Z
+,,,nan,,,,,,
+44.0,1.0,Service Request,crm portal keep crashing desktop code net,2025-12-06T14:26:17.583882Z,975.0,13.213,critical,CRM Portal keeps crashing on my desktop. Code NET-503.,2025-12-06T14:26:17.584097Z
+,,,nan,,,,,,
+45.0,1.0,Hardware Issue,database keep crashing laptop code net,2025-12-06T14:26:30.358325Z,300.0,11.868,critical,Database keeps crashing on my laptop. Code NET-503.,2025-12-06T14:26:30.358360Z
+,,,nan,,,,,,
+46.0,1.0,Account/Access Issue,outlook fails load desktop showing fail,2025-12-06T14:26:43.803320Z,278.0,12.558,high,Outlook fails to load on my desktop showing FAIL-101.,2025-12-06T14:26:43.803400Z
+,,,nan,,,,,,
+47.0,1.0,Security,laptop stopped working tried use active directory error displayed auth,2025-12-06T14:26:56.679353Z,925.0,11.964,medium,My laptop stopped working when I tried to use Active Directory. Error displayed: AUTH-007.,2025-12-06T14:26:56.679411Z
+,,,nan,,,,,,
+48.0,1.0,Account/Access Issue,log team server return err,2025-12-06T14:27:18.613093Z,602.0,21.071,medium,I can't log into Teams from my server. It returns ERR-9999.,2025-12-06T14:27:18.613228Z
+,,,nan,,,,,,
+49.0,1.0,Hardware Issue,log crm portal printer return timeout,2025-12-06T14:27:32.951235Z,440.0,13.486,critical,I can't log into CRM Portal from my printer. It returns TIMEOUT-22.,2025-12-06T14:27:32.951310Z
+,,,nan,,,,,,
+50.0,1.0,Network Problem,zoom keep crashing router code err,2025-12-06T14:27:51.106408Z,838.0,17.26,medium,Zoom keeps crashing on my router. Code ERR-9999.,2025-12-06T14:27:51.106479Z
+,,,nan,,,,,,
+51.0,1.0,Security,crm portal fails load mobile showing timeout,2025-12-06T14:28:25.185445Z,571.0,33.13,critical,CRM Portal fails to load on my mobile showing TIMEOUT-22.,2025-12-06T14:28:25.185497Z
+,,,nan,,,,,,
+52.0,1.0,Service Request,database fails load laptop showing fail,2025-12-06T14:28:41.399009Z,880.0,15.258,high,Database fails to load on my laptop showing FAIL-101.,2025-12-06T14:28:41.399064Z
+,,,nan,,,,,,
+53.0,1.0,Hardware Issue,crm portal keep crashing laptop code err,2025-12-06T14:28:57.078925Z,262.0,14.762,high,CRM Portal keeps crashing on my laptop. Code ERR-9999.,2025-12-06T14:28:57.078973Z
+,,,nan,,,,,,
+54.0,1.0,Other,problem outlook server error timeout,2025-12-06T14:29:10.584526Z,579.0,12.603,critical,There is a problem with Outlook on the server. Error: TIMEOUT-22.,2025-12-06T14:29:10.584724Z
+,,,nan,,,,,,
+55.0,1.0,Software Bug,printer stopped working tried use wifi error displayed fail,2025-12-06T14:29:25.997593Z,24.0,14.474,high,My printer stopped working when I tried to use WiFi. Error displayed: FAIL-101.,2025-12-06T14:29:25.997667Z
+,,,nan,,,,,,
+56.0,1.0,Security,router stopped working tried use outlook error displayed auth,2025-12-06T14:29:38.793849Z,31.0,11.888,medium,My router stopped working when I tried to use Outlook. Error displayed: AUTH-007.,2025-12-06T14:29:38.793902Z
+,,,nan,,,,,,
+57.0,1.0,Other,problem wifi desktop error xc f,2025-12-06T14:29:53.388963Z,618.0,13.765,high,There is a problem with WiFi on the desktop. Error: 0xC004F012.,2025-12-06T14:29:53.389014Z
+,,,nan,,,,,,
+58.0,1.0,Service Request,salesforce keep crashing printer code err,2025-12-06T14:30:10.705255Z,11.0,16.41,high,Salesforce keeps crashing on my printer. Code ERR42.,2025-12-06T14:30:10.705325Z
+,,,nan,,,,,,
+59.0,1.0,Account/Access Issue,unable access team laptop show error auth,2025-12-06T14:30:24.212278Z,222.0,12.637,medium,"I am unable to access Teams on my laptop, it shows error AUTH-007.",2025-12-06T14:30:24.212351Z
+,,,nan,,,,,,
+60.0,1.0,Software Bug,vpn keep crashing tablet code timeout,2025-12-06T14:30:41.993539Z,821.0,16.998,critical,VPN keeps crashing on my tablet. Code TIMEOUT-22.,2025-12-06T14:30:41.993622Z
+,,,nan,,,,,,
+61.0,1.0,Account/Access Issue,vpn keep crashing tablet code net,2025-12-06T14:30:56.713404Z,297.0,13.887,critical,VPN keeps crashing on my tablet. Code NET-503.,2025-12-06T14:30:56.713456Z
+,,,nan,,,,,,
+62.0,1.0,Network Problem,unable access team tablet show error xc f,2025-12-06T14:31:16.211859Z,55.0,18.542,high,"I am unable to access Teams on my tablet, it shows error 0xC004F012.",2025-12-06T14:31:16.211917Z
+,,,nan,,,,,,
+63.0,1.0,Security,problem active directory mobile error x,2025-12-06T14:32:19.535281Z,543.0,62.107,high,There is a problem with Active Directory on the mobile. Error: 0x80070005.,2025-12-06T14:32:19.535355Z
+,,,nan,,,,,,
+64.0,1.0,Software Bug,vpn keep crashing desktop code x,2025-12-06T14:32:32.631942Z,210.0,12.258,high,VPN keeps crashing on my desktop. Code 0x80070005.,2025-12-06T14:32:32.632012Z
+,,,nan,,,,,,
+65.0,1.0,Security,unable access outlook tablet show error auth,2025-12-06T14:32:46.639671Z,605.0,13.136,medium,"I am unable to access Outlook on my tablet, it shows error AUTH-007.",2025-12-06T14:32:46.639745Z
+,,,nan,,,,,,
+66.0,1.0,Security,log team tablet return net,2025-12-06T14:32:58.678066Z,693.0,11.18,critical,I can't log into Teams from my tablet. It returns NET-503.,2025-12-06T14:32:58.678113Z
+,,,nan,,,,,,
+67.0,1.0,Security,server stopped working tried use outlook error displayed err,2025-12-06T14:33:10.963516Z,663.0,11.368,medium,My server stopped working when I tried to use Outlook. Error displayed: ERR-9999.,2025-12-06T14:33:10.963593Z
+,,,nan,,,,,,
+68.0,1.0,Software Bug,problem salesforce printer error x,2025-12-06T14:33:23.539314Z,867.0,11.748,high,There is a problem with Salesforce on the printer. Error: 0x80070005.,2025-12-06T14:33:23.539371Z
+,,,nan,,,,,,
+69.0,1.0,Security,problem salesforce printer error auth,2025-12-06T14:33:38.383815Z,71.0,13.954,medium,There is a problem with Salesforce on the printer. Error: AUTH-007.,2025-12-06T14:33:38.383868Z
+,,,nan,,,,,,
+70.0,1.0,Network Problem,log database printer return fail,2025-12-06T14:33:58.358503Z,544.0,19.066,high,I can't log into Database from my printer. It returns FAIL-101.,2025-12-06T14:33:58.358531Z
+,,,nan,,,,,,
+71.0,1.0,Account/Access Issue,problem team printer error net,2025-12-06T14:34:37.210966Z,108.0,37.987,critical,There is a problem with Teams on the printer. Error: NET-503.,2025-12-06T14:34:37.211017Z
+,,,nan,,,,,,
+72.0,1.0,Software Bug,log outlook server return timeout,2025-12-06T14:35:11.910769Z,494.0,33.803,critical,I can't log into Outlook from my server. It returns TIMEOUT-22.,2025-12-06T14:35:11.910853Z
+,,,nan,,,,,,
+73.0,1.0,Service Request,server stopped working tried use outlook error displayed x,2025-12-06T14:35:27.732073Z,591.0,14.892,high,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005.,2025-12-06T14:35:27.732200Z
+,,,nan,,,,,,
+74.0,1.0,Other,team keep crashing desktop code fail,2025-12-06T14:35:49.471551Z,742.0,20.912,high,Teams keeps crashing on my desktop. Code FAIL-101.,2025-12-06T14:35:49.471628Z

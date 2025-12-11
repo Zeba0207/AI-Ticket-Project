@@ -1,4 +1,4 @@
-SNO,text,category,priority
+﻿SNO,text,category,priority
 1,I can't log into WiFi from my tablet. It returns ERR-9999.,Hardware Issue,critical
 2,Database keeps crashing on my printer. Code ERR-9999.,Hardware Issue,high
 3,Outlook fails to load on my laptop showing ERR42.,Hardware Issue,high
@@ -9999,3 +9999,403 @@ SNO,text,category,priority
 9998,I can't log into Zoom from my router. It returns 0x80070005.,Service Request,high
 9999,CRM Portal keeps crashing on my laptop. Code ERR-9999.,Hardware Issue,high
 10000,My laptop stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Needs immediate attention.,Service Request,critical
+100001,I forgot my Windows password on the laptop and cannot sign in.,Account/Access Issue,high
+100002,Password expired while trying to log into Outlook on my desktop.,Account/Access Issue,medium
+100003,Active Directory password not accepted on my tablet this morning.,Account/Access Issue,high
+100004,Unable to reset login password due to policy error on the server.,Account/Access Issue,critical
+100005,Password change popup keeps failing on my laptop.,Account/Access Issue,medium
+100006,I reset my password but still can’t log into Teams on my phone.,Account/Access Issue,medium
+100007,Password expired and the reset link shows invalid token.,Account/Access Issue,high
+100008,SSO login blocked after password reset on my desktop.,Account/Access Issue,critical
+100009,I cannot unlock my account after too many attempts on the laptop.,Account/Access Issue,high
+100010,Password reset not syncing between VPN and AD on desktop.,Account/Access Issue,medium
+100011,Temporary password expired before login on laptop.,Account/Access Issue,high
+100012,Password reset email not arriving to my corporate mailbox.,Account/Access Issue,medium
+100013,Unable to access Gmail because password update failed.,Account/Access Issue,high
+100014,Self-service password portal showing authentication failed.,Account/Access Issue,high
+100015,Password rejected due to complexity rules on my desktop.,Account/Access Issue,low
+100016,I forgot my Salesforce password and the reset link is not working.,Account/Access Issue,high
+100017,Password reset done but email still shows access denied.,Account/Access Issue,medium
+100018,MFA prompt failing after password change on laptop.,Account/Access Issue,critical
+100019,Password change required but system keeps looping login screen.,Account/Access Issue,high
+100020,Password is correct but AD shows invalid credentials.,Account/Access Issue,critical
+100021,Account locked after entering wrong password on my phone.,Account/Access Issue,high
+100022,Password update did not sync to Skype for Business.,Account/Access Issue,medium
+100023,Password reset completed but Cisco VPN refuses login.,Account/Access Issue,high
+100024,Domain password mismatch after Windows update on laptop.,Account/Access Issue,medium
+100025,Account blocked due to password reuse error on desktop.,Account/Access Issue,high
+100026,Password reset form keeps showing timeout while submitting.,Account/Access Issue,medium
+100027,I forgot my laptop login password and cannot unlock the session.,Account/Access Issue,high
+100028,Password update applied but OneDrive keeps asking old credentials.,Account/Access Issue,medium
+100029,Password reset completed but SAP login still failing.,Account/Access Issue,high
+100030,Password expired suddenly during meeting login.,Account/Access Issue,critical
+100031,Password recovery questions not accepted on mobile.,Account/Access Issue,low
+100032,Password policy error while creating new password on laptop.,Account/Access Issue,medium
+100033,Password rejection error due to previous password similarity.,Account/Access Issue,low
+100034,Password expired and IT portal not loading reset page.,Account/Access Issue,high
+100035,Password reset failed because OTP was not delivered.,Account/Access Issue,high
+100036,I cannot sign in because account remains locked after reset.,Account/Access Issue,critical
+100037,Password expired after VPN login and now no access to AD.,Account/Access Issue,high
+100038,Unable to validate new password against corporate policy.,Account/Access Issue,medium
+100039,Password changed but Jira still says invalid login.,Account/Access Issue,medium
+100040,Password reset successful but laptop still shows authentication error.,Account/Access Issue,high
+100041,VPN disconnects automatically every few minutes on my laptop.,Network Problem,medium
+100042,Unable to establish VPN connection from home network this morning.,Network Problem,high
+100043,VPN authentication keeps failing on my desktop today.,Network Problem,high
+100044,Cisco VPN shows timeout error while connecting to server.,Network Problem,medium
+100045,VPN client not launching after Windows update on laptop.,Network Problem,medium
+100046,VPN connects but internal applications are still inaccessible.,Network Problem,high
+100047,SSL VPN certificate expired and blocking my login attempt.,Network Problem,critical
+100048,VPN reconnect loop happening whenever laptop goes to sleep mode.,Network Problem,medium
+100049,VPN speed extremely slow while accessing Teams meeting.,Network Problem,medium
+100050,VPN disconnects whenever switching Wi-Fi network on tablet.,Network Problem,high
+100051,VPN login requires MFA but prompt never appears on mobile.,Network Problem,high
+100052,Unable to download VPN client due to missing permissions.,Network Problem,medium
+100053,VPN tunnel established but internal IP not reachable on desktop.,Network Problem,medium
+100054,VPN keeps asking password repeatedly but authentication fails.,Network Problem,high
+100055,VPN traffic not routing to internal resources on laptop.,Network Problem,high
+100056,VPN connection drops instantly after authentication success.,Network Problem,critical
+100057,VPN blocked by firewall policy on home router.,Network Problem,medium
+100058,VPN shows service unavailable error during business hours.,Network Problem,medium
+100059,Unable to connect VPN using mobile hotspot network.,Network Problem,medium
+100060,VPN certificate validation error on corporate laptop.,Network Problem,high
+100061,VPN fails to start because service is not responding.,Network Problem,critical
+100062,VPN client installation failed due to corrupted package.,Network Problem,medium
+100063,VPN blocked after security update applied on my desktop.,Network Problem,high
+100064,VPN rejects credentials even after password reset.,Network Problem,medium
+100065,VPN connection unstable during Teams audio calls.,Network Problem,medium
+100066,VPN requires token but token generation fails every time.,Network Problem,high
+100067,VPN disconnected due to network idle timeout on laptop.,Network Problem,medium
+100068,VPN not working only on office Wi-Fi connection.,Network Problem,medium
+100069,VPN shows negotiation failure with server endpoint.,Network Problem,high
+100070,VPN not recognizing corporate domain credentials.,Network Problem,high
+100071,VPN failed to reconnect after temporary network outage.,Network Problem,medium
+100072,VPN tunnel established but DNS not resolving internal websites.,Network Problem,medium
+100073,VPN asks for administrator password repeatedly on Mac.,Network Problem,high
+100074,VPN service disabled due to missing driver dependency.,Network Problem,medium
+100075,VPN blocked by antivirus scanning on my system.,Network Problem,medium
+100076,VPN disconnects whenever opening Salesforce portal.,Network Problem,high
+100077,VPN logs show handshake failure with gateway.,Network Problem,critical
+100078,VPN connection not allowed from foreign IP address.,Network Problem,medium
+100079,VPN unavailable due to maintenance window notification.,Network Problem,medium
+100080,VPN authentication successful but session terminated immediately.,Network Problem,medium
+100081,Printer shows paper jam error and refuses to print any documents.,Hardware Issue,medium
+100082,My printer keeps going offline and won’t reconnect automatically.,Hardware Issue,medium
+100083,Unable to print PDF due to constant paper jam messages.,Hardware Issue,medium
+100084,Printer tray not detected and print jobs are stuck in queue.,Hardware Issue,medium
+100085,Printer showing “offline” even though connected to the network.,Hardware Issue,high
+100086,Scanner function on printer not responding after reboot.,Hardware Issue,medium
+100087,Printer constantly says low paper when tray is full.,Hardware Issue,medium
+100088,Printer prints only blank pages despite full toner.,Hardware Issue,medium
+100089,Unable to print double-sided due to hardware limitation error.,Hardware Issue,medium
+100090,Printer taking too long to process print request on network.,Hardware Issue,low
+100091,Print queue stuck and cannot delete pending jobs.,Hardware Issue,medium
+100092,Unable to install printer driver on corporate laptop.,Hardware Issue,high
+100093,Printer leaving streaks and ink marks on printed pages.,Hardware Issue,medium
+100094,Printer suddenly stopped working during large print job.,Hardware Issue,medium
+100095,Printer not detected by Windows after restart.,Hardware Issue,medium
+100096,Cannot print color pages due to hardware error.,Hardware Issue,high
+100097,Paper feed sensor keeps triggering without any paper jam.,Hardware Issue,medium
+100098,Printer shows waste toner full error and stops printing.,Hardware Issue,critical
+100099,Unable to access printer settings from desktop.,Hardware Issue,medium
+100100,Network printer unreachable from my laptop.,Hardware Issue,high
+100101,Printer showing service code error and needs assistance.,Hardware Issue,high
+100102,Printer keeps pausing printing without user input.,Hardware Issue,medium
+100103,Double-sided printing option missing from device settings.,Hardware Issue,low
+100104,Printer refusing to print PDF files only.,Hardware Issue,medium
+100105,Print head alignment failed multiple times today.,Hardware Issue,medium
+100106,Printer connected but prints come out very faint.,Hardware Issue,low
+100107,Unable to resume printing after clearing paper jam.,Hardware Issue,medium
+100108,Printer shows toner not recognized on replacement cartridge.,Hardware Issue,high
+100109,Printer status stuck in “processing” for too long.,Hardware Issue,medium
+100110,Printer firmware update failed and device restarted.,Hardware Issue,medium
+100111,Unable to cancel current print job stuck in queue.,Hardware Issue,medium
+100112,Printer refusing to scan to email due to hardware error.,Hardware Issue,high
+100113,Printer asking to replace cartridge even though new one installed.,Hardware Issue,medium
+100114,Paper misfeed detected while printing regular documents.,Hardware Issue,medium
+100115,Printer constantly restarting during printing tasks.,Hardware Issue,medium
+100116,Printer showing tray empty though paper loaded correctly.,Hardware Issue,medium
+100117,Unable to connect wireless printer from laptop.,Hardware Issue,medium
+100118,Printer not responding after long idle time.,Hardware Issue,medium
+100119,Print spooler keeps crashing on Windows.,Hardware Issue,medium
+100120,Printer reports mechanical failure and needs maintenance.,Hardware Issue,high
+100121,System shows low disk space warning on my laptop.,Hardware Issue,medium
+100122,C drive full and unable to install updates.,Hardware Issue,medium
+100123,Laptop extremely slow when opening large Excel files.,Hardware Issue,high
+100124,Hard disk usage stays at 100% for long periods.,Hardware Issue,medium
+100125,Temporary files consuming a lot of storage space.,Hardware Issue,medium
+100126,Windows update stuck due to insufficient disk space.,Hardware Issue,high
+100127,Laptop becomes slow after overnight usage.,Hardware Issue,medium
+100128,Browser using too much memory and slowing system.,Hardware Issue,medium
+100129,Laptop freezing frequently during video calls.,Hardware Issue,high
+100130,Disk cleanup tool not removing temporary files.,Hardware Issue,medium
+100131,Memory usage high even when system idle.,Hardware Issue,medium
+100132,Laptop taking too long to boot after restart.,Hardware Issue,medium
+100133,Low virtual memory warning displayed on desktop.,Hardware Issue,medium
+100134,Application crashes due to insufficient memory.,Hardware Issue,high
+100135,Hard disk health warning displayed in system logs.,Hardware Issue,medium
+100136,Laptop overheating and slowing down during work.,Hardware Issue,medium
+100137,CPU usage spikes randomly causing slow performance.,Hardware Issue,medium
+100138,Unable to save files due to low disk space.,Hardware Issue,high
+100139,Windows shows insufficient storage for installation.,Hardware Issue,medium
+100140,Laptop becomes unresponsive after waking from sleep.,Hardware Issue,medium
+100141,System running slow after recent update.,Hardware Issue,medium
+100142,Outlook consuming too much disk space with cache.,Hardware Issue,high
+100143,Slow performance while running multiple applications.,Hardware Issue,medium
+100144,High memory usage shown in task manager.,Hardware Issue,medium
+100145,Laptop slow to respond when using Teams.,Hardware Issue,medium
+100146,Device storage full causing system slowdown.,Hardware Issue,high
+100147,Cache not clearing even after cleanup.,Hardware Issue,medium
+100148,Laptop fan running constantly due to high usage.,Hardware Issue,medium
+100149,System slowing down when loading images.,Hardware Issue,medium
+100150,Insufficient space to install critical software.,Hardware Issue,critical
+100151,Laptop slow when switching between apps.,Hardware Issue,medium
+100152,Windows indexing taking too long to complete.,Hardware Issue,medium
+100153,Browser keeps freezing while loading tabs.,Hardware Issue,medium
+100154,Laptop performance dropped after software update.,Hardware Issue,medium
+100155,Disk utilization constantly high in resource monitor.,Hardware Issue,medium
+100156,Update failed due to lack of free disk space.,Hardware Issue,medium
+100157,Laptop slow when copying large files.,Hardware Issue,high
+100158,Lag experienced when running virtual machine.,Hardware Issue,medium
+100159,System freezes while opening Outlook.,Hardware Issue,medium
+100160,Slow system performance while processing documents.,Hardware Issue,medium
+100161,Network request timed out while accessing internal server.,Network Problem,medium
+100162,Website takes too long to load on corporate network.,Network Problem,medium
+100163,VPN session dropped due to network timeout error.,Network Problem,high
+100164,Unable to reach email server due to connection timeout.,Network Problem,medium
+100165,Network disconnects frequently during Teams calls.,Network Problem,high
+100166,Ping request timed out when testing network connectivity.,Network Problem,medium
+100167,Remote desktop disconnected due to network delay.,Network Problem,medium
+100168,Network latency high while accessing internal apps.,Network Problem,medium
+100169,Unable to download files due to request timeout.,Network Problem,medium
+100170,Network interruption during video conference.,Network Problem,high
+100171,Network unreachable while trying to access CRM.,Network Problem,medium
+100172,Wi-Fi keeps dropping connection intermittently.,Network Problem,medium
+100173,Slow network response causing delays in uploading files.,Network Problem,medium
+100174,DNS lookup failed due to network timeout condition.,Network Problem,medium
+100175,Application freezes due to network delay issues.,Network Problem,medium
+100176,Unable to load portals due to gateway timeout error.,Network Problem,high
+100177,Internet connection unstable during office hours.,Network Problem,medium
+100178,Connection reset while accessing Jira dashboard.,Network Problem,medium
+100179,Network timeout while syncing OneDrive files.,Network Problem,medium
+100180,Network response extremely slow during peak hours.,Network Problem,medium
+100181,Network congestion affecting application performance.,Network Problem,medium
+100182,Unable to open internal websites due to timeout.,Network Problem,medium
+100183,Network request exceeded allowed time limit.,Network Problem,medium
+100184,Network delay causing email delivery failures.,Network Problem,medium
+100185,Unable to connect to intranet after timeout.,Network Problem,medium
+100186,Web application takes too long to respond.,Network Problem,medium
+100187,Network timeout error when loading corporate portal.,Network Problem,medium
+100188,Packet loss detected causing connection issues.,Network Problem,medium
+100189,Connection timeout while joining Zoom meeting.,Network Problem,medium
+100190,Network lag experienced while using VPN.,Network Problem,high
+100191,Gateway connection timeout during authentication.,Network Problem,medium
+100192,Network timeout caused by firewall restrictions.,Network Problem,medium
+100193,Loading webpages takes unusually long today.,Network Problem,medium
+100194,Network unstable when switching Wi-Fi networks.,Network Problem,medium
+100195,Server request failed due to timeout condition.,Network Problem,medium
+100196,Network service interruption during call.,Network Problem,medium
+100197,Network timeout while sending email attachments.,Network Problem,medium
+100198,Unable to access SharePoint due to timeout.,Network Problem,medium
+100199,Network response slow during large file transfer.,Network Problem,medium
+100200,Internet connection dropped due to network timeout.,Network Problem,high
+100201,Firewall is blocking access to internal portal on my laptop.,Security,medium
+100202,Unable to reach external website due to firewall restriction.,Security,medium
+100203,Firewall blocked file download from secure server.,Security,high
+100204,Firewall prevents remote desktop connection on my system.,Security,medium
+100205,Unable to upload document because firewall rejected the request.,Security,medium
+100206,Firewall blocked access to Git repository on desktop.,Security,high
+100207,Firewall inspection failed during SSL handshake.,Security,critical
+100208,Firewall policy blocks FTP connection from my laptop.,Security,medium
+100209,Firewall denies access to cloud storage services.,Security,medium
+100210,Firewall detected suspicious activity and restricted connection.,Security,medium
+100211,Firewall prevents Teams screen sharing during meeting.,Security,high
+100212,Firewall rule missing for required application.,Security,medium
+100213,Firewall configuration changed and access denied.,Security,medium
+100214,Firewall restricted outbound request to CRM portal.,Security,medium
+100215,Firewall blocked API call to internal services.,Security,high
+100216,Firewall flagged outbound connection as unauthorized.,Security,medium
+100217,Unable to access Jira due to firewall restrictions.,Security,medium
+100218,Firewall prevented software update from downloading.,Security,medium
+100219,Firewall inspection failure while accessing VPN.,Security,medium
+100220,Firewall blocked outbound traffic to SharePoint.,Security,medium
+100221,Firewall limited access to third-party websites.,Security,medium
+100222,Firewall certificate validation failed during login.,Security,medium
+100223,Firewall blocked internal server connection request.,Security,high
+100224,Unable to access external email service due to firewall.,Security,medium
+100225,Firewall flagged legitimate traffic as suspicious.,Security,medium
+100226,Firewall blocked remote SSH connection to server.,Security,medium
+100227,Firewall restrictions prevent opening required URLs.,Security,medium
+100228,Firewall policy blocked software installation attempt.,Security,medium
+100229,Firewall blocked download of required attachment.,Security,medium
+100230,Firewall stopping internal application from loading.,Security,high
+100231,Firewall blocking essential network ports on laptop.,Security,medium
+100232,Firewall blocked encrypted communication channel.,Security,medium
+100233,Firewall denies connection due to outdated certificate.,Security,medium
+100234,Firewall flagged file transfer as unsafe.,Security,medium
+100235,Firewall blocked internal IP due to policy rule.,Security,medium
+100236,Firewall prevented document sync in OneDrive.,Security,high
+100237,Firewall blocking database connection request.,Security,medium
+100238,Firewall classified website incorrectly and blocked access.,Security,medium
+100239,Firewall rejected secure connection due to policy.,Security,medium
+100240,Firewall blocked incoming request despite proper credentials.,Security,high
+100241,Email inbox full and cannot receive new messages.,Service Request,medium
+100242,Outlook showing mailbox quota exceeded warning.,Service Request,medium
+100243,Unable to send emails due to storage limit reached.,Service Request,medium
+100244,Mailbox is over capacity and blocks incoming mail.,Service Request,medium
+100245,Email failing because mailbox has reached maximum size.,Service Request,medium
+100246,Outlook not syncing due to quota restrictions.,Service Request,medium
+100247,"Storage quota reached, attachments cannot be downloaded.",Service Request,medium
+100248,Mailbox refuses new messages until space is freed.,Service Request,medium
+100249,Email bounce message says recipient quota exceeded.,Service Request,medium
+100250,Unable to open mailbox because storage is full.,Service Request,medium
+100251,Mailbox synchronizing slowly due to full capacity.,Service Request,medium
+100252,Cannot archive emails due to storage limitation.,Service Request,medium
+100253,Email attachments rejected due to insufficient quota.,Service Request,medium
+100254,Inbox size too large causing email delays.,Service Request,medium
+100255,Mailbox cleanup tool not reducing storage.,Service Request,low
+100256,Outlook keeps warning about mailbox size threshold.,Service Request,medium
+100257,Unable to save drafts due to quota issues.,Service Request,medium
+100258,Emails automatically deleted due to storage limit.,Service Request,medium
+100259,Email history not loading because mailbox is too big.,Service Request,medium
+100260,Cannot attach files due to quota exceeded.,Service Request,medium
+100261,Mailbox quota reached after receiving large emails.,Service Request,medium
+100262,Unable to send meeting invites because mailbox full.,Service Request,medium
+100263,Mailbox full even after deleting old items.,Service Request,medium
+100264,Archive folder also reached storage limit.,Service Request,medium
+100265,Email delivery delayed by insufficient space.,Service Request,medium
+100266,Outlook crashes when mailbox is too large.,Service Request,medium
+100267,Calendar sync blocked due to mailbox limit.,Service Request,medium
+100268,Emails stuck in outbox due to quota reached.,Service Request,medium
+100269,Cannot move messages to archive due to space issue.,Service Request,medium
+100270,Inbox search not working due to large mailbox.,Service Request,medium
+100271,Mailbox rules not applying because storage exceeded.,Service Request,medium
+100272,Unable to download attachments from email.,Service Request,medium
+100273,Outlook offline due to mailbox capacity.,Service Request,medium
+100274,Not receiving emails because mailbox full.,Service Request,medium
+100275,Drafts folder shows insufficient space error.,Service Request,low
+100276,Outlook displays low mailbox space warning.,Service Request,medium
+100277,Attachments unavailable due to mailbox limit.,Service Request,medium
+100278,Email auto-archive not functioning properly.,Service Request,medium
+100279,Outlook taking long to open due to large mailbox.,Service Request,medium
+100280,Mailbox over capacity after software updates.,Service Request,medium
+100281,Request to install Microsoft Visio on my laptop.,Service Request,medium
+100282,Need installation of Adobe Acrobat for PDF editing.,Service Request,medium
+100283,Requesting installation of SQL Server Management Studio.,Service Request,medium
+100284,Unable to install Teams plugin without admin rights.,Service Request,high
+100285,Need to install Java JDK for development work.,Service Request,medium
+100286,Request approval for installation of VPN client.,Service Request,medium
+100287,Requesting latest version of Google Chrome.,Service Request,low
+100288,Unable to install software due to permission restrictions.,Service Request,medium
+100289,Need installation of Microsoft Project for planning tasks.,Service Request,medium
+100290,Request to update older version of Outlook.,Service Request,medium
+100291,Unable to download required software from portal.,Service Request,medium
+100292,Need to install Python for data analysis work.,Service Request,medium
+100293,Requesting installation of Git for version control.,Service Request,medium
+100294,Need to install VMware Workstation on laptop.,Service Request,medium
+100295,Request to install Adobe Photoshop for design tasks.,Service Request,medium
+100296,Unable to update Teams to latest version.,Service Request,medium
+100297,Request installation of Notepad++ for editing scripts.,Service Request,medium
+100298,Need approval for installation of licensed software.,Service Request,medium
+100299,Requesting installation of antivirus software update.,Service Request,medium
+100300,Unable to install Outlook plugin due to restrictions.,Service Request,medium
+100301,Need installation of Tableau desktop tool.,Service Request,medium
+100302,Request approval to install Chrome extensions.,Service Request,low
+100303,Need to install Node.js for development project.,Service Request,medium
+100304,Requesting installation of SAP GUI client.,Service Request,medium
+100305,Unable to install printer driver without admin access.,Service Request,medium
+100306,Request to install Slack desktop application.,Service Request,medium
+100307,Need installation of Zoom desktop client.,Service Request,medium
+100308,Request for Microsoft Edge installation.,Service Request,medium
+100309,Unable to update Java runtime on laptop.,Service Request,medium
+100310,Need installation of Visual Studio Code editor.,Service Request,medium
+100311,Request installation of Power BI desktop.,Service Request,medium
+100312,Software installation request pending approval.,Service Request,medium
+100313,Need installation of password manager tool.,Service Request,medium
+100314,Unable to install drivers for new hardware.,Service Request,medium
+100315,Requesting installation of Citrix workspace.,Service Request,medium
+100316,Need installation of SQL client tools.,Service Request,medium
+100317,Unable to update applications due to admin rights.,Service Request,medium
+100318,Request installation of developer toolkit.,Service Request,medium
+100319,Need to install browser plugin to access intranet.,Service Request,medium
+100320,Request to install virtualization software.,Service Request,high
+100321,Access denied when trying to open Salesforce dashboard.,Account/Access Issue,high
+100322,Permission denied while accessing shared network drive.,Account/Access Issue,medium
+100323,Unable to view documents due to restricted access.,Account/Access Issue,medium
+100324,Access blocked to internal CRM portal on laptop.,Account/Access Issue,medium
+100325,Permission request pending for accessing SharePoint folder.,Account/Access Issue,low
+100326,Access denied error while opening confidential documents.,Account/Access Issue,high
+100327,Unable to edit shared Excel file due to permission issue.,Account/Access Issue,medium
+100328,Access denied when connecting to internal database.,Account/Access Issue,medium
+100329,Unable to delete old files due to restricted permissions.,Account/Access Issue,medium
+100330,Permission required to view archived email folders.,Account/Access Issue,medium
+100331,Access blocked by system administrator settings.,Account/Access Issue,medium
+100332,Permission denied while installing software update.,Account/Access Issue,medium
+100333,Cannot change printer settings due to restricted access.,Account/Access Issue,medium
+100334,Access denied when trying to upload attachments.,Account/Access Issue,medium
+100335,User not authorized to view sensitive records.,Account/Access Issue,high
+100336,Permission request required for editing documents.,Account/Access Issue,medium
+100337,Unable to add new contacts in CRM due to restrictions.,Account/Access Issue,medium
+100338,Access blocked when opening intranet site.,Account/Access Issue,medium
+100339,Permission denied to access secure file location.,Account/Access Issue,medium
+100340,Access revoked unexpectedly after password reset.,Account/Access Issue,medium
+100341,Unable to open internal portal due to restricted access.,Account/Access Issue,medium
+100342,Permission required for downloading attachments.,Account/Access Issue,low
+100343,Access denied while moving files to shared drive.,Account/Access Issue,medium
+100344,Permission request needed for accessing old project data.,Account/Access Issue,medium
+100345,Access blocked for remote file transfer.,Account/Access Issue,medium
+100346,Unable to manage Teams channels due to permissions.,Account/Access Issue,medium
+100347,Access restricted for viewing and editing emails.,Account/Access Issue,medium
+100348,Permission denied to install browser extension.,Account/Access Issue,medium
+100349,Access denied when trying to open Outlook plugin.,Account/Access Issue,medium
+100350,Unable to download files due to restricted rights.,Account/Access Issue,medium
+100351,Permission request pending for network access.,Account/Access Issue,medium
+100352,Access denied after policy update applied.,Account/Access Issue,medium
+100353,Unable to modify folder properties due to restrictions.,Account/Access Issue,medium
+100354,Permission required to access printer configuration.,Account/Access Issue,medium
+100355,Access blocked to personal network drives.,Account/Access Issue,low
+100356,Permission denied for external email access.,Account/Access Issue,medium
+100357,Unable to add new devices without admin approval.,Account/Access Issue,medium
+100358,Access removed from shared resources unexpectedly.,Account/Access Issue,medium
+100359,Permission request pending for developer tools.,Account/Access Issue,medium
+100360,Unable to access confidential files after changes.,Account/Access Issue,high
+100361,API returning null response when fetching user details.,Software Bug,medium
+100362,HTTP 500 error encountered while calling authentication API.,Software Bug,high
+100363,API authorization failed due to invalid token.,Software Bug,medium
+100364,API request timed out during data retrieval.,Software Bug,medium
+100365,API returning empty JSON object from server.,Software Bug,medium
+100366,API returns incorrect status code for valid request.,Software Bug,medium
+100367,Database connection lost causing API failure.,Software Bug,high
+100368,API returning 404 not found for existing endpoint.,Software Bug,medium
+100369,Payload size too large causing request failure.,Software Bug,medium
+100370,API authentication failing with invalid credentials.,Software Bug,high
+100371,API request failed due to SSL handshake error.,Software Bug,critical
+100372,API timeout when loading dashboard data.,Software Bug,medium
+100373,Gateway timeout error from internal API call.,Software Bug,medium
+100374,API returning inconsistent data structure.,Software Bug,medium
+100375,API exception thrown in server logs.,Software Bug,medium
+100376,Upstream service not reachable during API call.,Software Bug,medium
+100377,API failing to parse response JSON.,Software Bug,medium
+100378,API returning incorrect content type header.,Software Bug,medium
+100379,Dependency service down impacting API functionality.,Software Bug,medium
+100380,API request aborted unexpectedly.,Software Bug,medium
+100381,API version deprecated causing request failure.,Software Bug,medium
+100382,Invalid API response format received.,Software Bug,medium
+100383,CORS policy blocking API request from browser.,Software Bug,medium
+100384,API throttling due to rate limit exceeded.,Software Bug,medium
+100385,API returning internal server error randomly.,Software Bug,medium
+100386,Malformed request body causing API rejection.,Software Bug,medium
+100387,API endpoint unreachable from client side.,Software Bug,high
+100388,API authentication token expired unexpectedly.,Software Bug,medium
+100389,API failing when processing bulk data.,Software Bug,medium
+100390,API returning duplicate data in response.,Software Bug,medium
+100391,Data mismatch detected in API response.,Software Bug,medium
+100392,API returning unauthorized error despite proper credentials.,Software Bug,high
+100393,Service unavailable during API call execution.,Software Bug,medium
+100394,Unexpected API output format received.,Software Bug,medium
+100395,API returning error code without explanation.,Software Bug,medium
+100396,API cache corrupted causing stale responses.,Software Bug,medium
+100397,API throwing exception when processing request.,Software Bug,high
+100398,API integration failing after system update.,Software Bug,medium
+100399,API routing issue between microservices.,Software Bug,medium
+100400,API load failure due to backend error.,Software Bug,high

@@ -82,6 +82,20 @@ The dataset contains realistic IT support messages including:
 Annotation was completed using **Label Studio**.
 
 ---
+### Category Distribution & Class Imbalance Handling
+
+We analyzed the distribution of ticket categories using `category_distribution.csv`.
+The dataset is moderately imbalanced — two categories (such as *service_request* and *hardware_issue*)
+are significantly more frequent than others (e.g., *network_issue*, *access_issue*, etc.).
+
+To address this imbalance during model training, the following steps were taken:
+
+- **Class Weights:** Logistic Regression was trained with `class_weight='balanced'` to give minority classes more influence.
+- **Stratified Splits:** Train/Validation/Test splits were stratified on the category column to preserve class proportion.
+- **Monitoring Metrics:** Precision, recall, and F1 scores were evaluated per class to ensure minority-class performance.
+
+No SMOTE or oversampling was applied at this stage because the TF-IDF + class-weight approach
+already provided stable and meaningful results without introducing synthetic text.
 
 ## 🧠 Models Used
 

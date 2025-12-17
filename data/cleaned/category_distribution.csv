@@ -1,3 +1,8 @@
 category,count
 service_request,1679
+account_access_issue,1669
 hardware_issue,1549
+security,1548
+network_problem,1403
+software_bug,1359
+other,1193

@@ -1,260 +1,833 @@
 SNO,text,category,priority,text_clean
-6485,My desktop stopped working when I tried to use Teams. Error displayed: AUTH-007. Issue reported by user.,hardware_issue,medium,desktop stop work try use team error display auth issue report user
-4473,My router stopped working when I tried to use WiFi. Error displayed: NET-503. Kindly assist.,hardware_issue,critical,router stop work try use wifi error display net kindly assist
-8226,Salesforce fails to load on my printer showing NET-503. Needs immediate attention.,hardware_issue,critical,salesforce fail load printer show net need immediate attention
-7917,Zoom keeps crashing on my mobile. Code 0x80070005. Issue reported by user.,service_request,high,zoom keep crash mobile code x issue report user
-6759,I can't log into WiFi from my desktop. It returns ERR-9999.,hardware_issue,high,t log wifi desktop return err
-8602,VPN fails to load on my server showing 0x80070005.,service_request,high,vpn fail load server show x
-1491,Email keeps crashing on my server. Code 0xC004F012.,service_request,high,email keep crash server code xc f
-9662,I can't log into Salesforce from my server. It returns 0xC004F012. Please resolve soon.,service_request,high,t log salesforce server return xc f resolve soon
-7801,Database keeps crashing on my router. Code FAIL-101. Occurs intermittently.,hardware_issue,high,database keep crash router code fail occur intermittently
-4054,My tablet stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Issue reported by user.,service_request,critical,tablet stop work try use vpn error display timeout issue report user
-100139,Windows shows insufficient storage for installation.,hardware_issue,medium,windows show insufficient storage installation
-4177,My desktop stopped working when I tried to use Teams. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,desktop stop work try use team error display x need immediate attention
-7947,"I am unable to access Active Directory on my tablet, it shows error 0xC004F012. Please resolve soon.",service_request,high,unable access active directory tablet show error xc f resolve soon
-262,CRM Portal keeps crashing on my laptop. Code ERR-9999.,hardware_issue,high,crm portal keep crash laptop code err
-8941,Database keeps crashing on my laptop. Code NET-503. Needs immediate attention.,hardware_issue,critical,database keep crash laptop code net need immediate attention
-8392,Zoom keeps crashing on my server. Code NET-503. Please resolve soon.,hardware_issue,critical,zoom keep crash server code net resolve soon
-7703,I can't log into CRM Portal from my desktop. It returns FAIL-101. Needs immediate attention.,hardware_issue,high,t log crm portal desktop return fail need immediate attention
-6684,I can't log into WiFi from my desktop. It returns ERR-9999. Occurs intermittently.,hardware_issue,high,t log wifi desktop return err occur intermittently
-9495,VPN fails to load on my router showing 0x80070005. Issue reported by user.,service_request,high,vpn fail load router show x issue report user
-9857,My desktop stopped working when I tried to use Teams. Error displayed: 0x80070005. Occurs intermittently.,hardware_issue,high,desktop stop work try use team error display x occur intermittently
-6568,"I am unable to access Outlook on my server, it shows error AUTH-007. Needs immediate attention.",hardware_issue,medium,unable access outlook server show error auth need immediate attention
-1408,Outlook fails to load on my tablet showing 0xC004F012.,service_request,high,outlook fail load tablet show xc f
-6086,There is a problem with WiFi on the printer. Error: TIMEOUT-22.,hardware_issue,critical,problem wifi printer error timeout
-945,Email keeps crashing on my printer. Code AUTH-007.,hardware_issue,medium,email keep crash printer code auth
-1755,VPN keeps crashing on my server. Code ERR-9999.,hardware_issue,medium,vpn keep crash server code err
-947,My desktop stopped working when I tried to use WiFi. Error displayed: ERR-9999.,service_request,low,desktop stop work try use wifi error display err
-8901,My laptop stopped working when I tried to use Email. Error displayed: ERR-9999. Kindly assist.,service_request,low,laptop stop work try use email error display err kindly assist
-3990,I can't log into WiFi from my desktop. It returns ERR-9999.,hardware_issue,high,t log wifi desktop return err
-7744,There is a problem with VPN on the laptop. Error: ERR42.,hardware_issue,medium,problem vpn laptop error err
-7736,Database keeps crashing on my mobile. Code 0xC004F012.,service_request,high,database keep crash mobile code xc f
-7607,I can't log into CRM Portal from my mobile. It returns ERR42. Occurs intermittently.,hardware_issue,low,t log crm portal mobile return err occur intermittently
-2368,Teams fails to load on my server showing 0x80070005. Issue reported by user.,hardware_issue,high,team fail load server show x issue report user
-6842,I can't log into WiFi from my laptop. It returns AUTH-007. Issue reported by user.,service_request,medium,t log wifi laptop return auth issue report user
-100258,Emails automatically deleted due to storage limit.,service_request,medium,email automatically delete storage limit
-5661,My printer stopped working when I tried to use CRM Portal. Error displayed: 0xC004F012. Issue reported by user.,service_request,high,printer stop work try use crm portal error display xc f issue report user
-336,Database keeps crashing on my router. Code FAIL-101.,hardware_issue,high,database keep crash router code fail
-7759,There is a problem with Email on the laptop. Error: 0x80070005. Please resolve soon.,service_request,high,problem email laptop error x resolve soon
-7425,There is a problem with Email on the desktop. Error: 0xC004F012.,service_request,high,problem email desktop error xc f
+9431,CRM Portal fails to load on my printer showing 0x80070005.,security,high,crm portal fail load printer show x
+9871,My desktop stopped working when I tried to use VPN. Error displayed: ERR-9999. Needs immediate attention.,account_access_issue,critical,desktop stop work try use vpn error displayed err need immediate attention
+6327,Zoom fails to load on my server showing ERR42. Needs immediate attention.,account_access_issue,critical,zoom fail load server showing err need immediate attention
+5309,My laptop stopped working when I tried to use Active Directory. Error displayed: ERR42. Issue reported by user.,network_problem,critical,laptop stop work try use active directory error display err issue report user
+3102,Teams fails to load on my laptop showing AUTH-007. Kindly assist.,account_access_issue,medium,team fail load laptop show auth kindly assist
+2984,Email keeps crashing on my server. Code 0x80070005.,account_access_issue,high,email keep crash server code x
+4915,I can't log into Salesforce from my mobile. It returns AUTH-007. Needs immediate attention.,security,medium,t log salesforce mobile return auth need immediate attention
+3967,Outlook fails to load on my laptop showing ERR42.,hardware_issue,high,outlook fail load laptop show err
+1723,There is a problem with CRM Portal on the router. Error: NET-503.,software_bug,critical,problem crm portal router error net
+7583,"I am unable to access WiFi on my router, it shows error TIMEOUT-22.",hardware_issue,critical,unable access wifi router show error timeout
+8094,Salesforce fails to load on my server showing NET-503. Issue reported by user.,account_access_issue,critical,salesforce fail load server show net issue report user
+564,My tablet stopped working when I tried to use Database. Error displayed: 0x80070005.,account_access_issue,high,tablet stop work try use database error display x
+6517,My laptop stopped working when I tried to use Outlook. Error displayed: NET-503. Needs immediate attention.,software_bug,critical,laptop stop work try use outlook error display net need immediate attention
+9288,There is a problem with WiFi on the desktop. Error: 0xC004F012.,other,high,problem wifi desktop error xc f
+9595,There is a problem with WiFi on the printer. Error: ERR-9999. Please resolve soon.,account_access_issue,critical,problem wifi printer error err resolve soon
+3174,There is a problem with Email on the laptop. Error: AUTH-007. Needs immediate attention.,other,medium,problem email laptop error auth need immediate attention
+862,My desktop stopped working when I tried to use Active Directory. Error displayed: ERR42.,service_request,low,desktop stop work try use active directory error display err
+25,My server stopped working when I tried to use Salesforce. Error displayed: AUTH-007.,network_problem,medium,server stop work try use salesforce error display auth
+6203,My laptop stopped working when I tried to use Email. Error displayed: 0x80070005. Kindly assist.,hardware_issue,high,laptop stop work try use email error display x kindly assist
+6050,Outlook keeps crashing on my printer. Code 0x80070005. Kindly assist.,other,high,outlook keep crash printer code x kindly assist
+474,Database keeps crashing on my desktop. Code TIMEOUT-22.,security,critical,database keep crash desktop code timeout
+519,VPN keeps crashing on my server. Code AUTH-007.,software_bug,medium,vpn keep crash server code auth
+2091,Outlook keeps crashing on my printer. Code 0x80070005. Issue reported by user.,other,high,outlook keep crash printer code x issue report user
+1620,There is a problem with Teams on the printer. Error: FAIL-101.,network_problem,high,problem team printer error fail
+6767,"I am unable to access Active Directory on my printer, it shows error ERR42. Issue reported by user.",account_access_issue,critical,unable access active directory printer show error err issue report user
+3823,WiFi keeps crashing on my desktop. Code ERR42.,service_request,critical,wifi keep crash desktop code err
+4259,"I am unable to access Active Directory on my tablet, it shows error 0xC004F012. Issue reported by user.",service_request,high,unable access active directory tablet show error xc f issue report user
+6987,VPN fails to load on my router showing 0x80070005. Kindly assist.,service_request,high,vpn fail load router show x kindly assist
 7138,My desktop stopped working when I tried to use Salesforce. Error displayed: TIMEOUT-22.,service_request,critical,desktop stop work try use salesforce error display timeout
-3512,There is a problem with Teams on the laptop. Error: ERR-9999. Occurs intermittently.,hardware_issue,medium,problem team laptop error err occur intermittently
-5326,There is a problem with Salesforce on the desktop. Error: TIMEOUT-22.,hardware_issue,critical,problem salesforce desktop error timeout
-4934,Active Directory keeps crashing on my laptop. Code ERR-9999. Occurs intermittently.,service_request,medium,active directory keeps crash laptop code err occur intermittently
-9139,CRM Portal keeps crashing on my printer. Code ERR42. Issue reported by user.,hardware_issue,critical,crm portal keep crash printer code err issue report user
-8908,There is a problem with Active Directory on the desktop. Error: ERR42. Needs immediate attention.,service_request,high,problem active directory desktop error err need immediate attention
-7830,I can't log into CRM Portal from my mobile. It returns ERR42. Please resolve soon.,hardware_issue,low,t log crm portal mobile return err resolve soon
-7224,I can't log into Outlook from my printer. It returns 0x80070005. Needs immediate attention.,hardware_issue,high,t log outlook printer return x need immediate attention
-450,My mobile stopped working when I tried to use Outlook. Error displayed: 0xC004F012.,service_request,high,mobile stop work try use outlook error display xc f
-6719,"I am unable to access Teams on my server, it shows error TIMEOUT-22. Please resolve soon.",hardware_issue,critical,unable access team server show error timeout resolve soon
-100114,Paper misfeed detected while printing regular documents.,hardware_issue,medium,paper misfeed detect print regular document
-6404,Active Directory keeps crashing on my desktop. Code FAIL-101. Kindly assist.,service_request,high,active directory keeps crash desktop code fail kindly assist
-7027,My printer stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Needs immediate attention.,service_request,medium,printer stop work try use active directory error display auth need immediate attention
-908,There is a problem with Database on the router. Error: 0x80070005.,service_request,high,problem database router error x
-5285,"I am unable to access Email on my tablet, it shows error ERR42. Kindly assist.",service_request,critical,unable access email tablet show error err kindly assist
-8391,I can't log into WiFi from my laptop. It returns AUTH-007. Needs immediate attention.,service_request,medium,t log wifi laptop return auth need immediate attention
-595,My router stopped working when I tried to use Active Directory. Error displayed: 0xC004F012.,service_request,high,router stop work try use active directory error display xc f
-3793,"I am unable to access Email on my tablet, it shows error ERR42. Please resolve soon.",service_request,critical,unable access email tablet show error err resolve soon
-6139,Email keeps crashing on my printer. Code NET-503. Please resolve soon.,service_request,critical,email keep crash printer code net resolve soon
-8693,My printer stopped working when I tried to use Zoom. Error displayed: NET-503. Please resolve soon.,service_request,critical,printer stop work try use zoom error display net resolve soon
-7072,There is a problem with Outlook on the mobile. Error: NET-503. Please resolve soon.,service_request,critical,problem outlook mobile error net resolve soon
-226,"I am unable to access Active Directory on my mobile, it shows error FAIL-101.",hardware_issue,high,unable access active directory mobile show error fail
-5063,My mobile stopped working when I tried to use Zoom. Error displayed: ERR42. Kindly assist.,hardware_issue,medium,mobile stop work try use zoom error display err kindly assist
-4459,I can't log into CRM Portal from my printer. It returns TIMEOUT-22. Issue reported by user.,hardware_issue,critical,t log crm portal printer return timeout issue report user
-7369,I can't log into Email from my tablet. It returns ERR-9999. Issue reported by user.,service_request,high,t log email tablet return err issue report user
-6047,Salesforce keeps crashing on my laptop. Code TIMEOUT-22.,service_request,critical,salesforce keep crash laptop code timeout
-906,My server stopped working when I tried to use WiFi. Error displayed: NET-503.,hardware_issue,critical,server stop work try use wifi error display net
-2901,My laptop stopped working when I tried to use Active Directory. Error displayed: ERR42. Kindly assist.,service_request,medium,laptop stop work try use active directory error display err kindly assist
-2008,Teams fails to load on my server showing AUTH-007. Please resolve soon.,service_request,medium,team fail load server show auth resolve soon
-8924,Database keeps crashing on my router. Code FAIL-101. Please resolve soon.,service_request,high,database keep crash router code fail resolve soon
-6990,I can't log into Email from my mobile. It returns 0xC004F012. Issue reported by user.,hardware_issue,high,t log email mobile return xc f issue report user
-4881,I can't log into Salesforce from my router. It returns 0xC004F012. Occurs intermittently.,service_request,high,t log salesforce router return xc f occur intermittently
-100102,Printer keeps pausing printing without user input.,hardware_issue,medium,printer keep pause printing user input
-3524,Active Directory keeps crashing on my desktop. Code FAIL-101. Issue reported by user.,service_request,high,active directory keep crash desktop code fail issue report user
-7858,VPN fails to load on my server showing 0x80070005. Kindly assist.,service_request,high,vpn fail load server show x kindly assist
-4713,There is a problem with Zoom on the mobile. Error: ERR42. Needs immediate attention.,hardware_issue,medium,problem zoom mobile error err need immediate attention
-4642,There is a problem with Outlook on the tablet. Error: 0x80070005.,service_request,high,problem outlook tablet error x
-9775,Database fails to load on my mobile showing ERR-9999. Issue reported by user.,service_request,high,database fail load mobile showing err issue report user
-7202,Active Directory fails to load on my printer showing FAIL-101. Issue reported by user.,hardware_issue,high,active directory fail load printer show fail issue report user
-1100,CRM Portal keeps crashing on my printer. Code ERR42.,hardware_issue,critical,crm portal keep crash printer code err
-1959,There is a problem with Teams on the router. Error: NET-503.,service_request,critical,problem team router error net
-1739,I can't log into WiFi from my printer. It returns 0x80070005.,hardware_issue,high,t log wifi printer return x
-7490,Salesforce fails to load on my printer showing NET-503. Needs immediate attention.,hardware_issue,critical,salesforce fail load printer show net need immediate attention
-5422,Email fails to load on my desktop showing 0x80070005. Issue reported by user.,hardware_issue,high,email fail load desktop show x issue report user
-4799,My laptop stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Please resolve soon.,hardware_issue,medium,laptop stop work try use active directory error display auth resolve soon
-3217,My printer stopped working when I tried to use Zoom. Error displayed: 0xC004F012.,hardware_issue,high,printer stop work try use zoom error display xc f
-8432,I can't log into Database from my printer. It returns AUTH-007. Issue reported by user.,hardware_issue,medium,t log database printer return auth issue report user
-5246,Teams fails to load on my server showing 0x80070005. Issue reported by user.,hardware_issue,high,team fail load server show x issue report user
-566,There is a problem with CRM Portal on the desktop. Error: ERR-9999.,service_request,medium,problem crm portal desktop error err
-9629,Active Directory keeps crashing on my laptop. Code ERR-9999. Occurs intermittently.,service_request,medium,active directory keeps crash laptop code err occur intermittently
-7448,I can't log into Salesforce from my server. It returns 0xC004F012. Kindly assist.,service_request,high,t log salesforce server return xc f kindly assist
-5632,I can't log into WiFi from my laptop. It returns AUTH-007. Occurs intermittently.,service_request,medium,t log wifi laptop return auth occur intermittently
-7711,There is a problem with Active Directory on the server. Error: FAIL-101.,service_request,high,problem active directory server error fail
-3285,Teams keeps crashing on my tablet. Code ERR-9999.,hardware_issue,low,team keep crash tablet code err
-5146,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Occurs intermittently.,service_request,high,server stop work try use outlook error display x occur intermittently
-4567,"I am unable to access Active Directory on my mobile, it shows error 0xC004F012. Occurs intermittently.",hardware_issue,high,unable access active directory mobile show error xc f occur intermittently
-7485,I can't log into CRM Portal from my mobile. It returns ERR42. Issue reported by user.,hardware_issue,low,t log crm portal mobile return err issue report user
-8749,Salesforce fails to load on my mobile showing FAIL-101. Please resolve soon.,service_request,high,salesforce fail load mobile showing fail resolve soon
-1459,My mobile stopped working when I tried to use Outlook. Error displayed: ERR42.,service_request,low,mobile stop work try use outlook error display err
-7950,My laptop stopped working when I tried to use Active Directory. Error displayed: ERR42. Kindly assist.,service_request,medium,laptop stop work try use active directory error display err kindly assist
-4748,My laptop stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Occurs intermittently.,service_request,critical,laptop stop work try use vpn error display timeout occur intermittently
-5288,I can't log into Email from my mobile. It returns ERR-9999.,hardware_issue,critical,t log email mobile return err
-9182,CRM Portal keeps crashing on my mobile. Code AUTH-007.,hardware_issue,medium,crm portal keep crash mobile code auth
-6704,"I am unable to access Active Directory on my printer, it shows error ERR-9999. Please resolve soon.",hardware_issue,high,unable access active directory printer show error err resolve soon
-4342,CRM Portal keeps crashing on my laptop. Code 0xC004F012. Issue reported by user.,service_request,high,crm portal keep crash laptop code xc f issue report user
-5182,There is a problem with Email on the desktop. Error: ERR42. Please resolve soon.,service_request,critical,problem email desktop error err resolve soon
-9127,Active Directory keeps crashing on my desktop. Code TIMEOUT-22. Occurs intermittently.,service_request,critical,active directory keep crash desktop code timeout occur intermittently
-100269,Cannot move messages to archive due to space issue.,service_request,medium,message archive space issue
-6583,My desktop stopped working when I tried to use Outlook. Error displayed: ERR-9999. Kindly assist.,service_request,medium,desktop stop work try use outlook error display err kindly assist
-6916,Outlook fails to load on my tablet showing 0xC004F012. Occurs intermittently.,service_request,high,outlook fail load tablet show xc f occur intermittently
-137,WiFi fails to load on my printer showing FAIL-101.,service_request,high,wifi fail load printer show fail
-4481,"I am unable to access Database on my router, it shows error FAIL-101. Issue reported by user.",hardware_issue,high,unable access database router show error fail issue report user
-1252,"I am unable to access WiFi on my printer, it shows error 0xC004F012.",service_request,high,unable access wifi printer show error xc f
-100143,Slow performance while running multiple applications.,hardware_issue,medium,slow performance run multiple application
-2611,"I am unable to access Database on my desktop, it shows error NET-503. Please resolve soon.",hardware_issue,critical,unable access database desktop show error net resolve soon
-3525,Outlook keeps crashing on my mobile. Code TIMEOUT-22. Occurs intermittently.,hardware_issue,critical,outlook keep crash mobile code timeout occur intermittently
-3408,My tablet stopped working when I tried to use Database. Error displayed: AUTH-007. Occurs intermittently.,hardware_issue,medium,tablet stop work try use database error display auth occur intermittently
-3987,I can't log into Active Directory from my laptop. It returns FAIL-101. Please resolve soon.,service_request,high,t log active directory laptop return fail resolve soon
-4955,"I am unable to access VPN on my mobile, it shows error ERR-9999. Issue reported by user.",service_request,medium,unable access vpn mobile show error err issue report user
-4789,I can't log into Active Directory from my laptop. It returns ERR42. Needs immediate attention.,hardware_issue,critical,t log active directory laptop return err need immediate attention
-8515,My tablet stopped working when I tried to use WiFi. Error displayed: TIMEOUT-22.,service_request,critical,tablet stop work try use wifi error display timeout
-302,VPN keeps crashing on my mobile. Code ERR-9999.,service_request,medium,vpn keep crash mobile code err
-612,VPN fails to load on my laptop showing FAIL-101.,service_request,high,vpn fail load laptop show fail
-7402,My tablet stopped working when I tried to use Salesforce. Error displayed: 0xC004F012. Kindly assist.,hardware_issue,high,tablet stop work try use salesforce error display xc f kindly assist
-8195,There is a problem with Active Directory on the printer. Error: 0xC004F012. Occurs intermittently.,hardware_issue,high,problem active directory printer error xc f occur intermittently
-9562,My router stopped working when I tried to use Outlook. Error displayed: ERR42. Occurs intermittently.,service_request,high,router stop work try use outlook error display err occur intermittently
-2203,Outlook keeps crashing on my router. Code AUTH-007.,hardware_issue,medium,outlook keep crash router code auth
-1214,My desktop stopped working when I tried to use CRM Portal. Error displayed: TIMEOUT-22.,service_request,critical,desktop stop work try use crm portal error display timeout
-4231,There is a problem with Outlook on the laptop. Error: TIMEOUT-22. Kindly assist.,hardware_issue,critical,problem outlook laptop error timeout kindly assist
-9653,My mobile stopped working when I tried to use Zoom. Error displayed: 0xC004F012. Needs immediate attention.,service_request,high,mobile stop work try use zoom error display xc f need immediate attention
-2653,VPN fails to load on my router showing 0x80070005.,service_request,high,vpn fail load router show x
-3828,Database keeps crashing on my printer. Code ERR-9999. Please resolve soon.,hardware_issue,high,database keep crash printer code err resolve soon
-6089,WiFi keeps crashing on my desktop. Code ERR42. Occurs intermittently.,service_request,critical,wifi keeps crash desktop code err occur intermittently
-5589,VPN keeps crashing on my server. Code ERR-9999. Needs immediate attention.,hardware_issue,medium,vpn keep crash server code err need immediate attention
-5045,My printer stopped working when I tried to use Email. Error displayed: NET-503. Issue reported by user.,hardware_issue,critical,printer stop work try use email error display net issue report user
-1778,Active Directory keeps crashing on my laptop. Code ERR-9999.,service_request,medium,active directory keep crash laptop code err
-5036,"I am unable to access WiFi on my printer, it shows error 0xC004F012. Occurs intermittently.",service_request,high,unable access wifi printer show error xc f occur intermittently
-1530,Active Directory keeps crashing on my tablet. Code AUTH-007.,service_request,medium,active directory keep crash tablet code auth
-6940,CRM Portal keeps crashing on my mobile. Code AUTH-007. Please resolve soon.,hardware_issue,medium,crm portal keep crash mobile code auth resolve soon
-8922,My router stopped working when I tried to use WiFi. Error displayed: NET-503. Occurs intermittently.,hardware_issue,critical,router stop work try use wifi error display net occur intermittently
-803,VPN fails to load on my printer showing 0x80070005.,hardware_issue,high,vpn fail load printer show x
-9104,Teams fails to load on my server showing AUTH-007. Needs immediate attention.,service_request,medium,team fail load server show auth need immediate attention
-8018,There is a problem with Database on the tablet. Error: ERR-9999.,hardware_issue,critical,problem database tablet error err
-6303,I can't log into WiFi from my desktop. It returns ERR-9999. Occurs intermittently.,hardware_issue,high,t log wifi desktop return err occur intermittently
-1584,I can't log into VPN from my printer. It returns 0xC004F012.,service_request,high,t log vpn printer return xc f
-4820,My desktop stopped working when I tried to use CRM Portal. Error displayed: TIMEOUT-22. Kindly assist.,service_request,critical,desktop stop work try use crm portal error display timeout kindly assist
-2205,Outlook fails to load on my router showing 0xC004F012.,hardware_issue,high,outlook fail load router show xc f
-8113,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Issue reported by user.,hardware_issue,high,server stop work try use outlook error display x issue report user
-4976,I can't log into Database from my mobile. It returns TIMEOUT-22. Needs immediate attention.,hardware_issue,critical,t log database mobile return timeout need immediate attention
-6322,Outlook fails to load on my tablet showing 0xC004F012. Needs immediate attention.,service_request,high,outlook fail load tablet show xc f need immediate attention
-8932,Database keeps crashing on my laptop. Code NET-503. Occurs intermittently.,hardware_issue,critical,database keep crash laptop code net occur intermittently
-3150,Database keeps crashing on my mobile. Code TIMEOUT-22. Please resolve soon.,hardware_issue,critical,database keep crash mobile code timeout resolve soon
-7619,"I am unable to access WiFi on my mobile, it shows error TIMEOUT-22. Needs immediate attention.",service_request,critical,unable access wifi mobile show error timeout need immediate attention
-4377,There is a problem with Active Directory on the server. Error: FAIL-101. Issue reported by user.,hardware_issue,high,problem active directory server error fail issue report user
-9291,There is a problem with Email on the laptop. Error: 0x80070005. Needs immediate attention.,service_request,high,problem email laptop error x need immediate attention
-8269,There is a problem with Email on the server. Error: 0x80070005. Occurs intermittently.,service_request,high,problem email server error x occur intermittently
-4430,"I am unable to access Email on my mobile, it shows error 0xC004F012.",hardware_issue,high,unable access email mobile show error xc f
-2362,Active Directory fails to load on my printer showing FAIL-101. Kindly assist.,hardware_issue,high,active directory fail load printer show fail kindly assist
-1736,I can't log into Email from my mobile. It returns 0xC004F012.,hardware_issue,high,t log email mobile return xc f
-7191,I can't log into Email from my mobile. It returns ERR-9999. Needs immediate attention.,hardware_issue,critical,t log email mobile return err need immediate attention
-6836,Database fails to load on my desktop showing AUTH-007. Kindly assist.,hardware_issue,medium,database fail load desktop show auth kindly assist
-8864,Zoom fails to load on my tablet showing TIMEOUT-22. Please resolve soon.,service_request,critical,zoom fail load tablet show timeout resolve soon
-9411,"I am unable to access VPN on my mobile, it shows error ERR-9999. Issue reported by user.",service_request,medium,unable access vpn mobile show error err issue report user
-5973,I can't log into Database from my router. It returns FAIL-101. Needs immediate attention.,service_request,high,t log database router return fail need immediate attention
-8695,My laptop stopped working when I tried to use Email. Error displayed: ERR-9999. Occurs intermittently.,service_request,low,laptop stop work try use email error display err occur intermittently
-7609,CRM Portal keeps crashing on my tablet. Code AUTH-007. Occurs intermittently.,hardware_issue,medium,crm portal keep crash tablet code auth occur intermittently
-100293,Requesting installation of Git for version control.,service_request,medium,request installation git version control
-2965,"I am unable to access Active Directory on my printer, it shows error ERR-9999.",hardware_issue,high,unable access active directory printer show error err
-2438,My router stopped working when I tried to use Teams. Error displayed: AUTH-007. Needs immediate attention.,hardware_issue,medium,router stop work try use team error display auth need immediate attention
-7467,Outlook fails to load on my router showing TIMEOUT-22. Occurs intermittently.,hardware_issue,critical,outlook fail load router show timeout occur intermittently
-6051,My server stopped working when I tried to use WiFi. Error displayed: NET-503. Kindly assist.,hardware_issue,critical,server stop work try use wifi error display net kindly assist
-4537,"I am unable to access Email on my mobile, it shows error 0xC004F012. Please resolve soon.",hardware_issue,high,unable access email mobile show error xc f resolve soon
-2539,There is a problem with Email on the server. Error: 0x80070005. Needs immediate attention.,service_request,high,problem email server error x need immediate attention
-9583,"I am unable to access VPN on my mobile, it shows error FAIL-101. Please resolve soon.",service_request,high,unable access vpn mobile show error fail resolve soon
-680,My server stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,service_request,critical,server stop work try use database error display timeout
-1894,There is a problem with Active Directory on the desktop. Error: NET-503.,hardware_issue,critical,problem active directory desktop error net
-9854,My desktop stopped working when I tried to use CRM Portal. Error displayed: TIMEOUT-22. Kindly assist.,service_request,critical,desktop stop work try use crm portal error display timeout kindly assist
-4804,There is a problem with Email on the server. Error: 0x80070005. Please resolve soon.,service_request,high,problem email server error x resolve soon
-391,My server stopped working when I tried to use Teams. Error displayed: ERR42.,service_request,low,server stop work try use team error display err
-9641,"I am unable to access CRM Portal on my router, it shows error FAIL-101. Kindly assist.",hardware_issue,high,unable access crm portal router show error fail kindly assist
-1493,I can't log into Email from my router. It returns TIMEOUT-22.,hardware_issue,critical,t log email router return timeout
-8887,"I am unable to access WiFi on my router, it shows error TIMEOUT-22.",service_request,critical,unable access wifi router show error timeout
-8706,My router stopped working when I tried to use WiFi. Error displayed: NET-503. Please resolve soon.,hardware_issue,critical,router stop work try use wifi error display net resolve soon
-4006,Active Directory keeps crashing on my mobile. Code ERR42. Issue reported by user.,service_request,high,active directory keep crash mobile code err issue report user
-8882,Salesforce fails to load on my mobile showing FAIL-101. Occurs intermittently.,service_request,high,salesforce fail load mobile showing fail occur intermittently
-1226,"I am unable to access Active Directory on my mobile, it shows error FAIL-101.",hardware_issue,high,unable access active directory mobile show error fail
-5785,My laptop stopped working when I tried to use VPN. Error displayed: 0x80070005. Occurs intermittently.,hardware_issue,high,laptop stop work try use vpn error display x occur intermittently
-3833,My laptop stopped working when I tried to use VPN. Error displayed: TIMEOUT-22.,service_request,critical,laptop stop work try use vpn error display timeout
-2457,My desktop stopped working when I tried to use WiFi. Error displayed: 0xC004F012. Kindly assist.,service_request,high,desktop stop work try use wifi error display xc f kindly assist
-8166,There is a problem with Active Directory on the tablet. Error: FAIL-101. Please resolve soon.,service_request,high,problem active directory tablet error fail resolve soon
-6526,I can't log into WiFi from my laptop. It returns AUTH-007. Kindly assist.,service_request,medium,t log wifi laptop return auth kindly assist
-7932,VPN keeps crashing on my printer. Code ERR-9999. Please resolve soon.,hardware_issue,high,vpn keep crash printer code err resolve soon
-2701,Teams keeps crashing on my tablet. Code ERR-9999. Needs immediate attention.,hardware_issue,low,team keep crash tablet code err need immediate attention
-3584,There is a problem with Teams on the laptop. Error: 0x80070005. Kindly assist.,hardware_issue,high,problem team laptop error x kindly assist
-5374,Salesforce fails to load on my desktop showing ERR42. Needs immediate attention.,service_request,medium,salesforce fail load desktop showing err need immediate attention
-4739,I can't log into WiFi from my desktop. It returns ERR-9999. Needs immediate attention.,hardware_issue,high,t log wifi desktop return err need immediate attention
-1114,My router stopped working when I tried to use Teams. Error displayed: AUTH-007.,hardware_issue,medium,router stop work try use team error display auth
-2601,"I am unable to access Active Directory on my printer, it shows error AUTH-007. Please resolve soon.",service_request,medium,unable access active directory printer show error auth resolve soon
-3163,My router stopped working when I tried to use Teams. Error displayed: ERR42. Issue reported by user.,hardware_issue,low,router stop work try use team error display err issue report user
-2236,There is a problem with Teams on the laptop. Error: ERR-9999. Issue reported by user.,hardware_issue,medium,problem team laptop error err issue report user
-9607,I can't log into CRM Portal from my printer. It returns TIMEOUT-22. Kindly assist.,hardware_issue,critical,t log crm portal printer return timeout kindly assist
-7135,Database fails to load on my mobile showing ERR-9999. Needs immediate attention.,service_request,high,database fail load mobile showing err need immediate attention
-6373,Outlook fails to load on my tablet showing 0xC004F012. Needs immediate attention.,service_request,high,outlook fail load tablet show xc f need immediate attention
-5292,VPN fails to load on my laptop showing FAIL-101. Please resolve soon.,service_request,high,vpn fail load laptop show fail resolve soon
-1286,There is a problem with Active Directory on the server. Error: FAIL-101.,service_request,high,problem active directory server error fail
-3692,My tablet stopped working when I tried to use Active Directory. Error displayed: FAIL-101. Please resolve soon.,service_request,high,tablet stop work try use active directory error display fail resolve soon
-720,My mobile stopped working when I tried to use Email. Error displayed: AUTH-007.,hardware_issue,medium,mobile stop work try use email error display auth
-7693,There is a problem with Active Directory on the server. Error: FAIL-101. Please resolve soon.,service_request,high,problem active directory server error fail resolve soon
-4186,There is a problem with Zoom on the mobile. Error: ERR42. Please resolve soon.,hardware_issue,medium,problem zoom mobile error err resolve soon
-4963,I can't log into VPN from my mobile. It returns 0x80070005.,service_request,high,t log vpn mobile return x
-100262,Unable to send meeting invites because mailbox full.,service_request,medium,unable send meeting invite mailbox
-4956,WiFi keeps crashing on my server. Code FAIL-101. Needs immediate attention.,hardware_issue,high,wifi keeps crash server code fail need immediate attention
-6239,There is a problem with Outlook on the laptop. Error: TIMEOUT-22. Needs immediate attention.,hardware_issue,critical,problem outlook laptop error timeout need immediate attention
-7247,There is a problem with Email on the laptop. Error: 0x80070005. Please resolve soon.,service_request,high,problem email laptop error x resolve soon
-2179,I can't log into Email from my mobile. It returns ERR-9999. Occurs intermittently.,hardware_issue,critical,t log email mobile return err occur intermittently
-3348,There is a problem with Active Directory on the server. Error: FAIL-101. Occurs intermittently.,service_request,high,problem active directory server error fail occur intermittently
-4947,I can't log into Teams from my router. It returns ERR42. Needs immediate attention.,hardware_issue,low,t log team router return err need immediate attention
-2635,Salesforce fails to load on my desktop showing ERR42. Occurs intermittently.,service_request,medium,salesforce fail load desktop showing err occur intermittently
-710,My desktop stopped working when I tried to use Teams. Error displayed: 0x80070005.,service_request,high,desktop stop work try use team error display x
-6321,CRM Portal keeps crashing on my printer. Code FAIL-101.,service_request,high,crm portal keeps crash printer code fail
-135,"I am unable to access Active Directory on my tablet, it shows error NET-503.",service_request,critical,unable access active directory tablet show error net
+6656,CRM Portal fails to load on my desktop showing 0xC004F012. Needs immediate attention.,security,high,crm portal fail load desktop show xc f need immediate attention
 5438,My tablet stopped working when I tried to use Salesforce. Error displayed: 0x80070005. Please resolve soon.,service_request,high,tablet stop work try use salesforce error display x resolve soon
-8454,VPN fails to load on my router showing 0xC004F012. Issue reported by user.,hardware_issue,high,vpn fail load router show xc f issue report user
-4801,There is a problem with Teams on the router. Error: NET-503. Needs immediate attention.,service_request,critical,problem team router error net need immediate attention
-6592,Zoom keeps crashing on my desktop. Code 0x80070005. Needs immediate attention.,hardware_issue,high,zoom keeps crash desktop code x need immediate attention
-4617,VPN fails to load on my router showing 0x80070005.,service_request,high,vpn fail load router show x
-1586,"I am unable to access Teams on my server, it shows error TIMEOUT-22.",hardware_issue,critical,unable access team server show error timeout
-3988,Active Directory keeps crashing on my desktop. Code TIMEOUT-22.,service_request,critical,active directory keep crash desktop code timeout
-4187,Active Directory keeps crashing on my desktop. Code TIMEOUT-22. Occurs intermittently.,service_request,critical,active directory keep crash desktop code timeout occur intermittently
-5169,There is a problem with Salesforce on the desktop. Error: TIMEOUT-22. Kindly assist.,hardware_issue,critical,problem salesforce desktop error timeout kindly assist
-923,Database keeps crashing on my mobile. Code 0x80070005.,hardware_issue,high,database keep crash mobile code x
-100300,Unable to install Outlook plugin due to restrictions.,service_request,medium,unable install outlook plugin restriction
-6395,"I am unable to access Active Directory on my printer, it shows error AUTH-007.",service_request,medium,unable access active directory printer show error auth
-1642,Salesforce fails to load on my desktop showing ERR42.,service_request,medium,salesforce fail load desktop showing err
-2920,"I am unable to access Outlook on my server, it shows error AUTH-007. Occurs intermittently.",service_request,medium,unable access outlook server show error auth occur intermittently
-8298,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,server stop work try use outlook error display x need immediate attention
-6629,CRM Portal fails to load on my router showing TIMEOUT-22. Needs immediate attention.,service_request,critical,crm portal fail load router show timeout need immediate attention
-7750,Salesforce keeps crashing on my laptop. Code TIMEOUT-22. Needs immediate attention.,service_request,critical,salesforce keeps crash laptop code timeout need immediate attention
-2150,Database fails to load on my laptop showing FAIL-101. Issue reported by user.,service_request,high,database fail load laptop show fail issue report user
-2658,I can't log into Active Directory from my printer. It returns ERR-9999. Kindly assist.,service_request,high,t log active directory printer return err kindly assist
-2856,VPN keeps crashing on my printer. Code ERR-9999. Please resolve soon.,hardware_issue,high,vpn keep crash printer code err resolve soon
-4240,My laptop stopped working when I tried to use Active Directory. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,laptop stop work try use active directory error display x need immediate attention
-225,Zoom fails to load on my tablet showing TIMEOUT-22.,service_request,critical,zoom fail load tablet show timeout
-7573,Salesforce fails to load on my printer showing NET-503. Occurs intermittently.,hardware_issue,critical,salesforce fail load printer show net occur intermittently
-7543,I can't log into Salesforce from my desktop. It returns 0x80070005.,hardware_issue,high,t log salesforce desktop return x
-2507,VPN fails to load on my router showing 0xC004F012. Issue reported by user.,hardware_issue,high,vpn fail load router show xc f issue report user
+4967,My server stopped working when I tried to use CRM Portal. Error displayed: ERR-9999. Kindly assist.,other,high,server stop work try use crm portal error display err kindly assist
+8535,I can't log into CRM Portal from my mobile. It returns ERR42. Kindly assist.,service_request,critical,t log crm portal mobile return err kindly assist
+5797,There is a problem with Teams on the laptop. Error: 0x80070005. Issue reported by user.,hardware_issue,high,problem team laptop error x issue report user
+587,I can't log into Email from my tablet. It returns ERR-9999.,service_request,high,t log email tablet return err
+7831,I can't log into Active Directory from my tablet. It returns 0xC004F012. Occurs intermittently.,service_request,high,t log active directory tablet return xc f occur intermittently
+3873,CRM Portal keeps crashing on my laptop. Code FAIL-101. Please resolve soon.,security,high,crm portal keep crash laptop code fail resolve soon
+4136,I can't log into Database from my printer. It returns 0x80070005. Kindly assist.,account_access_issue,high,t log database printer return x kindly assist
+9722,There is a problem with Outlook on the mobile. Error: NET-503. Issue reported by user.,service_request,critical,problem outlook mobile error net issue report user
+5241,"I am unable to access Active Directory on my router, it shows error ERR-9999.",other,high,unable access active directory router show error err
+7160,My mobile stopped working when I tried to use Zoom. Error displayed: NET-503. Occurs intermittently.,software_bug,critical,mobile stop work try use zoom error display net occur intermittently
+7612,I can't log into Outlook from my laptop. It returns NET-503. Please resolve soon.,other,critical,t log outlook laptop return net resolve soon
+5800,Active Directory keeps crashing on my desktop. Code FAIL-101. Issue reported by user.,service_request,high,active directory keep crash desktop code fail issue report user
+4643,My laptop stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Occurs intermittently.,hardware_issue,medium,laptop stop work try use active directory error display auth occur intermittently
+100157,Laptop slow when copying large files.,hardware_issue,high,laptop slow copy large file
+1505,Database fails to load on my laptop showing 0xC004F012.,security,high,database fail load laptop show xc f
+186,Teams keeps crashing on my router. Code 0xC004F012.,hardware_issue,high,team keep crash router code xc f
+8769,Active Directory keeps crashing on my desktop. Code ERR42. Issue reported by user.,service_request,low,active directory keep crash desktop code err issue report user
+5652,Zoom keeps crashing on my printer. Code AUTH-007. Needs immediate attention.,security,medium,zoom keep crash printer code auth need immediate attention
+6408,VPN fails to load on my desktop showing ERR42.,security,medium,vpn fail load desktop showing err
+5859,I can't log into Database from my laptop. It returns ERR-9999. Occurs intermittently.,other,critical,t log database laptop return err occur intermittently
+7608,My printer stopped working when I tried to use WiFi. Error displayed: FAIL-101. Kindly assist.,software_bug,high,printer stop work try use wifi error display fail kindly assist
+5394,I can't log into Teams from my router. It returns ERR42. Kindly assist.,hardware_issue,low,t log team router return err kindly assist
+7781,My router stopped working when I tried to use Database. Error displayed: 0xC004F012. Issue reported by user.,network_problem,high,router stop work try use database error display xc f issue report user
+5384,There is a problem with WiFi on the printer. Error: TIMEOUT-22. Kindly assist.,hardware_issue,critical,problem wifi printer error timeout kindly assist
+7302,There is a problem with WiFi on the server. Error: NET-503. Issue reported by user.,account_access_issue,critical,problem wifi server error net issue report user
+551,VPN fails to load on my server showing 0x80070005.,security,high,vpn fail load server show x
+7848,There is a problem with Salesforce on the router. Error: 0x80070005. Issue reported by user.,software_bug,high,problem salesforce router error x issue report user
+6599,There is a problem with Teams on the router. Error: ERR-9999. Please resolve soon.,account_access_issue,low,problem team router error err resolve soon
+1946,VPN keeps crashing on my laptop. Code ERR42.,security,medium,vpn keep crash laptop code err
+8832,I can't log into Outlook from my tablet. It returns NET-503.,network_problem,critical,t log outlook tablet return net
+1208,CRM Portal keeps crashing on my server. Code 0xC004F012.,service_request,high,crm portal keep crash server code xc f
+3051,Database keeps crashing on my desktop. Code AUTH-007. Please resolve soon.,security,medium,database keep crash desktop code auth resolve soon
+3753,My tablet stopped working when I tried to use Email. Error displayed: ERR42. Needs immediate attention.,account_access_issue,critical,tablet stop work try use email error displayed err need immediate attention
+100028,Password update applied but OneDrive keeps asking old credentials.,account_access_issue,medium,password update apply onedrive keep ask old credential
+79,I can't log into Salesforce from my router. It returns 0xC004F012.,service_request,high,t log salesforce router return xc f
+5034,Outlook keeps crashing on my mobile. Code TIMEOUT-22. Issue reported by user.,hardware_issue,critical,outlook keep crash mobile code timeout issue report user
+789,My router stopped working when I tried to use Salesforce. Error displayed: NET-503.,other,critical,router stop work try use salesforce error display net
+8405,My server stopped working when I tried to use Salesforce. Error displayed: FAIL-101. Please resolve soon.,service_request,high,server stop work try use salesforce error display fail resolve soon
+5623,WiFi fails to load on my laptop showing ERR42. Needs immediate attention.,software_bug,low,wifi fail load laptop show err need immediate attention
+4936,Salesforce keeps crashing on my mobile. Code 0xC004F012. Kindly assist.,security,high,salesforce keeps crash mobile code xc f kindly assist
+8028,My router stopped working when I tried to use CRM Portal. Error displayed: 0x80070005. Needs immediate attention.,software_bug,high,router stop work try use crm portal error display x need immediate attention
+5693,"I am unable to access Active Directory on my tablet, it shows error NET-503. Occurs intermittently.",service_request,critical,unable access active directory tablet show error net occur intermittently
+8596,My tablet stopped working when I tried to use Zoom. Error displayed: TIMEOUT-22. Kindly assist.,account_access_issue,critical,tablet stop work try use zoom error display timeout kindly assist
+1508,CRM Portal keeps crashing on my desktop. Code 0xC004F012.,account_access_issue,high,crm portal keep crash desktop code xc f
+6044,My server stopped working when I tried to use Teams. Error displayed: TIMEOUT-22. Kindly assist.,account_access_issue,critical,server stop work try use team error display timeout kindly assist
+1111,My desktop stopped working when I tried to use Active Directory. Error displayed: ERR42.,network_problem,medium,desktop stop work try use active directory error display err
+9413,My laptop stopped working when I tried to use WiFi. Error displayed: 0xC004F012.,network_problem,high,laptop stop work try use wifi error display xc f
+4265,I can't log into Salesforce from my desktop. It returns 0x80070005.,service_request,high,t log salesforce desktop return x
+874,I can't log into Active Directory from my tablet. It returns 0xC004F012.,service_request,high,t log active directory tablet return xc f
+4468,My mobile stopped working when I tried to use CRM Portal. Error displayed: 0x80070005. Please resolve soon.,security,high,mobile stop work try use crm portal error display x resolve soon
+7925,There is a problem with Zoom on the tablet. Error: NET-503. Please resolve soon.,account_access_issue,critical,problem zoom tablet error net resolve soon
+5432,I can't log into Outlook from my tablet. It returns ERR42.,other,critical,t log outlook tablet return err
+4179,Database keeps crashing on my mobile. Code 0xC004F012.,service_request,high,database keep crash mobile code xc f
+134,My desktop stopped working when I tried to use Outlook. Error displayed: ERR-9999.,service_request,medium,desktop stop work try use outlook error display err
+581,I can't log into Database from my mobile. It returns ERR42.,account_access_issue,low,t log database mobile return err
+7087,I can't log into CRM Portal from my tablet. It returns 0xC004F012.,security,high,t log crm portal tablet return xc f
+836,"I am unable to access VPN on my router, it shows error AUTH-007.",account_access_issue,medium,unable access vpn router show error auth
+554,There is a problem with Active Directory on the desktop. Error: ERR42.,service_request,high,problem active directory desktop error err
+2408,"I am unable to access Active Directory on my tablet, it shows error 0xC004F012. Kindly assist.",service_request,high,unable access active directory tablet show error xc f kindly assist
+8276,Database fails to load on my printer showing NET-503. Needs immediate attention.,software_bug,critical,database fail load printer show net need immediate attention
+4522,My mobile stopped working when I tried to use CRM Portal. Error displayed: ERR42. Please resolve soon.,other,critical,mobile stop work try use crm portal error display err resolve soon
+4159,Teams fails to load on my router showing ERR42. Please resolve soon.,network_problem,critical,team fail load router show err resolve soon
+8658,There is a problem with Email on the mobile. Error: 0xC004F012. Needs immediate attention.,hardware_issue,high,problem email mobile error xc f need immediate attention
+9754,"I am unable to access Database on my router, it shows error ERR42. Needs immediate attention.",account_access_issue,low,unable access database router show error err need immediate attention
+7793,I can't log into CRM Portal from my desktop. It returns FAIL-101. Please resolve soon.,hardware_issue,high,t log crm portal desktop return fail resolve soon
+572,CRM Portal keeps crashing on my tablet. Code TIMEOUT-22.,network_problem,critical,crm portal keep crash tablet code timeout
+2882,There is a problem with VPN on the desktop. Error: AUTH-007. Occurs intermittently.,software_bug,medium,problem vpn desktop error auth occur intermittently
+4628,I can't log into WiFi from my laptop. It returns AUTH-007. Occurs intermittently.,security,medium,t log wifi laptop return auth occur intermittently
+3423,I can't log into WiFi from my desktop. It returns TIMEOUT-22. Occurs intermittently.,software_bug,critical,t log wifi desktop return timeout occur intermittently
+3332,"I am unable to access Database on my server, it shows error AUTH-007. Occurs intermittently.",network_problem,medium,unable access database server show error auth occur intermittently
+3077,My router stopped working when I tried to use Outlook. Error displayed: 0xC004F012.,hardware_issue,high,router stop work try use outlook error display xc f
+8089,Database keeps crashing on my laptop. Code FAIL-101. Kindly assist.,software_bug,high,database keeps crash laptop code fail kindly assist
+959,There is a problem with Teams on the router. Error: NET-503.,service_request,critical,problem team router error net
+3788,My mobile stopped working when I tried to use WiFi. Error displayed: 0x80070005. Kindly assist.,account_access_issue,high,mobile stop work try use wifi error display x kindly assist
+880,Database fails to load on my laptop showing FAIL-101.,service_request,high,database fail load laptop show fail
+8250,I can't log into Zoom from my tablet. It returns NET-503. Kindly assist.,software_bug,critical,t log zoom tablet return net kindly assist
+6398,VPN fails to load on my laptop showing ERR-9999. Occurs intermittently.,network_problem,low,vpn fail load laptop show err occur intermittently
+1663,My server stopped working when I tried to use Outlook. Error displayed: ERR-9999.,security,medium,server stop work try use outlook error display err
+5983,"I am unable to access Active Directory on my tablet, it shows error NET-503.",service_request,critical,unable access active directory tablet show error net
+7938,Salesforce fails to load on my desktop showing AUTH-007. Occurs intermittently.,account_access_issue,medium,salesforce fail load desktop show auth occur intermittently
+7778,I can't log into Teams from my server. It returns 0xC004F012. Issue reported by user.,account_access_issue,high,t log team server return xc f issue report user
+8669,There is a problem with Email on the server. Error: NET-503. Issue reported by user.,network_problem,critical,problem email server error net issue report user
+4622,Zoom fails to load on my server showing ERR42. Issue reported by user.,account_access_issue,critical,zoom fail load server showing err issue report user
+9285,My router stopped working when I tried to use Email. Error displayed: ERR42.,network_problem,high,router stop work try use email error display err
+5461,"I am unable to access Zoom on my server, it shows error FAIL-101. Occurs intermittently.",service_request,high,unable access zoom server show error fail occur intermittently
+4925,"I am unable to access Teams on my tablet, it shows error NET-503. Please resolve soon.",other,critical,unable access team tablet show error net resolve soon
+8608,There is a problem with Salesforce on the mobile. Error: 0x80070005. Please resolve soon.,other,high,problem salesforce mobile error x resolve soon
+6412,My mobile stopped working when I tried to use Zoom. Error displayed: ERR42. Please resolve soon.,hardware_issue,medium,mobile stop work try use zoom error display err resolve soon
+1065,Teams keeps crashing on my server. Code AUTH-007.,account_access_issue,medium,team keep crash server code auth
+95,I can't log into Salesforce from my router. It returns TIMEOUT-22.,software_bug,critical,t log salesforce router return timeout
+5119,I can't log into Teams from my desktop. It returns AUTH-007. Needs immediate attention.,hardware_issue,medium,t log team desktop return auth need immediate attention
+1609,Database fails to load on my desktop showing TIMEOUT-22.,account_access_issue,critical,database fail load desktop show timeout
+7881,There is a problem with Database on the desktop. Error: NET-503. Needs immediate attention.,hardware_issue,critical,problem database desktop error net need immediate attention
+270,My desktop stopped working when I tried to use Database. Error displayed: 0xC004F012.,network_problem,high,desktop stop work try use database error display xc f
+9328,My laptop stopped working when I tried to use WiFi. Error displayed: 0xC004F012.,network_problem,high,laptop stop work try use wifi error display xc f
+6927,"I am unable to access Active Directory on my router, it shows error FAIL-101. Kindly assist.",network_problem,high,unable access active directory router show error fail kindly assist
+3926,I can't log into Outlook from my printer. It returns ERR42. Needs immediate attention.,software_bug,high,t log outlook printer return err need immediate attention
+2398,I can't log into Email from my router. It returns 0xC004F012. Kindly assist.,software_bug,high,t log email router return xc f kindly assist
+3962,"I am unable to access Email on my printer, it shows error 0xC004F012. Kindly assist.",hardware_issue,high,unable access email printer show error xc f kindly assist
+4738,"I am unable to access Teams on my laptop, it shows error NET-503. Occurs intermittently.",account_access_issue,critical,unable access team laptop show error net occur intermittently
+2411,Zoom fails to load on my mobile showing 0x80070005. Please resolve soon.,other,high,zoom fail load mobile showing x resolve soon
+8929,My tablet stopped working when I tried to use VPN. Error displayed: ERR-9999. Issue reported by user.,software_bug,medium,tablet stop work try use vpn error display err issue report user
+818,My tablet stopped working when I tried to use Salesforce. Error displayed: 0x80070005.,service_request,high,tablet stop work try use salesforce error display x
+7651,There is a problem with Teams on the laptop. Error: TIMEOUT-22. Needs immediate attention.,other,critical,problem team laptop error timeout need immediate attention
+47,"I am unable to access Active Directory on my laptop, it shows error NET-503.",hardware_issue,critical,unable access active directory laptop show error net
+9827,Active Directory keeps crashing on my desktop. Code ERR42. Kindly assist.,service_request,low,active directory keeps crash desktop code err kindly assist
+9671,I can't log into Zoom from my laptop. It returns 0xC004F012. Kindly assist.,other,high,t log zoom laptop return xc f kindly assist
+9503,My server stopped working when I tried to use CRM Portal. Error displayed: NET-503. Please resolve soon.,network_problem,critical,server stop work try use crm portal error display net resolve soon
+5168,My mobile stopped working when I tried to use Email. Error displayed: ERR42. Occurs intermittently.,security,critical,mobile stop work try use email error display err occur intermittently
+4305,I can't log into Salesforce from my desktop. It returns AUTH-007. Kindly assist.,software_bug,medium,t log salesforce desktop return auth kindly assist
+5524,Salesforce keeps crashing on my tablet. Code 0x80070005. Kindly assist.,account_access_issue,high,salesforce keep crash tablet code x kindly assist
+5078,Email fails to load on my mobile showing ERR42. Issue reported by user.,account_access_issue,critical,email fail load mobile showing err issue report user
+4625,There is a problem with Zoom on the desktop. Error: 0x80070005. Please resolve soon.,software_bug,high,problem zoom desktop error x resolve soon
+8520,Database keeps crashing on my router. Code FAIL-101. Kindly assist.,service_request,high,database keeps crash router code fail kindly assist
+502,Outlook keeps crashing on my printer. Code ERR-9999.,security,critical,outlook keep crash printer code err
+100173,Slow network response causing delays in uploading files.,network_problem,medium,slow network response cause delay upload file
+2736,Database fails to load on my laptop showing ERR-9999.,other,low,database fail load laptop show err
+8612,I can't log into Outlook from my desktop. It returns ERR-9999.,software_bug,high,t log outlook desktop return err
+8469,There is a problem with CRM Portal on the tablet. Error: ERR-9999. Please resolve soon.,security,critical,problem crm portal tablet error err resolve soon
+5379,"I am unable to access Zoom on my tablet, it shows error 0xC004F012. Needs immediate attention.",service_request,high,unable access zoom tablet show error xc f need immediate attention
+3638,"I am unable to access VPN on my mobile, it shows error ERR-9999. Issue reported by user.",service_request,medium,unable access vpn mobile show error err issue report user
+9572,Salesforce fails to load on my server showing AUTH-007. Issue reported by user.,other,medium,salesforce fail load server show auth issue report user
+4126,"I am unable to access Teams on my desktop, it shows error FAIL-101. Please resolve soon.",security,high,unable access team desktop show error fail resolve soon
+517,My printer stopped working when I tried to use WiFi. Error displayed: ERR42.,account_access_issue,medium,printer stop work try use wifi error display err
+8077,WiFi keeps crashing on my printer. Code NET-503. Please resolve soon.,security,critical,wifi keep crash printer code net resolve soon
+9642,Email fails to load on my printer showing ERR42. Needs immediate attention.,other,medium,email fail load printer showing err need immediate attention
+6130,I can't log into Active Directory from my server. It returns 0xC004F012. Kindly assist.,software_bug,high,t log active directory server return xc f kindly assist
+8692,I can't log into Active Directory from my server. It returns ERR-9999. Kindly assist.,account_access_issue,medium,t log active directory server return err kindly assist
+107,I can't log into Email from my router. It returns AUTH-007.,network_problem,medium,t log email router return auth
+111,My desktop stopped working when I tried to use Active Directory. Error displayed: ERR42.,network_problem,medium,desktop stop work try use active directory error display err
+6873,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22. Kindly assist.,service_request,critical,mobile stop work try use database error display timeout kindly assist
+7325,There is a problem with Teams on the printer. Error: TIMEOUT-22. Occurs intermittently.,network_problem,critical,problem team printer error timeout occur intermittently
+3465,I can't log into WiFi from my desktop. It returns TIMEOUT-22. Please resolve soon.,software_bug,critical,t log wifi desktop return timeout resolve soon
+4422,VPN keeps crashing on my laptop. Code ERR42. Issue reported by user.,account_access_issue,low,vpn keep crash laptop code err issue report user
+4549,"I am unable to access Database on my mobile, it shows error 0x80070005. Issue reported by user.",security,high,unable access database mobile show error x issue report user
+133,WiFi keeps crashing on my server. Code NET-503.,security,critical,wifi keep crash server code net
+944,My mobile stopped working when I tried to use Email. Error displayed: 0xC004F012.,other,high,mobile stop work try use email error display xc f
+5232,I can't log into Email from my printer. It returns 0x80070005.,security,high,t log email printer return x
+9585,"I am unable to access Teams on my printer, it shows error AUTH-007.",account_access_issue,medium,unable access team printer show error auth
+7704,I can't log into Teams from my server. It returns ERR-9999. Occurs intermittently.,service_request,critical,t log team server return err occur intermittently
+1516,My router stopped working when I tried to use Outlook. Error displayed: 0xC004F012.,hardware_issue,high,router stop work try use outlook error display xc f
+6893,There is a problem with VPN on the laptop. Error: 0x80070005. Occurs intermittently.,software_bug,high,problem vpn laptop error x occur intermittently
+4472,"I am unable to access Active Directory on my tablet, it shows error ERR-9999.",network_problem,low,unable access active directory tablet show error err
+2131,There is a problem with WiFi on the server. Error: NET-503. Occurs intermittently.,account_access_issue,critical,problem wifi server error net occur intermittently
+9246,My tablet stopped working when I tried to use VPN. Error displayed: ERR42.,network_problem,critical,tablet stop work try use vpn error display err
+4087,I can't log into Database from my server. It returns AUTH-007. Please resolve soon.,network_problem,medium,t log database server return auth resolve soon
+8109,My server stopped working when I tried to use VPN. Error displayed: 0x80070005. Issue reported by user.,other,high,server stop work try use vpn error display x issue report user
+7586,"I am unable to access Teams on my desktop, it shows error 0xC004F012. Occurs intermittently.",security,high,unable access team desktop show error xc f occur intermittently
+6590,Outlook fails to load on my tablet showing TIMEOUT-22.,service_request,critical,outlook fail load tablet show timeout
+3889,I can't log into Outlook from my server. It returns TIMEOUT-22. Please resolve soon.,software_bug,critical,t log outlook server return timeout resolve soon
+7680,I can't log into Email from my router. It returns TIMEOUT-22.,hardware_issue,critical,t log email router return timeout
+6574,I can't log into Active Directory from my tablet. It returns 0x80070005. Needs immediate attention.,other,high,t log active directory tablet return x need immediate attention
+4755,My router stopped working when I tried to use Database. Error displayed: 0xC004F012. Needs immediate attention.,security,high,router stop work try use database error display xc f need immediate attention
+415,"I am unable to access Database on my router, it shows error FAIL-101.",hardware_issue,high,unable access database router show error fail
+198,There is a problem with WiFi on the desktop. Error: 0x80070005.,hardware_issue,high,problem wifi desktop error x
+100103,Double-sided printing option missing from device settings.,hardware_issue,low,double sided printing option miss device setting
+2240,Salesforce keeps crashing on my desktop. Code FAIL-101. Kindly assist.,network_problem,high,salesforce keeps crash desktop code fail kindly assist
+1775,"I am unable to access Outlook on my desktop, it shows error ERR42.",network_problem,critical,unable access outlook desktop show error err
+865,Active Directory fails to load on my server showing NET-503.,hardware_issue,critical,active directory fail load server show net
+5489,I can't log into VPN from my server. It returns FAIL-101. Kindly assist.,security,high,t log vpn server return fail kindly assist
+4772,There is a problem with Database on the router. Error: 0x80070005.,service_request,high,problem database router error x
+3047,There is a problem with Active Directory on the laptop. Error: FAIL-101. Please resolve soon.,account_access_issue,high,problem active directory laptop error fail resolve soon
+2687,Salesforce keeps crashing on my laptop. Code FAIL-101. Please resolve soon.,account_access_issue,high,salesforce keep crash laptop code fail resolve soon
+3812,Teams keeps crashing on my printer. Code FAIL-101.,software_bug,high,team keep crash printer code fail
+6428,My laptop stopped working when I tried to use VPN. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,laptop stop work try use vpn error display x need immediate attention
+100312,Software installation request pending approval.,service_request,medium,software installation request pende approval
+9924,WiFi fails to load on my desktop showing 0x80070005. Issue reported by user.,service_request,high,wifi fail load desktop show x issue report user
+5754,There is a problem with Salesforce on the laptop. Error: FAIL-101. Please resolve soon.,security,high,problem salesforce laptop error fail resolve soon
+5628,CRM Portal keeps crashing on my router. Code TIMEOUT-22. Occurs intermittently.,hardware_issue,critical,crm portal keep crash router code timeout occur intermittently
+7477,There is a problem with Active Directory on the desktop. Error: NET-503. Occurs intermittently.,hardware_issue,critical,problem active directory desktop error net occur intermittently
+607,"I am unable to access Teams on my tablet, it shows error NET-503.",other,critical,unable access team tablet show error net
+7666,My mobile stopped working when I tried to use Active Directory. Error displayed: AUTH-007.,security,medium,mobile stop work try use active directory error display auth
+1473,Salesforce keeps crashing on my server. Code FAIL-101.,security,high,salesforce keep crash server code fail
+136,There is a problem with Email on the server. Error: NET-503.,software_bug,critical,problem email server error net
+7164,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22. Occurs intermittently.,account_access_issue,critical,mobile stop work try use database error display timeout occur intermittently
+3803,My printer stopped working when I tried to use Zoom. Error displayed: AUTH-007. Please resolve soon.,service_request,medium,printer stop work try use zoom error display auth resolve soon
+6967,There is a problem with CRM Portal on the laptop. Error: AUTH-007. Please resolve soon.,security,medium,problem crm portal laptop error auth resolve soon
+3405,I can't log into Email from my router. It returns AUTH-007. Kindly assist.,software_bug,medium,t log email router return auth kindly assist
+4475,Teams fails to load on my server showing 0x80070005. Kindly assist.,hardware_issue,high,team fail load server show x kindly assist
+5686,I can't log into Teams from my router. It returns TIMEOUT-22. Please resolve soon.,other,critical,t log team router return timeout resolve soon
+6440,I can't log into Database from my desktop. It returns 0x80070005. Please resolve soon.,security,high,t log database desktop return x resolve soon
+7322,There is a problem with Active Directory on the desktop. Error: NET-503. Please resolve soon.,hardware_issue,critical,problem active directory desktop error net resolve soon
+6514,My tablet stopped working when I tried to use Email. Error displayed: AUTH-007. Kindly assist.,network_problem,medium,tablet stop work try use email error display auth kindly assist
+6542,Outlook keeps crashing on my router. Code ERR42. Issue reported by user.,other,critical,outlook keep crash router code err issue report user
+9659,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,service_request,critical,mobile stop work try use database error display timeout
+9361,I can't log into Salesforce from my router. It returns ERR42. Kindly assist.,network_problem,critical,t log salesforce router return err kindly assist
+5779,Active Directory fails to load on my printer showing AUTH-007. Needs immediate attention.,security,medium,active directory fail load printer show auth need immediate attention
+78,There is a problem with Zoom on the router. Error: FAIL-101.,network_problem,high,problem zoom router error fail
+2054,There is a problem with Zoom on the tablet. Error: NET-503. Kindly assist.,account_access_issue,critical,problem zoom tablet error net kindly assist
+8378,VPN keeps crashing on my laptop. Code ERR42. Occurs intermittently.,account_access_issue,low,vpn keep crash laptop code err occur intermittently
+7575,VPN keeps crashing on my server. Code ERR-9999. Kindly assist.,hardware_issue,medium,vpn keep crash server code err kindly assist
+4499,I can't log into Database from my mobile. It returns TIMEOUT-22. Needs immediate attention.,security,critical,t log database mobile return timeout need immediate attention
+261,My laptop stopped working when I tried to use Active Directory. Error displayed: ERR42.,network_problem,critical,laptop stop work try use active directory error display err
+5323,There is a problem with Teams on the laptop. Error: TIMEOUT-22. Issue reported by user.,other,critical,problem team laptop error timeout issue report user
+2553,Outlook keeps crashing on my mobile. Code 0xC004F012. Occurs intermittently.,network_problem,high,outlook keep crash mobile code xc f occur intermittently
+3647,There is a problem with Teams on the router. Error: NET-503. Issue reported by user.,service_request,critical,problem team router error net issue report user
+8422,"I am unable to access VPN on my mobile, it shows error TIMEOUT-22. Please resolve soon.",security,critical,unable access vpn mobile show error timeout resolve soon
+7641,There is a problem with Outlook on the desktop. Error: 0x80070005. Kindly assist.,account_access_issue,high,problem outlook desktop error x kindly assist
+8756,My mobile stopped working when I tried to use CRM Portal. Error displayed: ERR42. Please resolve soon.,other,critical,mobile stop work try use crm portal error display err resolve soon
+2691,My tablet stopped working when I tried to use Active Directory. Error displayed: ERR42. Needs immediate attention.,network_problem,critical,tablet stop work try use active directory error displayed err need immediate attention
+5839,There is a problem with Email on the desktop. Error: ERR-9999.,security,low,problem email desktop error err
+9444,CRM Portal fails to load on my router showing 0xC004F012. Issue reported by user.,security,high,crm portal fail load router show xc f issue report user
+2900,Active Directory fails to load on my mobile showing FAIL-101. Needs immediate attention.,software_bug,high,active directory fail load mobile showing fail need immediate attention
+100394,Unexpected API output format received.,software_bug,medium,unexpected api output format receive
+3860,Salesforce fails to load on my desktop showing AUTH-007. Issue reported by user.,account_access_issue,medium,salesforce fail load desktop show auth issue report user
+1966,My router stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,account_access_issue,critical,router stop work try use database error display timeout
+9450,"I am unable to access WiFi on my mobile, it shows error FAIL-101. Issue reported by user.",other,high,unable access wifi mobile show error fail issue report user
+1105,There is a problem with Active Directory on the printer. Error: ERR-9999.,network_problem,high,problem active directory printer error err
+100249,Email bounce message says recipient quota exceeded.,service_request,medium,email bounce message say recipient quota exceed
+1079,I can't log into Salesforce from my router. It returns 0xC004F012.,service_request,high,t log salesforce router return xc f
+244,"I am unable to access Database on my router, it shows error ERR42.",security,critical,unable access database router show error err
+6682,My server stopped working when I tried to use Salesforce. Error displayed: AUTH-007. Needs immediate attention.,network_problem,medium,server stop work try use salesforce error display auth need immediate attention
+7099,CRM Portal keeps crashing on my printer. Code ERR42. Issue reported by user.,security,medium,crm portal keep crash printer code err issue report user
+9634,"I am unable to access Active Directory on my tablet, it shows error NET-503. Occurs intermittently.",service_request,critical,unable access active directory tablet show error net occur intermittently
+6404,Active Directory keeps crashing on my desktop. Code FAIL-101. Kindly assist.,service_request,high,active directory keeps crash desktop code fail kindly assist
+58,VPN keeps crashing on my printer. Code ERR42.,account_access_issue,high,vpn keep crash printer code err
+8772,There is a problem with WiFi on the server. Error: ERR42. Kindly assist.,security,high,problem wifi server error err kindly assist
+3644,I can't log into CRM Portal from my server. It returns TIMEOUT-22. Kindly assist.,software_bug,critical,t log crm portal server return timeout kindly assist
+299,There is a problem with Active Directory on the server. Error: 0x80070005.,software_bug,high,problem active directory server error x
+2693,Teams keeps crashing on my laptop. Code TIMEOUT-22. Please resolve soon.,software_bug,critical,team keep crash laptop code timeout resolve soon
+8373,There is a problem with Teams on the router. Error: FAIL-101. Issue reported by user.,other,high,problem team router error fail issue report user
+6945,Salesforce fails to load on my mobile showing FAIL-101. Needs immediate attention.,account_access_issue,high,salesforce fail load mobile showing fail need immediate attention
+7415,"I am unable to access VPN on my mobile, it shows error ERR-9999. Kindly assist.",service_request,medium,unable access vpn mobile show error err kindly assist
+100211,Firewall prevents Teams screen sharing during meeting.,security,high,firewall prevent team screen sharing meeting
+7701,"I am unable to access Email on my router, it shows error 0x80070005. Please resolve soon.",software_bug,high,unable access email router show error x resolve soon
+9017,"I am unable to access Outlook on my router, it shows error ERR-9999. Kindly assist.",network_problem,high,unable access outlook router show error err kindly assist
+4787,I can't log into Outlook from my desktop. It returns ERR-9999. Issue reported by user.,software_bug,high,t log outlook desktop return err issue report user
+6133,I can't log into Email from my router. It returns FAIL-101.,network_problem,high,t log email router return fail
+8679,I can't log into Outlook from my router. It returns NET-503. Occurs intermittently.,hardware_issue,critical,t log outlook router return net occur intermittently
+8698,There is a problem with Email on the laptop. Error: 0xC004F012. Occurs intermittently.,account_access_issue,high,problem email laptop error xc f occur intermittently
+6481,There is a problem with VPN on the desktop. Error: AUTH-007. Kindly assist.,software_bug,medium,problem vpn desktop error auth kindly assist
+7185,I can't log into Email from my printer. It returns NET-503. Please resolve soon.,software_bug,critical,t log email printer return net resolve soon
+3742,Database fails to load on my laptop showing 0xC004F012. Occurs intermittently.,security,high,database fail load laptop show xc f occur intermittently
+6235,I can't log into Teams from my router. It returns 0xC004F012. Needs immediate attention.,network_problem,high,t log team router return xc f need immediate attention
+8974,Zoom fails to load on my tablet showing TIMEOUT-22. Kindly assist.,service_request,critical,zoom fail load tablet show timeout kindly assist
+3994,Outlook keeps crashing on my printer. Code 0x80070005. Needs immediate attention.,other,high,outlook keep crash printer code x need immediate attention
+8485,I can't log into Active Directory from my laptop. It returns 0x80070005. Please resolve soon.,software_bug,high,t log active directory laptop return x resolve soon
+7621,VPN fails to load on my laptop showing TIMEOUT-22. Needs immediate attention.,account_access_issue,critical,vpn fail load laptop show timeout need immediate attention
+9664,VPN fails to load on my laptop showing TIMEOUT-22. Occurs intermittently.,account_access_issue,critical,vpn fail load laptop show timeout occur intermittently
+100297,Request installation of Notepad++ for editing scripts.,service_request,medium,request installation notepad edit script
+3243,VPN fails to load on my server showing 0x80070005. Kindly assist.,service_request,high,vpn fail load server show x kindly assist
+2525,Active Directory keeps crashing on my desktop. Code 0xC004F012. Occurs intermittently.,software_bug,high,active directory keep crash desktop code xc f occur intermittently
+6500,WiFi keeps crashing on my server. Code FAIL-101. Occurs intermittently.,hardware_issue,high,wifi keep crash server code fail occur intermittently
+2082,I can't log into Zoom from my server. It returns ERR42. Occurs intermittently.,hardware_issue,low,t log zoom server return err occur intermittently
+668,Zoom fails to load on my server showing ERR42.,account_access_issue,critical,zoom fail load server showing err
+8681,Outlook keeps crashing on my laptop. Code 0x80070005. Occurs intermittently.,network_problem,high,outlook keeps crash laptop code x occur intermittently
+4836,"I am unable to access Salesforce on my laptop, it shows error TIMEOUT-22. Please resolve soon.",security,critical,unable access salesforce laptop show error timeout resolve soon
+1207,Active Directory keeps crashing on my router. Code FAIL-101.,hardware_issue,high,active directory keep crash router code fail
+5833,My laptop stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Needs immediate attention.,service_request,critical,laptop stop work try use vpn error display timeout need immediate attention
+5092,There is a problem with Salesforce on the router. Error: 0x80070005. Please resolve soon.,software_bug,high,problem salesforce router error x resolve soon
+5641,There is a problem with VPN on the tablet. Error: 0xC004F012. Needs immediate attention.,other,high,problem vpn tablet error xc f need immediate attention
+96,WiFi fails to load on my router showing TIMEOUT-22.,software_bug,critical,wifi fail load router show timeout
+999,Outlook keeps crashing on my mobile. Code 0xC004F012.,network_problem,high,outlook keep crash mobile code xc f
+9945,VPN fails to load on my laptop showing ERR-9999. Occurs intermittently.,service_request,high,vpn fail load laptop show err occur intermittently
+4856,There is a problem with Outlook on the laptop. Error: TIMEOUT-22. Issue reported by user.,hardware_issue,critical,problem outlook laptop error timeout issue report user
+1553,"I am unable to access Teams on my desktop, it shows error 0xC004F012.",security,high,unable access team desktop show error xc f
+1485,There is a problem with VPN on the laptop. Error: ERR42.,hardware_issue,medium,problem vpn laptop error err
+2486,CRM Portal keeps crashing on my printer. Code FAIL-101. Kindly assist.,software_bug,high,crm portal keeps crash printer code fail kindly assist
+6567,Salesforce fails to load on my desktop showing 0x80070005. Please resolve soon.,software_bug,high,salesforce fail load desktop show x resolve soon
+4253,There is a problem with Database on the server. Error: ERR-9999. Please resolve soon.,service_request,high,problem database server error err resolve soon
+2245,My tablet stopped working when I tried to use Email. Error displayed: ERR42. Needs immediate attention.,account_access_issue,critical,tablet stop work try use email error displayed err need immediate attention
+792,VPN keeps crashing on my laptop. Code ERR42.,account_access_issue,low,vpn keep crash laptop code err
+920,Database keeps crashing on my server. Code FAIL-101.,hardware_issue,high,database keep crash server code fail
+8710,My printer stopped working when I tried to use Teams. Error displayed: FAIL-101. Kindly assist.,account_access_issue,high,printer stop work try use team error display fail kindly assist
+4280,I can't log into Database from my mobile. It returns TIMEOUT-22. Issue reported by user.,hardware_issue,critical,t log database mobile return timeout issue report user
+3455,I can't log into Salesforce from my laptop. It returns ERR-9999. Occurs intermittently.,software_bug,low,t log salesforce laptop return err occur intermittently
+8100,WiFi keeps crashing on my server. Code FAIL-101. Occurs intermittently.,hardware_issue,high,wifi keep crash server code fail occur intermittently
+9913,WiFi keeps crashing on my laptop. Code 0x80070005. Issue reported by user.,hardware_issue,high,wifi keep crash laptop code x issue report user
+1249,"I am unable to access Active Directory on my laptop, it shows error ERR-9999.",security,high,unable access active directory laptop show error err
+2181,There is a problem with VPN on the desktop. Error: AUTH-007. Occurs intermittently.,other,medium,problem vpn desktop error auth occur intermittently
+9289,I can't log into Active Directory from my laptop. It returns FAIL-101. Issue reported by user.,service_request,high,t log active directory laptop return fail issue report user
+8528,WiFi keeps crashing on my mobile. Code FAIL-101. Please resolve soon.,software_bug,high,wifi keep crash mobile code fail resolve soon
+6077,Active Directory fails to load on my server showing FAIL-101. Issue reported by user.,service_request,high,active directory fail load server show fail issue report user
+3914,CRM Portal fails to load on my server showing 0x80070005.,security,high,crm portal fail load server show x
+3636,VPN keeps crashing on my desktop. Code 0x80070005. Issue reported by user.,software_bug,high,vpn keep crash desktop code x issue report user
+2362,Active Directory fails to load on my printer showing FAIL-101. Kindly assist.,hardware_issue,high,active directory fail load printer show fail kindly assist
+6394,I can't log into Teams from my mobile. It returns ERR42. Occurs intermittently.,other,high,t log team mobile return err occur intermittently
+4917,Active Directory fails to load on my laptop showing ERR-9999. Kindly assist.,network_problem,high,active directory fail load laptop showing err kindly assist
+2401,My desktop stopped working when I tried to use VPN. Error displayed: 0x80070005. Please resolve soon.,security,high,desktop stop work try use vpn error display x resolve soon
+6350,There is a problem with Outlook on the printer. Error: ERR42.,software_bug,low,problem outlook printer error err
+3318,"I am unable to access Active Directory on my laptop, it shows error AUTH-007. Please resolve soon.",other,medium,unable access active directory laptop show error auth resolve soon
+5727,Salesforce keeps crashing on my mobile. Code 0xC004F012. Kindly assist.,security,high,salesforce keeps crash mobile code xc f kindly assist
+5142,My laptop stopped working when I tried to use Teams. Error displayed: 0xC004F012.,security,high,laptop stop work try use team error display xc f
+2845,There is a problem with Zoom on the router. Error: FAIL-101. Needs immediate attention.,network_problem,high,problem zoom router error fail need immediate attention
+9628,My laptop stopped working when I tried to use Outlook. Error displayed: NET-503.,software_bug,critical,laptop stop work try use outlook error display net
+8586,There is a problem with Outlook on the printer. Error: ERR42. Occurs intermittently.,software_bug,low,problem outlook printer error err occur intermittently
+7107,"I am unable to access Active Directory on my desktop, it shows error TIMEOUT-22.",hardware_issue,critical,unable access active directory desktop show error timeout
+4974,WiFi fails to load on my server showing ERR-9999. Kindly assist.,service_request,low,wifi fail load server showing err kindly assist
+891,Zoom keeps crashing on my printer. Code ERR42.,network_problem,low,zoom keep crash printer code err
+4786,My server stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Occurs intermittently.,account_access_issue,critical,server stop work try use vpn error display timeout occur intermittently
+7045,"I am unable to access Outlook on my server, it shows error AUTH-007. Occurs intermittently.",service_request,medium,unable access outlook server show error auth occur intermittently
+6770,CRM Portal keeps crashing on my laptop. Code ERR-9999. Please resolve soon.,account_access_issue,medium,crm portal keep crash laptop code err resolve soon
+2120,I can't log into Outlook from my mobile. It returns TIMEOUT-22. Issue reported by user.,account_access_issue,critical,t log outlook mobile return timeout issue report user
+2125,"I am unable to access Database on my laptop, it shows error AUTH-007.",software_bug,medium,unable access database laptop show error auth
+1365,My server stopped working when I tried to use CRM Portal. Error displayed: NET-503.,network_problem,critical,server stop work try use crm portal error display net
+6743,VPN keeps crashing on my router. Code AUTH-007.,network_problem,medium,vpn keep crash router code auth
+3850,My desktop stopped working when I tried to use Active Directory. Error displayed: 0x80070005. Kindly assist.,hardware_issue,high,desktop stop work try use active directory error display x kindly assist
+100184,Network delay causing email delivery failures.,network_problem,medium,network delay cause email delivery failure
+2199,"I am unable to access Active Directory on my printer, it shows error ERR-9999. Please resolve soon.",hardware_issue,high,unable access active directory printer show error err resolve soon
+7794,My tablet stopped working when I tried to use Teams. Error displayed: 0xC004F012. Kindly assist.,security,high,tablet stop work try use team error display xc f kindly assist
+5114,There is a problem with Salesforce on the printer. Error: 0x80070005. Kindly assist.,network_problem,high,problem salesforce printer error x kindly assist
+3150,Database keeps crashing on my mobile. Code TIMEOUT-22. Please resolve soon.,hardware_issue,critical,database keep crash mobile code timeout resolve soon
+4099,"I am unable to access WiFi on my mobile, it shows error 0xC004F012. Occurs intermittently.",security,high,unable access wifi mobile show error xc f occur intermittently
+6331,VPN fails to load on my mobile showing FAIL-101. Issue reported by user.,hardware_issue,high,vpn fail load mobile showing fail issue report user
+8556,"I am unable to access Salesforce on my laptop, it shows error 0xC004F012.",other,high,unable access salesforce laptop show error xc f
+1852,I can't log into Active Directory from my server. It returns ERR42.,other,medium,t log active directory server return err
+3550,CRM Portal keeps crashing on my printer. Code FAIL-101. Please resolve soon.,service_request,high,crm portal keep crash printer code fail resolve soon
+9929,CRM Portal keeps crashing on my server. Code 0xC004F012. Needs immediate attention.,service_request,high,crm portal keeps crash server code xc f need immediate attention
+3908,"I am unable to access WiFi on my router, it shows error 0x80070005. Needs immediate attention.",software_bug,high,unable access wifi router show error x need immediate attention
+1098,My tablet stopped working when I tried to use Database. Error displayed: 0x80070005.,other,high,tablet stop work try use database error display x
+8115,My server stopped working when I tried to use CRM Portal. Error displayed: ERR-9999.,other,high,server stop work try use crm portal error display err
+8787,I can't log into Email from my printer. It returns 0x80070005.,security,high,t log email printer return x
+100311,Request installation of Power BI desktop.,service_request,medium,request installation power bi desktop
+100238,Firewall classified website incorrectly and blocked access.,security,medium,firewall classify website incorrectly block access
+6630,My server stopped working when I tried to use CRM Portal. Error displayed: ERR-9999. Needs immediate attention.,other,high,server stop work try use crm portal error displayed err need immediate attention
+2085,There is a problem with WiFi on the tablet. Error: TIMEOUT-22. Occurs intermittently.,software_bug,critical,problem wifi tablet error timeout occur intermittently
+6403,There is a problem with Active Directory on the server. Error: 0x80070005. Occurs intermittently.,software_bug,high,problem active directory server error x occur intermittently
+100108,Printer shows toner not recognized on replacement cartridge.,hardware_issue,high,printer show toner recognize replacement cartridge
+7212,I can't log into Salesforce from my tablet. It returns 0x80070005. Please resolve soon.,network_problem,high,t log salesforce tablet return x resolve soon
+3116,I can't log into Salesforce from my router. It returns 0xC004F012. Issue reported by user.,service_request,high,t log salesforce router return xc f issue report user
+2754,I can't log into Zoom from my server. It returns 0x80070005. Occurs intermittently.,account_access_issue,high,t log zoom server return x occur intermittently
+100077,VPN logs show handshake failure with gateway.,network_problem,critical,vpn log handshake failure gateway
+8618,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Please resolve soon.,service_request,high,server stop work try use outlook error display x resolve soon
+9377,Database keeps crashing on my router. Code 0x80070005. Issue reported by user.,account_access_issue,high,database keep crash router code x issue report user
+674,There is a problem with VPN on the printer. Error: FAIL-101.,security,high,problem vpn printer error fail
+3471,My printer stopped working when I tried to use CRM Portal. Error displayed: 0xC004F012. Please resolve soon.,service_request,high,printer stop work try use crm portal error display xc f resolve soon
+7830,I can't log into CRM Portal from my mobile. It returns ERR42. Please resolve soon.,hardware_issue,low,t log crm portal mobile return err resolve soon
+7416,I can't log into Teams from my tablet. It returns TIMEOUT-22. Issue reported by user.,other,critical,t log team tablet return timeout issue report user
+887,Teams keeps crashing on my tablet. Code 0xC004F012.,software_bug,high,team keep crash tablet code xc f
+3004,I can't log into Active Directory from my tablet. It returns AUTH-007. Needs immediate attention.,service_request,medium,t log active directory tablet return auth need immediate attention
+8291,"I am unable to access Salesforce on my laptop, it shows error TIMEOUT-22. Kindly assist.",security,critical,unable access salesforce laptop show error timeout kindly assist
+3033,My tablet stopped working when I tried to use Teams. Error displayed: ERR42. Occurs intermittently.,network_problem,low,tablet stop work try use team error display err occur intermittently
+1494,I can't log into Outlook from my server. It returns TIMEOUT-22.,software_bug,critical,t log outlook server return timeout
+7048,Outlook keeps crashing on my printer. Code 0x80070005. Needs immediate attention.,other,high,outlook keep crash printer code x need immediate attention
+7914,I can't log into Teams from my laptop. It returns TIMEOUT-22. Needs immediate attention.,security,critical,t log team laptop return timeout need immediate attention
+4891,VPN keeps crashing on my desktop. Code 0x80070005.,software_bug,high,vpn keep crash desktop code x
+2108,WiFi fails to load on my router showing 0x80070005. Needs immediate attention.,account_access_issue,high,wifi fail load router show x need immediate attention
+7437,My desktop stopped working when I tried to use Teams. Error displayed: 0x80070005. Please resolve soon.,service_request,high,desktop stop work try use team error display x resolve soon
+2619,My printer stopped working when I tried to use Salesforce. Error displayed: 0xC004F012. Kindly assist.,account_access_issue,high,printer stop work try use salesforce error display xc f kindly assist
+9443,"I am unable to access Outlook on my tablet, it shows error AUTH-007.",software_bug,medium,unable access outlook tablet show error auth
+9842,CRM Portal keeps crashing on my tablet. Code AUTH-007.,hardware_issue,medium,crm portal keep crash tablet code auth
+5336,Teams fails to load on my laptop showing AUTH-007. Occurs intermittently.,account_access_issue,medium,team fail load laptop show auth occur intermittently
+9844,"I am unable to access VPN on my tablet, it shows error NET-503. Issue reported by user.",security,critical,unable access vpn tablet show error net issue report user
+4816,Zoom keeps crashing on my router. Code TIMEOUT-22. Needs immediate attention.,security,critical,zoom keep crash router code timeout need immediate attention
+7293,There is a problem with Email on the server. Error: 0x80070005. Issue reported by user.,service_request,high,problem email server error x issue report user
+4396,My mobile stopped working when I tried to use Teams. Error displayed: AUTH-007. Needs immediate attention.,network_problem,medium,mobile stop work try use team error display auth need immediate attention
+4132,My router stopped working when I tried to use Outlook. Error displayed: NET-503. Needs immediate attention.,network_problem,critical,router stop work try use outlook error display net need immediate attention
+9314,Outlook fails to load on my printer showing FAIL-101. Please resolve soon.,service_request,high,outlook fail load printer show fail resolve soon
+852,I can't log into Active Directory from my server. It returns ERR42.,other,medium,t log active directory server return err
+8727,I can't log into Database from my desktop. It returns 0x80070005. Occurs intermittently.,security,high,t log database desktop return x occur intermittently
+100277,Attachments unavailable due to mailbox limit.,service_request,medium,attachment unavailable mailbox limit
+2189,My laptop stopped working when I tried to use Teams. Error displayed: FAIL-101.,other,high,laptop stop work try use team error display fail
+4602,My laptop stopped working when I tried to use Outlook. Error displayed: NET-503. Issue reported by user.,software_bug,critical,laptop stop work try use outlook error display net issue report user
+9668,Outlook fails to load on my laptop showing ERR42. Please resolve soon.,hardware_issue,high,outlook fail load laptop show err resolve soon
+8073,"I am unable to access Active Directory on my tablet, it shows error TIMEOUT-22. Please resolve soon.",service_request,critical,unable access active directory tablet show error timeout resolve soon
+1570,VPN keeps crashing on my desktop. Code TIMEOUT-22.,network_problem,critical,vpn keep crash desktop code timeout
+2058,Active Directory keeps crashing on my desktop. Code ERR42. Please resolve soon.,service_request,low,active directory keep crash desktop code err resolve soon
+877,"I am unable to access WiFi on my printer, it shows error AUTH-007.",account_access_issue,medium,unable access wifi printer show error auth
+5617,I can't log into Teams from my server. It returns ERR-9999. Kindly assist.,account_access_issue,medium,t log team server return err kindly assist
+649,"I am unable to access Email on my mobile, it shows error FAIL-101.",network_problem,high,unable access email mobile show error fail
+1364,"I am unable to access Zoom on my mobile, it shows error FAIL-101.",security,high,unable access zoom mobile show error fail
+501,There is a problem with Teams on the server. Error: NET-503.,security,critical,problem team server error net
+1323,CRM Portal keeps crashing on my laptop. Code ERR-9999.,account_access_issue,medium,crm portal keep crash laptop code err
+6951,CRM Portal keeps crashing on my printer. Code FAIL-101. Needs immediate attention.,service_request,high,crm portal keeps crash printer code fail need immediate attention
+628,My printer stopped working when I tried to use Database. Error displayed: NET-503.,service_request,critical,printer stop work try use database error display net
+1916,"I am unable to access WiFi on my server, it shows error ERR-9999.",network_problem,high,unable access wifi server show error err
+1848,My mobile stopped working when I tried to use Active Directory. Error displayed: AUTH-007.,security,medium,mobile stop work try use active directory error display auth
+356,I can't log into Teams from my router. It returns TIMEOUT-22.,other,critical,t log team router return timeout
+2438,My router stopped working when I tried to use Teams. Error displayed: AUTH-007. Needs immediate attention.,hardware_issue,medium,router stop work try use team error display auth need immediate attention
+3386,I can't log into CRM Portal from my server. It returns TIMEOUT-22. Occurs intermittently.,software_bug,critical,t log crm portal server return timeout occur intermittently
+9623,I can't log into Zoom from my router. It returns ERR42.,account_access_issue,high,t log zoom router return err
+1730,I can't log into Email from my server. It returns FAIL-101.,software_bug,high,t log email server return fail
+7928,There is a problem with Database on the tablet. Error: ERR-9999. Needs immediate attention.,hardware_issue,critical,problem database tablet error err need immediate attention
+8425,Email fails to load on my desktop showing 0x80070005. Occurs intermittently.,hardware_issue,high,email fail load desktop show x occur intermittently
+8799,VPN fails to load on my printer showing 0x80070005. Please resolve soon.,hardware_issue,high,vpn fail load printer show x resolve soon
+4687,"I am unable to access Database on my router, it shows error TIMEOUT-22. Issue reported by user.",hardware_issue,critical,unable access database router show error timeout issue report user
+6001,CRM Portal keeps crashing on my mobile. Code AUTH-007. Issue reported by user.,hardware_issue,medium,crm portal keep crash mobile code auth issue report user
+7908,Zoom keeps crashing on my mobile. Code 0x80070005.,service_request,high,zoom keep crash mobile code x
+3381,Zoom keeps crashing on my server. Code TIMEOUT-22. Needs immediate attention.,software_bug,critical,zoom keep crash server code timeout need immediate attention
+7403,My tablet stopped working when I tried to use Salesforce. Error displayed: AUTH-007. Issue reported by user.,service_request,medium,tablet stop work try use salesforce error display auth issue report user
+5711,My server stopped working when I tried to use Outlook. Error displayed: ERR-9999. Issue reported by user.,security,medium,server stop work try use outlook error display err issue report user
+9525,There is a problem with VPN on the server. Error: ERR42. Issue reported by user.,security,medium,problem vpn server error err issue report user
+2610,There is a problem with VPN on the server. Error: 0xC004F012. Occurs intermittently.,account_access_issue,high,problem vpn server error xc f occur intermittently
+4424,There is a problem with Zoom on the desktop. Error: NET-503. Occurs intermittently.,account_access_issue,critical,problem zoom desktop error net occur intermittently
+6583,My desktop stopped working when I tried to use Outlook. Error displayed: ERR-9999. Kindly assist.,service_request,medium,desktop stop work try use outlook error display err kindly assist
+4992,CRM Portal fails to load on my router showing FAIL-101. Kindly assist.,software_bug,high,crm portal fail load router show fail kindly assist
+4356,VPN fails to load on my laptop showing ERR-9999. Please resolve soon.,network_problem,low,vpn fail load laptop show err resolve soon
+2604,I can't log into Active Directory from my mobile. It returns TIMEOUT-22. Occurs intermittently.,network_problem,critical,t log active directory mobile return timeout occur intermittently
+7480,WiFi fails to load on my laptop showing ERR42. Needs immediate attention.,software_bug,low,wifi fail load laptop show err need immediate attention
+5671,Active Directory fails to load on my mobile showing FAIL-101. Kindly assist.,software_bug,high,active directory fail load mobile showing fail kindly assist
+6351,My tablet stopped working when I tried to use Database. Error displayed: 0x80070005. Needs immediate attention.,other,high,tablet stop work try use database error display x need immediate attention
+5596,My server stopped working when I tried to use Database. Error displayed: AUTH-007. Occurs intermittently.,hardware_issue,medium,server stop work try use database error display auth occur intermittently
+8284,I can't log into CRM Portal from my mobile. It returns ERR42. Please resolve soon.,hardware_issue,low,t log crm portal mobile return err resolve soon
+1285,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,service_request,critical,mobile stop work try use database error display timeout
+1810,"I am unable to access Outlook on my laptop, it shows error AUTH-007.",software_bug,medium,unable access outlook laptop show error auth
+2149,There is a problem with Salesforce on the tablet. Error: TIMEOUT-22.,software_bug,critical,problem salesforce tablet error timeout
+9630,VPN keeps crashing on my desktop. Code ERR42. Occurs intermittently.,other,low,vpn keep crash desktop code err occur intermittently
+5512,I can't log into Teams from my desktop. It returns AUTH-007. Please resolve soon.,hardware_issue,medium,t log team desktop return auth resolve soon
+8160,Database keeps crashing on my tablet. Code 0xC004F012. Please resolve soon.,network_problem,high,database keep crash tablet code xc f resolve soon
+8025,Teams keeps crashing on my server. Code AUTH-007. Occurs intermittently.,account_access_issue,medium,team keep crash server code auth occur intermittently
+9851,There is a problem with VPN on the laptop. Error: ERR42. Please resolve soon.,hardware_issue,medium,problem vpn laptop error err resolve soon
+5028,There is a problem with Outlook on the laptop. Error: TIMEOUT-22. Occurs intermittently.,service_request,critical,problem outlook laptop error timeout occur intermittently
+2266,My printer stopped working when I tried to use Salesforce. Error displayed: 0xC004F012. Occurs intermittently.,account_access_issue,high,printer stop work try use salesforce error display xc f occur intermittently
+4471,Email keeps crashing on my laptop. Code ERR-9999. Please resolve soon.,account_access_issue,low,email keep crash laptop code err resolve soon
+6173,Database fails to load on my laptop showing ERR-9999. Kindly assist.,other,low,database fail load laptop showing err kindly assist
+6711,My server stopped working when I tried to use Database. Error displayed: TIMEOUT-22. Issue reported by user.,service_request,critical,server stop work try use database error display timeout issue report user
+7227,My tablet stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Please resolve soon.,service_request,critical,tablet stop work try use vpn error display timeout resolve soon
+7767,Outlook keeps crashing on my printer. Code 0x80070005.,other,high,outlook keep crash printer code x
+7280,Active Directory keeps crashing on my tablet. Code AUTH-007. Issue reported by user.,service_request,medium,active directory keep crash tablet code auth issue report user
+4065,Zoom fails to load on my server showing TIMEOUT-22. Issue reported by user.,network_problem,critical,zoom fail load server show timeout issue report user
+7478,Zoom fails to load on my server showing TIMEOUT-22. Please resolve soon.,network_problem,critical,zoom fail load server show timeout resolve soon
+777,VPN fails to load on my tablet showing 0x80070005.,security,high,vpn fail load tablet show x
+9783,CRM Portal fails to load on my router showing TIMEOUT-22. Needs immediate attention.,account_access_issue,critical,crm portal fail load router show timeout need immediate attention
+9626,Database keeps crashing on my desktop. Code AUTH-007. Kindly assist.,security,medium,database keeps crash desktop code auth kindly assist
+7969,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22. Issue reported by user.,service_request,critical,mobile stop work try use database error display timeout issue report user
+3263,My printer stopped working when I tried to use Teams. Error displayed: 0x80070005. Issue reported by user.,other,high,printer stop work try use team error display x issue report user
+7880,I can't log into Active Directory from my printer. It returns TIMEOUT-22. Please resolve soon.,network_problem,critical,t log active directory printer return timeout resolve soon
+2860,"I am unable to access Zoom on my mobile, it shows error FAIL-101. Kindly assist.",security,high,unable access zoom mobile show error fail kindly assist
+7263,My laptop stopped working when I tried to use Email. Error displayed: ERR-9999. Occurs intermittently.,service_request,low,laptop stop work try use email error display err occur intermittently
+3341,My mobile stopped working when I tried to use Teams. Error displayed: FAIL-101.,account_access_issue,high,mobile stop work try use team error display fail
+1286,There is a problem with Active Directory on the server. Error: FAIL-101.,service_request,high,problem active directory server error fail
 6037,My router stopped working when I tried to use WiFi. Error displayed: NET-503. Kindly assist.,hardware_issue,critical,router stop work try use wifi error display net kindly assist
-6495,"I am unable to access Active Directory on my tablet, it shows error TIMEOUT-22. Needs immediate attention.",service_request,critical,unable access active directory tablet show error timeout need immediate attention
-8616,My server stopped working when I tried to use WiFi. Error displayed: NET-503. Kindly assist.,hardware_issue,critical,server stop work try use wifi error display net kindly assist
-1371,There is a problem with Email on the laptop. Error: 0x80070005.,service_request,high,problem email laptop error x
-9311,There is a problem with Outlook on the laptop. Error: FAIL-101. Needs immediate attention.,service_request,high,problem outlook laptop error fail need immediate attention
-3542,"I am unable to access CRM Portal on my desktop, it shows error ERR-9999. Occurs intermittently.",service_request,high,unable access crm portal desktop show error err occur intermittently
-7271,WiFi fails to load on my desktop showing ERR42. Occurs intermittently.,hardware_issue,critical,wifi fail load desktop showing err occur intermittently
-3046,I can't log into CRM Portal from my router. It returns FAIL-101. Needs immediate attention.,hardware_issue,high,t log crm portal router return fail need immediate attention
-2464,My server stopped working when I tried to use Salesforce. Error displayed: FAIL-101. Issue reported by user.,service_request,high,server stop work try use salesforce error display fail issue report user
-1259,There is a problem with Active Directory on the printer. Error: 0xC004F012.,hardware_issue,high,problem active directory printer error xc f
-1947,My desktop stopped working when I tried to use WiFi. Error displayed: ERR-9999.,service_request,low,desktop stop work try use wifi error display err
-4762,I can't log into WiFi from my printer. It returns 0x80070005. Needs immediate attention.,hardware_issue,high,t log wifi printer return x need immediate attention
-8736,My printer stopped working when I tried to use VPN. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,printer stop work try use vpn error display x need immediate attention
-3316,There is a problem with Zoom on the mobile. Error: NET-503. Kindly assist.,service_request,critical,problem zoom mobile error net kindly assist
+7102,I can't log into WiFi from my tablet. It returns ERR-9999. Please resolve soon.,hardware_issue,critical,t log wifi tablet return err resolve soon
+2256,CRM Portal fails to load on my mobile showing FAIL-101. Kindly assist.,security,high,crm portal fail load mobile showing fail kindly assist
+4085,"I am unable to access Active Directory on my laptop, it shows error NET-503. Please resolve soon.",hardware_issue,critical,unable access active directory laptop show error net resolve soon
+5079,My server stopped working when I tried to use CRM Portal. Error displayed: 0xC004F012. Occurs intermittently.,network_problem,high,server stop work try use crm portal error display xc f occur intermittently
+4677,Outlook keeps crashing on my desktop. Code 0x80070005. Issue reported by user.,security,high,outlook keep crash desktop code x issue report user
+8663,"I am unable to access WiFi on my mobile, it shows error ERR-9999.",other,medium,unable access wifi mobile show error err
+1197,Zoom keeps crashing on my mobile. Code 0x80070005.,service_request,high,zoom keep crash mobile code x
+8856,Teams fails to load on my tablet showing AUTH-007. Kindly assist.,other,medium,team fail load tablet show auth kindly assist
+400,Database fails to load on my server showing 0xC004F012.,network_problem,high,database fail load server show xc f
+9678,There is a problem with Salesforce on the tablet. Error: AUTH-007.,security,medium,problem salesforce tablet error auth
+2162,There is a problem with Zoom on the desktop. Error: NET-503.,account_access_issue,critical,problem zoom desktop error net
+6284,"I am unable to access Zoom on my router, it shows error AUTH-007.",network_problem,medium,unable access zoom router show error auth
+9079,There is a problem with VPN on the mobile. Error: 0x80070005.,other,high,problem vpn mobile error x
+1714,I can't log into Outlook from my printer. It returns AUTH-007.,software_bug,medium,t log outlook printer return auth
+3476,Zoom keeps crashing on my server. Code TIMEOUT-22. Issue reported by user.,software_bug,critical,zoom keep crash server code timeout issue report user
+8299,CRM Portal keeps crashing on my printer. Code FAIL-101. Occurs intermittently.,software_bug,high,crm portal keep crash printer code fail occur intermittently
+9725,CRM Portal keeps crashing on my printer. Code ERR42.,hardware_issue,critical,crm portal keep crash printer code err
+2111,CRM Portal keeps crashing on my desktop. Code AUTH-007. Kindly assist.,software_bug,medium,crm portal keeps crash desktop code auth kindly assist
+1141,My desktop stopped working when I tried to use Email. Error displayed: 0x80070005.,security,high,desktop stop work try use email error display x
+7490,Salesforce fails to load on my printer showing NET-503. Needs immediate attention.,hardware_issue,critical,salesforce fail load printer show net need immediate attention
+7855,My desktop stopped working when I tried to use Outlook. Error displayed: ERR-9999. Occurs intermittently.,other,medium,desktop stop work try use outlook error display err occur intermittently
+118,Teams keeps crashing on my tablet. Code ERR-9999.,hardware_issue,low,team keep crash tablet code err
+5560,There is a problem with Outlook on the tablet. Error: 0x80070005.,account_access_issue,high,problem outlook tablet error x
+466,"I am unable to access Salesforce on my laptop, it shows error FAIL-101.",service_request,high,unable access salesforce laptop show error fail
+7495,"I am unable to access Zoom on my tablet, it shows error FAIL-101.",other,high,unable access zoom tablet show error fail
+2826,I can't log into Zoom from my laptop. It returns 0xC004F012. Needs immediate attention.,other,high,t log zoom laptop return xc f need immediate attention
+1001,I can't log into WiFi from my tablet. It returns ERR-9999.,hardware_issue,critical,t log wifi tablet return err
+9601,VPN keeps crashing on my router. Code AUTH-007. Kindly assist.,network_problem,medium,vpn keeps crash router code auth kindly assist
+503,My mobile stopped working when I tried to use Database. Error displayed: NET-503.,network_problem,critical,mobile stop work try use database error display net
+7515,I can't log into VPN from my printer. It returns ERR42. Please resolve soon.,security,low,t log vpn printer return err resolve soon
+8046,There is a problem with Outlook on the desktop. Error: 0x80070005. Needs immediate attention.,service_request,high,problem outlook desktop error x need immediate attention
+6140,There is a problem with Zoom on the mobile. Error: NET-503.,service_request,critical,problem zoom mobile error net
+6975,Database fails to load on my desktop showing AUTH-007. Needs immediate attention.,other,medium,database fail load desktop show auth need immediate attention
+8035,There is a problem with Database on the printer. Error: AUTH-007. Please resolve soon.,software_bug,medium,problem database printer error auth resolve soon
+8434,Outlook keeps crashing on my router. Code ERR42. Please resolve soon.,security,medium,outlook keep crash router code err resolve soon
+1935,There is a problem with VPN on the tablet. Error: 0xC004F012.,other,high,problem vpn tablet error xc f
 975,CRM Portal keeps crashing on my desktop. Code NET-503.,service_request,critical,crm portal keep crash desktop code net
+9892,Salesforce keeps crashing on my printer. Code ERR42. Occurs intermittently.,service_request,high,salesforce keep crash printer code err occur intermittently
+1348,CRM Portal keeps crashing on my laptop. Code ERR-9999.,other,high,crm portal keep crash laptop code err
+3598,My mobile stopped working when I tried to use Teams. Error displayed: FAIL-101. Kindly assist.,account_access_issue,high,mobile stop work try use team error display fail kindly assist
+7609,CRM Portal keeps crashing on my tablet. Code AUTH-007. Occurs intermittently.,hardware_issue,medium,crm portal keep crash tablet code auth occur intermittently
+9296,"I am unable to access Active Directory on my tablet, it shows error NET-503. Kindly assist.",service_request,critical,unable access active directory tablet show error net kindly assist
+5177,My tablet stopped working when I tried to use Outlook. Error displayed: NET-503. Occurs intermittently.,account_access_issue,critical,tablet stop work try use outlook error display net occur intermittently
+2457,My desktop stopped working when I tried to use WiFi. Error displayed: 0xC004F012. Kindly assist.,service_request,high,desktop stop work try use wifi error display xc f kindly assist
+9078,Outlook fails to load on my tablet showing TIMEOUT-22. Issue reported by user.,other,critical,outlook fail load tablet show timeout issue report user
+5852,There is a problem with Outlook on the tablet. Error: ERR-9999. Needs immediate attention.,security,critical,problem outlook tablet error err need immediate attention
+5052,There is a problem with Active Directory on the printer. Error: NET-503.,network_problem,critical,problem active directory printer error net
+3422,My printer stopped working when I tried to use Outlook. Error displayed: 0x80070005. Issue reported by user.,other,high,printer stop work try use outlook error display x issue report user
+6363,I can't log into Outlook from my tablet. It returns ERR42.,other,critical,t log outlook tablet return err
+9987,VPN fails to load on my tablet showing TIMEOUT-22.,account_access_issue,critical,vpn fail load tablet show timeout
+1627,Email fails to load on my printer showing ERR-9999.,service_request,low,email fail load printer showing err
+35,WiFi keeps crashing on my server. Code TIMEOUT-22.,security,critical,wifi keep crash server code timeout
+3335,My laptop stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Occurs intermittently.,service_request,critical,laptop stop work try use vpn error display timeout occur intermittently
+2853,"I am unable to access Zoom on my desktop, it shows error ERR42. Needs immediate attention.",account_access_issue,high,unable access zoom desktop show error err need immediate attention
+8229,I can't log into Email from my router. It returns AUTH-007.,network_problem,medium,t log email router return auth
+9509,I can't log into Teams from my router. It returns 0xC004F012. Issue reported by user.,security,high,t log team router return xc f issue report user
+1835,Database keeps crashing on my laptop. Code FAIL-101.,software_bug,high,database keep crash laptop code fail
+7034,Outlook fails to load on my router showing 0xC004F012.,hardware_issue,high,outlook fail load router show xc f
+5185,I can't log into Email from my desktop. It returns AUTH-007.,security,medium,t log email desktop return auth
+6664,I can't log into WiFi from my router. It returns NET-503. Issue reported by user.,other,critical,t log wifi router return net issue report user
+5917,There is a problem with VPN on the tablet. Error: 0xC004F012.,other,high,problem vpn tablet error xc f
+1385,Database fails to load on my server showing AUTH-007.,other,medium,database fail load server show auth
+1368,There is a problem with CRM Portal on the mobile. Error: TIMEOUT-22.,security,critical,problem crm portal mobile error timeout
+6546,VPN keeps crashing on my tablet. Code TIMEOUT-22. Please resolve soon.,software_bug,critical,vpn keep crash tablet code timeout resolve soon
+2002,My laptop stopped working when I tried to use VPN. Error displayed: 0x80070005. Needs immediate attention.,hardware_issue,high,laptop stop work try use vpn error display x need immediate attention
+2308,"I am unable to access Outlook on my server, it shows error AUTH-007.",hardware_issue,medium,unable access outlook server show error auth
+4392,There is a problem with Database on the desktop. Error: 0xC004F012. Kindly assist.,account_access_issue,high,problem database desktop error xc f kindly assist
+1163,My mobile stopped working when I tried to use Outlook. Error displayed: ERR42.,software_bug,medium,mobile stop work try use outlook error display err
+3564,Email fails to load on my server showing NET-503. Issue reported by user.,network_problem,critical,email fail load server show net issue report user
+2045,I can't log into VPN from my server. It returns 0x80070005. Kindly assist.,network_problem,high,t log vpn server return x kindly assist
+4088,Active Directory keeps crashing on my laptop. Code ERR-9999.,service_request,medium,active directory keep crash laptop code err
+9384,My printer stopped working when I tried to use Active Directory. Error displayed: ERR-9999. Needs immediate attention.,other,critical,printer stop work try use active directory error displayed err need immediate attention
+3201,My tablet stopped working when I tried to use Outlook. Error displayed: NET-503. Kindly assist.,account_access_issue,critical,tablet stop work try use outlook error display net kindly assist
+7766,"I am unable to access VPN on my server, it shows error 0x80070005. Kindly assist.",account_access_issue,high,unable access vpn server show error x kindly assist
+3095,I can't log into Salesforce from my server. It returns 0x80070005. Needs immediate attention.,account_access_issue,high,t log salesforce server return x need immediate attention
+8302,Email fails to load on my laptop showing ERR42. Please resolve soon.,network_problem,medium,email fail load laptop show err resolve soon
+1370,I can't log into Salesforce from my laptop. It returns ERR-9999.,software_bug,low,t log salesforce laptop return err
+3561,My printer stopped working when I tried to use WiFi. Error displayed: ERR-9999. Issue reported by user.,account_access_issue,high,printer stop work try use wifi error display err issue report user
+7842,Salesforce fails to load on my printer showing NET-503. Issue reported by user.,hardware_issue,critical,salesforce fail load printer show net issue report user
+5362,"I am unable to access Email on my mobile, it shows error TIMEOUT-22. Occurs intermittently.",security,critical,unable access email mobile show error timeout occur intermittently
+5087,"I am unable to access Email on my tablet, it shows error ERR42. Please resolve soon.",service_request,critical,unable access email tablet show error err resolve soon
+838,Zoom keeps crashing on my router. Code ERR-9999.,network_problem,medium,zoom keep crash router code err
+9974,CRM Portal keeps crashing on my desktop. Code AUTH-007. Kindly assist.,software_bug,medium,crm portal keeps crash desktop code auth kindly assist
+8911,I can't log into Active Directory from my tablet. It returns 0xC004F012.,service_request,high,t log active directory tablet return xc f
+9768,I can't log into Active Directory from my tablet. It returns TIMEOUT-22. Occurs intermittently.,other,critical,t log active directory tablet return timeout occur intermittently
+8492,My printer stopped working when I tried to use Salesforce. Error displayed: 0xC004F012. Please resolve soon.,account_access_issue,high,printer stop work try use salesforce error display xc f resolve soon
+6733,There is a problem with VPN on the server. Error: 0x80070005.,network_problem,high,problem vpn server error x
+9016,Salesforce keeps crashing on my router. Code NET-503. Issue reported by user.,security,critical,salesforce keep crash router code net issue report user
+8992,There is a problem with Zoom on the desktop. Error: 0x80070005. Occurs intermittently.,account_access_issue,high,problem zoom desktop error x occur intermittently
+8863,"I am unable to access Salesforce on my mobile, it shows error AUTH-007. Issue reported by user.",security,medium,unable access salesforce mobile show error auth issue report user
+9407,I can't log into WiFi from my server. It returns TIMEOUT-22. Please resolve soon.,other,critical,t log wifi server return timeout resolve soon
+4507,There is a problem with Database on the tablet. Error: FAIL-101. Needs immediate attention.,service_request,high,problem database tablet error fail need immediate attention
+8584,Database keeps crashing on my printer. Code 0x80070005. Please resolve soon.,hardware_issue,high,database keep crash printer code x resolve soon
+8793,There is a problem with Zoom on the mobile. Error: ERR42. Kindly assist.,hardware_issue,medium,problem zoom mobile error err kindly assist
+9223,My router stopped working when I tried to use Database. Error displayed: TIMEOUT-22. Kindly assist.,account_access_issue,critical,router stop work try use database error display timeout kindly assist
+8958,Active Directory keeps crashing on my tablet. Code AUTH-007. Issue reported by user.,service_request,medium,active directory keep crash tablet code auth issue report user
+6097,"I am unable to access Teams on my laptop, it shows error NET-503. Please resolve soon.",account_access_issue,critical,unable access team laptop show error net resolve soon
+9835,I can't log into Salesforce from my printer. It returns TIMEOUT-22. Please resolve soon.,software_bug,critical,t log salesforce printer return timeout resolve soon
+9253,There is a problem with Teams on the tablet. Error: 0x80070005. Occurs intermittently.,service_request,high,problem team tablet error x occur intermittently
+528,Zoom keeps crashing on my router. Code TIMEOUT-22.,security,critical,zoom keep crash router code timeout
+317,Teams keeps crashing on my server. Code NET-503.,security,critical,team keep crash server code net
+8065,VPN keeps crashing on my printer. Code ERR42. Issue reported by user.,account_access_issue,high,vpn keep crash printer code err issue report user
+1044,"I am unable to access Outlook on my server, it shows error AUTH-007.",service_request,medium,unable access outlook server show error auth
+2255,Outlook keeps crashing on my router. Code ERR42. Needs immediate attention.,other,critical,outlook keeps crash router code err need immediate attention
+2329,My tablet stopped working when I tried to use Zoom. Error displayed: NET-503.,hardware_issue,critical,tablet stop work try use zoom error display net
+9894,Database fails to load on my printer showing NET-503. Issue reported by user.,software_bug,critical,database fail load printer show net issue report user
+1002,Database keeps crashing on my printer. Code ERR-9999.,hardware_issue,high,database keep crash printer code err
+7762,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Please resolve soon.,hardware_issue,high,server stop work try use outlook error display x resolve soon
+8818,My router stopped working when I tried to use Active Directory. Error displayed: 0xC004F012.,service_request,high,router stop work try use active directory error display xc f
+1192,Email fails to load on my desktop showing TIMEOUT-22.,software_bug,critical,email fail load desktop show timeout
+8340,"I am unable to access Email on my laptop, it shows error AUTH-007. Occurs intermittently.",software_bug,medium,unable access email laptop show error auth occur intermittently
+3686,"I am unable to access Zoom on my server, it shows error ERR-9999. Occurs intermittently.",account_access_issue,low,unable access zoom server show error err occur intermittently
+1090,CRM Portal fails to load on my desktop showing NET-503.,other,critical,crm portal fail load desktop show net
+3616,Salesforce keeps crashing on my router. Code NET-503.,security,critical,salesforce keep crash router code net
+1171,There is a problem with Database on the desktop. Error: 0xC004F012.,account_access_issue,high,problem database desktop error xc f
+159,"I am unable to access Outlook on my router, it shows error ERR-9999.",network_problem,high,unable access outlook router show error err
+926,My mobile stopped working when I tried to use Teams. Error displayed: AUTH-007.,network_problem,medium,mobile stop work try use team error display auth
+5099,CRM Portal fails to load on my router showing 0xC004F012. Kindly assist.,security,high,crm portal fail load router show xc f kindly assist
+5575,I can't log into Teams from my mobile. It returns ERR42. Please resolve soon.,other,high,t log team mobile return err resolve soon
+6225,My router stopped working when I tried to use WiFi. Error displayed: NET-503. Please resolve soon.,hardware_issue,critical,router stop work try use wifi error display net resolve soon
+7818,Email keeps crashing on my laptop. Code ERR-9999.,account_access_issue,low,email keep crash laptop code err
+8303,Salesforce fails to load on my printer showing NET-503. Please resolve soon.,hardware_issue,critical,salesforce fail load printer show net resolve soon
+7723,There is a problem with Database on the tablet. Error: TIMEOUT-22. Kindly assist.,network_problem,critical,problem database tablet error timeout kindly assist
+5396,My tablet stopped working when I tried to use Active Directory. Error displayed: NET-503. Occurs intermittently.,account_access_issue,critical,tablet stop work try use active directory error display net occur intermittently
+3096,Zoom keeps crashing on my desktop. Code ERR42. Issue reported by user.,service_request,high,zoom keep crash desktop code err issue report user
+6910,Zoom keeps crashing on my server. Code TIMEOUT-22. Occurs intermittently.,software_bug,critical,zoom keep crash server code timeout occur intermittently
+3650,My server stopped working when I tried to use WiFi. Error displayed: ERR-9999. Needs immediate attention.,software_bug,medium,server stop work try use wifi error displayed err need immediate attention
+9010,Database keeps crashing on my desktop. Code 0xC004F012.,service_request,high,database keep crash desktop code xc f
+5906,Outlook keeps crashing on my router. Code ERR42. Please resolve soon.,security,medium,outlook keep crash router code err resolve soon
+436,My desktop stopped working when I tried to use WiFi. Error displayed: 0xC004F012.,service_request,high,desktop stop work try use wifi error display xc f
+3066,I can't log into Teams from my router. It returns 0xC004F012.,security,high,t log team router return xc f
+4926,CRM Portal keeps crashing on my printer. Code ERR42. Kindly assist.,account_access_issue,high,crm portal keeps crash printer code err kindly assist
+373,VPN fails to load on my server showing 0x80070005.,service_request,high,vpn fail load server show x
+100153,Browser keeps freezing while loading tabs.,hardware_issue,medium,browser keep freeze load tab
+278,Outlook fails to load on my desktop showing FAIL-101.,account_access_issue,high,outlook fail load desktop showing fail
+9373,Email keeps crashing on my printer. Code ERR-9999.,network_problem,high,email keep crash printer code err
+2095,I can't log into Outlook from my printer. It returns NET-503. Occurs intermittently.,network_problem,critical,t log outlook printer return net occur intermittently
+2286,I can't log into Email from my server. It returns FAIL-101. Please resolve soon.,software_bug,high,t log email server return fail resolve soon
+7755,There is a problem with Database on the mobile. Error: 0x80070005.,hardware_issue,high,problem database mobile error x
+8451,WiFi fails to load on my desktop showing NET-503. Please resolve soon.,network_problem,critical,wifi fail load desktop show net resolve soon
+8000,Email fails to load on my router showing AUTH-007. Occurs intermittently.,account_access_issue,medium,email fail load router show auth occur intermittently
+8461,There is a problem with Teams on the server. Error: 0x80070005. Please resolve soon.,hardware_issue,high,problem team server error x resolve soon
+8446,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005.,service_request,high,server stop work try use outlook error display x
+911,There is a problem with Email on the tablet. Error: 0x80070005.,account_access_issue,high,problem email tablet error x
+6746,My mobile stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Occurs intermittently.,security,medium,mobile stop work try use active directory error display auth occur intermittently
+1112,I can't log into Database from my router. It returns FAIL-101.,service_request,high,t log database router return fail
+1448,VPN keeps crashing on my tablet. Code AUTH-007.,network_problem,medium,vpn keep crash tablet code auth
+6533,My desktop stopped working when I tried to use Salesforce. Error displayed: ERR-9999.,network_problem,low,desktop stop work try use salesforce error display err
+7912,"I am unable to access Active Directory on my router, it shows error 0xC004F012. Occurs intermittently.",account_access_issue,high,unable access active directory router show error xc f occur intermittently
+1366,Email keeps crashing on my laptop. Code ERR-9999.,account_access_issue,low,email keep crash laptop code err
+8489,There is a problem with CRM Portal on the printer. Error: ERR42. Kindly assist.,software_bug,medium,problem crm portal printer error err kindly assist
+4063,"I am unable to access Teams on my desktop, it shows error FAIL-101. Needs immediate attention.",account_access_issue,high,unable access team desktop show error fail need immediate attention
+2958,CRM Portal keeps crashing on my laptop. Code NET-503. Issue reported by user.,software_bug,critical,crm portal keep crash laptop code net issue report user
+2447,"I am unable to access Zoom on my tablet, it shows error FAIL-101.",other,high,unable access zoom tablet show error fail
+3703,I can't log into Active Directory from my desktop. It returns NET-503. Please resolve soon.,security,critical,t log active directory desktop return net resolve soon
+1868,CRM Portal keeps crashing on my desktop. Code AUTH-007.,software_bug,medium,crm portal keep crash desktop code auth
+2400,There is a problem with WiFi on the desktop. Error: ERR42. Occurs intermittently.,security,low,problem wifi desktop error err occur intermittently
+2339,WiFi keeps crashing on my server. Code NET-503. Needs immediate attention.,security,critical,wifi keeps crash server code net need immediate attention
+9564,"I am unable to access Database on my mobile, it shows error 0x80070005. Issue reported by user.",security,high,unable access database mobile show error x issue report user
+3441,Email fails to load on my printer showing 0xC004F012.,security,high,email fail load printer show xc f
+1842,I can't log into Database from my desktop. It returns 0x80070005.,security,high,t log database desktop return x
+6609,I can't log into Outlook from my tablet. It returns ERR42. Kindly assist.,other,critical,t log outlook tablet return err kindly assist
+4036,Zoom keeps crashing on my laptop. Code FAIL-101. Please resolve soon.,software_bug,high,zoom keep crash laptop code fail resolve soon
+8082,I can't log into Teams from my router. It returns 0xC004F012. Needs immediate attention.,software_bug,high,t log team router return xc f need immediate attention
+3430,I can't log into Email from my mobile. It returns ERR-9999. Please resolve soon.,hardware_issue,critical,t log email mobile return err resolve soon
+1467,"I am unable to access Teams on my desktop, it shows error FAIL-101.",account_access_issue,high,unable access team desktop show error fail
+2074,"I am unable to access Salesforce on my laptop, it shows error TIMEOUT-22. Issue reported by user.",security,critical,unable access salesforce laptop show error timeout issue report user
+8694,CRM Portal keeps crashing on my laptop. Code FAIL-101. Please resolve soon.,security,high,crm portal keep crash laptop code fail resolve soon
+7870,I can't log into Email from my tablet. It returns TIMEOUT-22. Needs immediate attention.,security,critical,t log email tablet return timeout need immediate attention
+6774,I can't log into Email from my server. It returns ERR42.,software_bug,medium,t log email server return err
+1877,"I am unable to access WiFi on my printer, it shows error AUTH-007.",account_access_issue,medium,unable access wifi printer show error auth
+5770,There is a problem with Teams on the laptop. Error: TIMEOUT-22. Occurs intermittently.,other,critical,problem team laptop error timeout occur intermittently
+8328,My printer stopped working when I tried to use Outlook. Error displayed: NET-503.,software_bug,critical,printer stop work try use outlook error display net
+1519,VPN keeps crashing on my server. Code AUTH-007.,software_bug,medium,vpn keep crash server code auth
+9156,Teams keeps crashing on my desktop. Code ERR42. Issue reported by user.,other,critical,team keep crash desktop code err issue report user
+4775,I can't log into Outlook from my mobile. It returns TIMEOUT-22. Needs immediate attention.,account_access_issue,critical,t log outlook mobile return timeout need immediate attention
+5265,"I am unable to access Salesforce on my laptop, it shows error NET-503. Kindly assist.",hardware_issue,critical,unable access salesforce laptop show error net kindly assist
+100102,Printer keeps pausing printing without user input.,hardware_issue,medium,printer keep pause printing user input
+4953,There is a problem with Zoom on the tablet. Error: NET-503. Kindly assist.,account_access_issue,critical,problem zoom tablet error net kindly assist
+5124,My desktop stopped working when I tried to use Teams. Error displayed: ERR-9999. Kindly assist.,network_problem,critical,desktop stop work try use team error display err kindly assist
+4959,There is a problem with CRM Portal on the server. Error: FAIL-101. Please resolve soon.,service_request,high,problem crm portal server error fail resolve soon
+848,My mobile stopped working when I tried to use Active Directory. Error displayed: AUTH-007.,security,medium,mobile stop work try use active directory error display auth
+3993,My printer stopped working when I tried to use Zoom. Error displayed: 0xC004F012. Needs immediate attention.,hardware_issue,high,printer stop work try use zoom error display xc f need immediate attention
+6269,Zoom keeps crashing on my desktop. Code 0x80070005. Please resolve soon.,hardware_issue,high,zoom keep crash desktop code x resolve soon
+2653,VPN fails to load on my router showing 0x80070005.,service_request,high,vpn fail load router show x
+6352,There is a problem with Email on the laptop. Error: AUTH-007. Needs immediate attention.,other,medium,problem email laptop error auth need immediate attention
+9216,My tablet stopped working when I tried to use VPN. Error displayed: ERR42. Kindly assist.,network_problem,critical,tablet stop work try use vpn error display err kindly assist
+8196,There is a problem with WiFi on the printer. Error: ERR-9999.,account_access_issue,critical,problem wifi printer error err
+4376,I can't log into Active Directory from my desktop. It returns 0xC004F012. Needs immediate attention.,service_request,high,t log active directory desktop return xc f need immediate attention
+3627,Zoom keeps crashing on my laptop. Code FAIL-101.,software_bug,high,zoom keep crash laptop code fail
+3445,I can't log into Email from my desktop. It returns AUTH-007. Please resolve soon.,security,medium,t log email desktop return auth resolve soon
+7140,Active Directory keeps crashing on my laptop. Code ERR-9999. Kindly assist.,service_request,medium,active directory keeps crash laptop code err kindly assist
+3890,Teams fails to load on my mobile showing FAIL-101. Needs immediate attention.,network_problem,high,team fail load mobile showing fail need immediate attention
+7554,My desktop stopped working when I tried to use Active Directory. Error displayed: ERR42. Please resolve soon.,network_problem,medium,desktop stop work try use active directory error display err resolve soon
+2974,Outlook keeps crashing on my router. Code FAIL-101.,service_request,high,outlook keep crash router code fail
+3519,My mobile stopped working when I tried to use VPN. Error displayed: TIMEOUT-22. Kindly assist.,other,critical,mobile stop work try use vpn error display timeout kindly assist
+3105,Teams keeps crashing on my router. Code 0xC004F012. Issue reported by user.,hardware_issue,high,team keep crash router code xc f issue report user
+5296,"I am unable to access Database on my tablet, it shows error 0x80070005. Issue reported by user.",network_problem,high,unable access database tablet show error x issue report user
+100217,Unable to access Jira due to firewall restrictions.,security,medium,unable access jira firewall restriction
+1878,Teams fails to load on my mobile showing FAIL-101.,network_problem,high,team fail load mobile showing fail
+5352,I can't log into Teams from my router. It returns ERR42. Issue reported by user.,hardware_issue,low,t log team router return err issue report user
+9471,There is a problem with Zoom on the printer. Error: ERR42. Issue reported by user.,hardware_issue,low,problem zoom printer error err issue report user
+7292,Outlook keeps crashing on my printer. Code FAIL-101. Occurs intermittently.,account_access_issue,high,outlook keep crash printer code fail occur intermittently
+6635,My desktop stopped working when I tried to use WiFi. Error displayed: AUTH-007. Issue reported by user.,security,medium,desktop stop work try use wifi error display auth issue report user
+4427,My printer stopped working when I tried to use Teams. Error displayed: ERR-9999.,hardware_issue,low,printer stop work try use team error display err
+1799,I can't log into CRM Portal from my desktop. It returns FAIL-101.,hardware_issue,high,t log crm portal desktop return fail
+4041,My router stopped working when I tried to use Teams. Error displayed: ERR42. Occurs intermittently.,hardware_issue,low,router stop work try use team error display err occur intermittently
+7927,I can't log into VPN from my printer. It returns ERR42. Kindly assist.,security,low,t log vpn printer return err kindly assist
+100189,Connection timeout while joining Zoom meeting.,network_problem,medium,connection timeout join zoom meeting
+3155,My printer stopped working when I tried to use VPN. Error displayed: 0x80070005. Occurs intermittently.,hardware_issue,high,printer stop work try use vpn error display x occur intermittently
+389,Teams fails to load on my server showing 0x80070005.,hardware_issue,high,team fail load server show x
+6201,I can't log into Database from my desktop. It returns 0x80070005. Kindly assist.,security,high,t log database desktop return x kindly assist
+835,Database keeps crashing on my laptop. Code FAIL-101.,software_bug,high,database keep crash laptop code fail
+7122,"I am unable to access Salesforce on my laptop, it shows error NET-503. Kindly assist.",hardware_issue,critical,unable access salesforce laptop show error net kindly assist
+7516,I can't log into Database from my mobile. It returns ERR42.,account_access_issue,low,t log database mobile return err
+243,My desktop stopped working when I tried to use Teams. Error displayed: ERR-9999.,network_problem,critical,desktop stop work try use team error display err
+861,There is a problem with Teams on the router. Error: ERR-9999.,account_access_issue,low,problem team router error err
+100057,VPN blocked by firewall policy on home router.,network_problem,medium,vpn block firewall policy home router
+150,There is a problem with Teams on the tablet. Error: 0x80070005.,service_request,high,problem team tablet error x
+565,There is a problem with Zoom on the mobile. Error: TIMEOUT-22.,account_access_issue,critical,problem zoom mobile error timeout
+680,My server stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,service_request,critical,server stop work try use database error display timeout
+5535,There is a problem with CRM Portal on the tablet. Error: 0x80070005. Needs immediate attention.,other,high,problem crm portal tablet error x need immediate attention
+9909,I can't log into Teams from my router. It returns AUTH-007.,security,medium,t log team router return auth
+8436,There is a problem with WiFi on the server. Error: NET-503. Issue reported by user.,account_access_issue,critical,problem wifi server error net issue report user
+3215,I can't log into Email from my tablet. It returns ERR-9999.,service_request,high,t log email tablet return err
+2615,My printer stopped working when I tried to use Database. Error displayed: NET-503. Please resolve soon.,service_request,critical,printer stop work try use database error display net resolve soon
+153,CRM Portal keeps crashing on my server. Code TIMEOUT-22.,security,critical,crm portal keep crash server code timeout
+8428,"I am unable to access VPN on my printer, it shows error FAIL-101. Issue reported by user.",other,high,unable access vpn printer show error fail issue report user
+8746,"I am unable to access Outlook on my router, it shows error ERR-9999.",network_problem,high,unable access outlook router show error err
+3457,Database keeps crashing on my mobile. Code 0xC004F012. Kindly assist.,software_bug,high,database keep crash mobile code xc f kindly assist
+1902,My desktop stopped working when I tried to use Teams. Error displayed: AUTH-007.,hardware_issue,medium,desktop stop work try use team error display auth
+8629,My laptop stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Needs immediate attention.,hardware_issue,medium,laptop stop work try use active directory error display auth need immediate attention
+4941,WiFi fails to load on my router showing 0x80070005.,account_access_issue,high,wifi fail load router show x
+1637,Zoom keeps crashing on my server. Code NET-503.,hardware_issue,critical,zoom keep crash server code net
+2675,I can't log into VPN from my server. It returns 0x80070005.,software_bug,high,t log vpn server return x
+2086,I can't log into Salesforce from my server. It returns 0xC004F012. Occurs intermittently.,service_request,high,t log salesforce server return xc f occur intermittently
+3733,My router stopped working when I tried to use CRM Portal. Error displayed: AUTH-007. Kindly assist.,account_access_issue,medium,router stop work try use crm portal error display auth kindly assist
+3311,"I am unable to access Zoom on my server, it shows error 0xC004F012. Occurs intermittently.",software_bug,high,unable access zoom server show error xc f occur intermittently
+6076,My server stopped working when I tried to use CRM Portal. Error displayed: NET-503. Occurs intermittently.,network_problem,critical,server stop work try use crm portal error display net occur intermittently
+5008,There is a problem with WiFi on the tablet. Error: 0x80070005. Please resolve soon.,account_access_issue,high,problem wifi tablet error x resolve soon
+9000,My printer stopped working when I tried to use Database. Error displayed: AUTH-007. Kindly assist.,account_access_issue,medium,printer stop work try use database error display auth kindly assist
+9923,There is a problem with Outlook on the printer. Error: ERR42. Please resolve soon.,software_bug,low,problem outlook printer error err resolve soon
+4325,"I am unable to access Database on my router, it shows error TIMEOUT-22. Kindly assist.",hardware_issue,critical,unable access database router show error timeout kindly assist
+4145,I can't log into Salesforce from my desktop. It returns 0x80070005. Needs immediate attention.,hardware_issue,high,t log salesforce desktop return x need immediate attention
+2724,My printer stopped working when I tried to use Active Directory. Error displayed: AUTH-007. Needs immediate attention.,service_request,medium,printer stop work try use active directory error display auth need immediate attention
+9446,I can't log into Email from my printer. It returns 0x80070005. Issue reported by user.,security,high,t log email printer return x issue report user
+4244,There is a problem with Outlook on the desktop. Error: 0x80070005. Please resolve soon.,account_access_issue,high,problem outlook desktop error x resolve soon
+4686,CRM Portal keeps crashing on my tablet. Code TIMEOUT-22. Please resolve soon.,network_problem,critical,crm portal keep crash tablet code timeout resolve soon
+4762,I can't log into WiFi from my printer. It returns 0x80070005. Needs immediate attention.,hardware_issue,high,t log wifi printer return x need immediate attention
+1602,I can't log into Teams from my server. It returns ERR-9999.,account_access_issue,medium,t log team server return err
+8096,My server stopped working when I tried to use CRM Portal. Error displayed: NET-503. Kindly assist.,network_problem,critical,server stop work try use crm portal error display net kindly assist
+8778,There is a problem with CRM Portal on the router. Error: ERR-9999. Occurs intermittently.,security,low,problem crm portal router error err occur intermittently
+2302,Active Directory keeps crashing on my server. Code 0xC004F012.,hardware_issue,high,active directory keep crash server code xc f
+4339,"I am unable to access Teams on my desktop, it shows error FAIL-101. Kindly assist.",security,high,unable access team desktop show error fail kindly assist
+3846,Email fails to load on my router showing ERR42. Issue reported by user.,hardware_issue,high,email fail load router show err issue report user
+9981,Salesforce fails to load on my printer showing NET-503. Please resolve soon.,hardware_issue,critical,salesforce fail load printer show net resolve soon
+2539,There is a problem with Email on the server. Error: 0x80070005. Needs immediate attention.,service_request,high,problem email server error x need immediate attention
+4794,"I am unable to access CRM Portal on my printer, it shows error FAIL-101. Please resolve soon.",other,high,unable access crm portal printer show error fail resolve soon
+8860,There is a problem with Teams on the server. Error: NET-503. Occurs intermittently.,security,critical,problem team server error net occur intermittently
+3219,"I am unable to access Zoom on my desktop, it shows error ERR42.",account_access_issue,high,unable access zoom desktop show error err
+6515,CRM Portal keeps crashing on my printer. Code ERR42. Kindly assist.,account_access_issue,high,crm portal keeps crash printer code err kindly assist
+4827,Outlook fails to load on my mobile showing 0x80070005. Occurs intermittently.,other,high,outlook fail load mobile showing x occur intermittently
+3934,I can't log into CRM Portal from my laptop. It returns FAIL-101. Issue reported by user.,security,high,t log crm portal laptop return fail issue report user
+5645,I can't log into Outlook from my server. It returns AUTH-007.,account_access_issue,medium,t log outlook server return auth
+9359,There is a problem with Teams on the tablet. Error: 0x80070005.,service_request,high,problem team tablet error x
+9776,There is a problem with Email on the mobile. Error: 0xC004F012. Needs immediate attention.,hardware_issue,high,problem email mobile error xc f need immediate attention
+3159,"I am unable to access Active Directory on my tablet, it shows error ERR-9999. Issue reported by user.",network_problem,low,unable access active directory tablet show error err issue report user
+3247,Salesforce fails to load on my desktop showing 0x80070005. Kindly assist.,hardware_issue,high,salesforce fail load desktop showing x kindly assist
+8393,"I am unable to access WiFi on my router, it shows error TIMEOUT-22. Needs immediate attention.",hardware_issue,critical,unable access wifi router show error timeout need immediate attention
+9451,I can't log into WiFi from my laptop. It returns AUTH-007.,security,medium,t log wifi laptop return auth
+4631,I can't log into Database from my printer. It returns 0x80070005.,account_access_issue,high,t log database printer return x
+4690,I can't log into VPN from my desktop. It returns NET-503. Needs immediate attention.,account_access_issue,critical,t log vpn desktop return net need immediate attention
+4103,"I am unable to access WiFi on my server, it shows error NET-503. Occurs intermittently.",other,critical,unable access wifi server show error net occur intermittently
+2562,I can't log into Outlook from my tablet. It returns NET-503. Issue reported by user.,network_problem,critical,t log outlook tablet return net issue report user
+3041,Salesforce keeps crashing on my server. Code FAIL-101. Issue reported by user.,security,high,salesforce keep crash server code fail issue report user
+7049,I can't log into Salesforce from my printer. It returns TIMEOUT-22. Kindly assist.,software_bug,critical,t log salesforce printer return timeout kindly assist
+9303,I can't log into Teams from my tablet. It returns TIMEOUT-22. Occurs intermittently.,other,critical,t log team tablet return timeout occur intermittently
+1701,Database fails to load on my laptop showing ERR-9999.,other,low,database fail load laptop show err
+100050,VPN disconnects whenever switching Wi-Fi network on tablet.,network_problem,high,vpn disconnect switch wi fi network tablet
+4551,I can't log into Outlook from my laptop. It returns NET-503.,other,critical,t log outlook laptop return net
+9478,There is a problem with Zoom on the mobile. Error: ERR42.,hardware_issue,medium,problem zoom mobile error err
+3981,My desktop stopped working when I tried to use Teams. Error displayed: AUTH-007. Needs immediate attention.,hardware_issue,medium,desktop stop work try use team error display auth need immediate attention
+9728,"I am unable to access VPN on my mobile, it shows error ERR-9999.",service_request,medium,unable access vpn mobile show error err
+3619,I can't log into Outlook from my router. It returns NET-503. Kindly assist.,hardware_issue,critical,t log outlook router return net kindly assist
+8762,I can't log into Active Directory from my server. It returns 0xC004F012. Needs immediate attention.,software_bug,high,t log active directory server return xc f need immediate attention
+6994,WiFi fails to load on my laptop showing 0x80070005.,software_bug,high,wifi fail load laptop show x
+6968,Database fails to load on my laptop showing NET-503. Please resolve soon.,service_request,critical,database fail load laptop show net resolve soon
+7644,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Please resolve soon.,service_request,high,server stop work try use outlook error display x resolve soon
+3344,Email keeps crashing on my printer. Code ERR-9999. Occurs intermittently.,service_request,critical,email keep crash printer code err occur intermittently
+5541,My server stopped working when I tried to use Outlook. Error displayed: 0x80070005. Issue reported by user.,hardware_issue,high,server stop work try use outlook error display x issue report user
+3705,VPN keeps crashing on my tablet. Code AUTH-007. Issue reported by user.,network_problem,medium,vpn keep crash tablet code auth issue report user
+4074,My mobile stopped working when I tried to use Zoom. Error displayed: ERR42. Occurs intermittently.,hardware_issue,medium,mobile stop work try use zoom error display err occur intermittently
+3358,My mobile stopped working when I tried to use CRM Portal. Error displayed: ERR42. Kindly assist.,other,critical,mobile stop work try use crm portal error display err kindly assist
+9290,Outlook keeps crashing on my router. Code FAIL-101. Please resolve soon.,service_request,high,outlook keep crash router code fail resolve soon
+2395,My laptop stopped working when I tried to use Outlook. Error displayed: 0xC004F012. Occurs intermittently.,service_request,high,laptop stop work try use outlook error display xc f occur intermittently
+7967,My desktop stopped working when I tried to use Outlook. Error displayed: ERR-9999.,service_request,medium,desktop stop work try use outlook error display err
+1340,Database fails to load on my router showing FAIL-101.,network_problem,high,database fail load router show fail
+9132,"I am unable to access Database on my server, it shows error AUTH-007.",network_problem,medium,unable access database server show error auth
+2670,"I am unable to access Teams on my tablet, it shows error FAIL-101. Please resolve soon.",security,high,unable access team tablet show error fail resolve soon
+927,There is a problem with Email on the router. Error: AUTH-007.,security,medium,problem email router error auth
+4716,I can't log into VPN from my desktop. It returns NET-503. Please resolve soon.,account_access_issue,critical,t log vpn desktop return net resolve soon
+7815,There is a problem with Email on the printer. Error: AUTH-007. Please resolve soon.,network_problem,medium,problem email printer error auth resolve soon
+5900,I can't log into CRM Portal from my printer. It returns TIMEOUT-22.,network_problem,critical,t log crm portal printer return timeout
+1932,I can't log into WiFi from my server. It returns ERR-9999.,network_problem,medium,t log wifi server return err
+6962,"I am unable to access Outlook on my mobile, it shows error AUTH-007.",other,medium,unable access outlook mobile show error auth
+2667,Active Directory fails to load on my desktop showing TIMEOUT-22. Kindly assist.,network_problem,critical,active directory fail load desktop show timeout kindly assist
+4797,My tablet stopped working when I tried to use VPN. Error displayed: ERR-9999.,software_bug,medium,tablet stop work try use vpn error display err
+5143,There is a problem with Teams on the printer. Error: FAIL-101. Kindly assist.,network_problem,high,problem team printer error fail kindly assist
+2813,Database keeps crashing on my server. Code 0x80070005. Occurs intermittently.,software_bug,high,database keep crash server code x occur intermittently
+2737,Database fails to load on my desktop showing AUTH-007. Issue reported by user.,other,medium,database fail load desktop show auth issue report user
+6472,Database keeps crashing on my mobile. Code TIMEOUT-22. Occurs intermittently.,hardware_issue,critical,database keep crash mobile code timeout occur intermittently
+4822,There is a problem with VPN on the tablet. Error: 0xC004F012. Needs immediate attention.,other,high,problem vpn tablet error xc f need immediate attention
+666,Outlook keeps crashing on my tablet. Code NET-503.,account_access_issue,critical,outlook keep crash tablet code net
+8807,There is a problem with Outlook on the tablet. Error: AUTH-007. Issue reported by user.,security,medium,problem outlook tablet error auth issue report user
+8253,VPN fails to load on my printer showing 0x80070005. Kindly assist.,hardware_issue,high,vpn fail load printer show x kindly assist
+7172,There is a problem with VPN on the desktop. Error: AUTH-007.,other,medium,problem vpn desktop error auth
+7232,Outlook fails to load on my printer showing AUTH-007. Occurs intermittently.,account_access_issue,medium,outlook fail load printer show auth occur intermittently
+7379,I can't log into Email from my tablet. It returns FAIL-101. Occurs intermittently.,network_problem,high,t log email tablet return fail occur intermittently
+1120,My laptop stopped working when I tried to use CRM Portal. Error displayed: 0xC004F012.,network_problem,high,laptop stop work try use crm portal error display xc f
+5018,Salesforce fails to load on my desktop showing 0x80070005.,hardware_issue,high,salesforce fail load desktop show x
+8271,I can't log into Teams from my laptop. It returns AUTH-007. Please resolve soon.,hardware_issue,medium,t log team laptop return auth resolve soon
+6207,I can't log into Active Directory from my printer. It returns TIMEOUT-22. Occurs intermittently.,network_problem,critical,t log active directory printer return timeout occur intermittently
+7068,VPN keeps crashing on my mobile. Code ERR-9999. Needs immediate attention.,service_request,medium,vpn keep crash mobile code err need immediate attention
+6812,I can't log into Teams from my mobile. It returns NET-503. Needs immediate attention.,account_access_issue,critical,t log team mobile return net need immediate attention
+100127,Laptop becomes slow after overnight usage.,hardware_issue,medium,laptop slow overnight usage
+4640,I can't log into Zoom from my router. It returns 0x80070005. Please resolve soon.,service_request,high,t log zoom router return x resolve soon
+8164,"I am unable to access Active Directory on my laptop, it shows error NET-503. Kindly assist.",hardware_issue,critical,unable access active directory laptop show error net kindly assist
+1423,CRM Portal keeps crashing on my printer. Code ERR42.,security,medium,crm portal keep crash printer code err
+5872,"I am unable to access WiFi on my server, it shows error NET-503. Issue reported by user.",other,critical,unable access wifi server show error net issue report user
+3995,I can't log into Zoom from my router. It returns ERR42. Occurs intermittently.,account_access_issue,high,t log zoom router return err occur intermittently
+9459,I can't log into CRM Portal from my printer. It returns TIMEOUT-22. Needs immediate attention.,network_problem,critical,t log crm portal printer return timeout need immediate attention
+6775,I can't log into Zoom from my server. It returns 0x80070005. Occurs intermittently.,account_access_issue,high,t log zoom server return x occur intermittently
+4988,I can't log into Database from my server. It returns ERR-9999. Issue reported by user.,security,high,t log database server return err issue report user
+4900,My mobile stopped working when I tried to use Database. Error displayed: TIMEOUT-22.,account_access_issue,critical,mobile stop work try use database error display timeout
+639,There is a problem with Outlook on the desktop. Error: TIMEOUT-22.,other,critical,problem outlook desktop error timeout
+1294,I can't log into Teams from my laptop. It returns AUTH-007.,hardware_issue,medium,t log team laptop return auth
+5150,I can't log into Teams from my desktop. It returns AUTH-007. Needs immediate attention.,account_access_issue,medium,t log team desktop return auth need immediate attention
+7562,"I am unable to access Outlook on my mobile, it shows error AUTH-007. Please resolve soon.",other,medium,unable access outlook mobile show error auth resolve soon
+1495,I can't log into VPN from my mobile. It returns ERR-9999.,other,critical,t log vpn mobile return err
+9462,I can't log into Teams from my tablet. It returns NET-503. Issue reported by user.,hardware_issue,critical,t log team tablet return net issue report user
+2297,There is a problem with VPN on the laptop. Error: 0x80070005.,software_bug,high,problem vpn laptop error x
+1204,Outlook keeps crashing on my tablet. Code ERR-9999.,account_access_issue,high,outlook keep crash tablet code err
+7512,My desktop stopped working when I tried to use Teams. Error displayed: 0x80070005. Please resolve soon.,hardware_issue,high,desktop stop work try use team error display x resolve soon
+7473,VPN fails to load on my router showing 0x80070005. Occurs intermittently.,software_bug,high,vpn fail load router show x occur intermittently
+1798,VPN keeps crashing on my server. Code TIMEOUT-22.,security,critical,vpn keep crash server code timeout
+4912,My printer stopped working when I tried to use Database. Error displayed: AUTH-007. Issue reported by user.,account_access_issue,medium,printer stop work try use database error display auth issue report user
+2472,"I am unable to access CRM Portal on my printer, it shows error FAIL-101.",other,high,unable access crm portal printer show error fail
+100227,Firewall restrictions prevent opening required URLs.,security,medium,firewall restriction prevent opening require url
+4966,Outlook keeps crashing on my desktop. Code 0x80070005. Needs immediate attention.,security,high,outlook keep crash desktop code x need immediate attention
+3453,There is a problem with Database on the server. Error: ERR42.,network_problem,medium,problem database server error err
+5891,My tablet stopped working when I tried to use Active Directory. Error displayed: FAIL-101. Issue reported by user.,service_request,high,tablet stop work try use active directory error display fail issue report user
+7623,My printer stopped working when I tried to use WiFi. Error displayed: ERR-9999. Kindly assist.,software_bug,critical,printer stop work try use wifi error display err kindly assist
+100228,Firewall policy blocked software installation attempt.,security,medium,firewall policy block software installation attempt
+3261,There is a problem with Email on the router. Error: AUTH-007. Issue reported by user.,security,medium,problem email router error auth issue report user
+5074,I can't log into Salesforce from my desktop. It returns 0x80070005. Kindly assist.,hardware_issue,high,t log salesforce desktop return x kindly assist
+100185,Unable to connect to intranet after timeout.,network_problem,medium,unable connect intranet timeout
+4733,CRM Portal keeps crashing on my router. Code TIMEOUT-22. Occurs intermittently.,hardware_issue,critical,crm portal keep crash router code timeout occur intermittently
+100338,Access blocked when opening intranet site.,account_access_issue,medium,access block open intranet site
+9267,"I am unable to access WiFi on my printer, it shows error 0x80070005.",security,high,unable access wifi printer show error x
+4270,Teams keeps crashing on my server. Code AUTH-007. Please resolve soon.,account_access_issue,medium,team keep crash server code auth resolve soon
+7854,Active Directory keeps crashing on my mobile. Code ERR42. Needs immediate attention.,service_request,high,active directory keeps crash mobile code err need immediate attention
+622,Email fails to load on my desktop showing ERR42.,software_bug,low,email fail load desktop showing err
+9189,Zoom keeps crashing on my server. Code TIMEOUT-22. Needs immediate attention.,software_bug,critical,zoom keep crash server code timeout need immediate attention
+4650,I can't log into Teams from my router. It returns TIMEOUT-22. Occurs intermittently.,other,critical,t log team router return timeout occur intermittently
+2271,My server stopped working when I tried to use Salesforce. Error displayed: AUTH-007. Please resolve soon.,network_problem,medium,server stop work try use salesforce error display auth resolve soon
+2963,My desktop stopped working when I tried to use Active Directory. Error displayed: ERR42. Kindly assist.,software_bug,high,desktop stop work try use active directory error display err kindly assist
+4076,There is a problem with Database on the tablet. Error: FAIL-101. Occurs intermittently.,service_request,high,problem database tablet error fail occur intermittently
+7631,"I am unable to access Active Directory on my router, it shows error 0xC004F012. Needs immediate attention.",account_access_issue,high,unable access active directory router show error xc f need immediate attention
+4423,I can't log into Email from my laptop. It returns TIMEOUT-22. Issue reported by user.,account_access_issue,critical,t log email laptop return timeout issue report user
+3277,Active Directory keeps crashing on my router. Code FAIL-101. Issue reported by user.,service_request,high,active directory keep crash router code fail issue report user
+2252,There is a problem with Salesforce on the router. Error: 0x80070005. Issue reported by user.,software_bug,high,problem salesforce router error x issue report user
+1523,I can't log into Outlook from my tablet. It returns NET-503.,network_problem,critical,t log outlook tablet return net
+9123,There is a problem with Active Directory on the tablet. Error: FAIL-101. Occurs intermittently.,service_request,high,problem active directory tablet error fail occur intermittently
+5827,My mobile stopped working when I tried to use WiFi. Error displayed: 0x80070005. Needs immediate attention.,account_access_issue,high,mobile stop work try use wifi error display x need immediate attention
+9429,WiFi keeps crashing on my desktop. Code ERR42.,service_request,critical,wifi keep crash desktop code err
+100020,Password is correct but AD shows invalid credentials.,account_access_issue,critical,password correct ad show invalid credential
+1510,My mobile stopped working when I tried to use CRM Portal. Error displayed: 0x80070005.,security,high,mobile stop work try use crm portal error display x
+8367,Outlook keeps crashing on my router. Code FAIL-101. Needs immediate attention.,service_request,high,outlook keeps crash router code fail need immediate attention
+9128,There is a problem with Outlook on the tablet. Error: FAIL-101. Issue reported by user.,software_bug,high,problem outlook tablet error fail issue report user

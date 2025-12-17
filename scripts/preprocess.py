@@ -11,19 +11,31 @@ tqdm.pandas()
 # Map inconsistent category names
 CATEGORY_MAP = {
     "account/access issue": "account_access_issue",
-    "Hardware Issue": "hardware_issue",
+    "account issue": "account_access_issue",
+    "access issue": "account_access_issue",
+
+    "hardware issue": "hardware_issue",
+
     "network problem": "network_problem",
+    "network issue": "network_problem",
+
     "security": "security",
-    "Service Request": "service_request",
+
+    "service request": "service_request",
+
     "software bug": "software_bug",
+    "software issue": "software_bug",
+
     "other": "other"
 }
 
 def normalize_category(cat):
     if not isinstance(cat, str):
         return None
-    cat = cat.strip()
-    return CATEGORY_MAP.get(cat, None)  # return mapped or None
+
+    cat = cat.strip().lower()   
+    return CATEGORY_MAP.get(cat, cat)  
+
 
 def mask_pii(text):
     if not isinstance(text, str):

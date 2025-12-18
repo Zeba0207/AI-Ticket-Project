@@ -8,9 +8,9 @@ base = Path(__file__).resolve().parents[1]
 # Load unified TF-IDF vectorizer
 vectorizer = joblib.load(base / "models" / "tfidf.pkl")
 
-# Load trained models
-category_model = joblib.load(base / "models" / "category_model.pkl")
-priority_model = joblib.load(base / "models" / "priority_model.pkl")
+# Load Random Forest trained models
+category_model = joblib.load(base / "models" / "category_model_random_forest.pkl")
+priority_model = joblib.load(base / "models" / "priority_model_random_forest.pkl")
 
 def generate_ticket(text: str):
     """
@@ -22,10 +22,10 @@ def generate_ticket(text: str):
     # 1️⃣ Clean input text
     cleaned = clean_text(text)
 
-    # 2️⃣ Vectorize using the SAME TF-IDF vectorizer used in training
+    # 2️⃣ Vectorize
     X = vectorizer.transform([cleaned])
 
-    # 3️⃣ Make predictions
+    # 3️⃣ Predict
     category = category_model.predict(X)[0]
     priority = priority_model.predict(X)[0]
 
@@ -38,7 +38,7 @@ def generate_ticket(text: str):
 
 
 if __name__ == "__main__":
-    print("\n=== AI Ticket Prediction ===")
+    print("\n=== AI Ticket Prediction (Random Forest) ===")
     user_text = input("Enter ticket description: ")
 
     result = generate_ticket(user_text)

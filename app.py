@@ -1,17 +1,13 @@
 import streamlit as st
-import pickle
+import joblib
 from scripts.clean_text import clean_text
 
 # Load vectorizer
-with open("models/tfidf_vectorizer.pkl", "rb") as f:
-    vectorizer = pickle.load(f)
+vectorizer = joblib.load("models/tfidf.pkl")
 
-# Load models
-with open("models/category_model.pkl", "rb") as f:
-    category_model = pickle.load(f)
-
-with open("models/priority_model.pkl", "rb") as f:
-    priority_model = pickle.load(f)
+# Load Random Forest models
+category_model = joblib.load("models/category_model_random_forest.pkl")
+priority_model = joblib.load("models/priority_model_random_forest.pkl")
 
 st.set_page_config(page_title="AI Ticket Generator")
 

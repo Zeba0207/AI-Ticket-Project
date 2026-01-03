@@ -1,0 +1,9 @@
+{
+    "ticket_id": "002bc542",
+    "title": "Network Issue",
+    "description": "VPN keeps disconnecting every hour.\n",
+    "category": "Network",
+    "priority": "Medium",
+    "category_confidence": 0.77,
+    "priority_confidence": 0.66
+}

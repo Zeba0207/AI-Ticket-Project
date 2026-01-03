@@ -1,3 +1,13 @@
 {
-    "random_forest_accuracy": 0.7639423076923076
+    "model": "LinearSVC",
+    "accuracy": 0.5144,
+    "macro_f1": 0.506,
+    "labels": [
+        "Access",
+        "Hardware",
+        "Network",
+        "Security",
+        "Software"
+    ],
+    "notes": "Linear SVM + optimized TF-IDF, noisy categories removed"
 }

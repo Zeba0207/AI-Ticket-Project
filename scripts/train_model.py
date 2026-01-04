@@ -1,143 +1,126 @@
+import pickle
 import pandas as pd
 from pathlib import Path
+from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import accuracy_score, classification_report, f1_score
 from sklearn.svm import LinearSVC
-from sklearn.ensemble import RandomForestClassifier
-import joblib, json
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score, classification_report
 
-# ===================================
-# Base project directory
-# ===================================
-base = Path(__file__).resolve().parents[1]
+# ✅ Correct import (same folder)
+from clean_text import clean_text
 
-# ===================================
-# Load dataset splits
-# ===================================
-train = pd.read_csv(base / "data/splits/train.csv")
-test = pd.read_csv(base / "data/splits/test.csv")
+# =====================================================
+# PATHS
+# =====================================================
+BASE_DIR = Path(__file__).resolve().parents[1]
+DATA_PATH = BASE_DIR / "data" / "cleaned" / "final_dataset_cleaned.csv"
+MODEL_DIR = BASE_DIR / "models"
+MODEL_DIR.mkdir(exist_ok=True)
 
-# ===================================
-# STEP 1: CATEGORY NORMALIZATION (NO NOISE)
-# ===================================
-CATEGORY_MAP = {
-    "Service Request": "Software",
-    "Software Bug": "Software",
-    "Account/Access Issue": "Access",
-    "Hardware Issue": "Hardware",
-    "Network Problem": "Network",
-    "Security": "Security"
-}
+# =====================================================
+# LOAD DATASET
+# =====================================================
+df = pd.read_csv(DATA_PATH)
 
-train["category"] = train["category"].map(CATEGORY_MAP)
-test["category"] = test["category"].map(CATEGORY_MAP)
+# Required columns check
+required_cols = ["category", "priority"]
+missing = [c for c in required_cols if c not in df.columns]
+if missing:
+    raise ValueError(f"Missing required columns: {missing}")
 
-# Remove rows with undefined / noisy categories
-train = train.dropna(subset=["category"])
-test = test.dropna(subset=["category"])
+# =====================================================
+# CREATE text_clean
+# =====================================================
+if "text_clean" not in df.columns:
+    if "text" in df.columns:
+        source_col = "text"
+    elif "description" in df.columns:
+        source_col = "description"
+    else:
+        raise ValueError("No text column found")
 
-# ===================================
-# STEP 2: TF-IDF (OPTIMIZED FOR IT TEXT)
-# ===================================
-vectorizer = TfidfVectorizer(
+    df["text_clean"] = df[source_col].astype(str).apply(clean_text)
+
+df = df.dropna(subset=["text_clean", "category", "priority"])
+
+# Normalize labels
+df["category"] = df["category"].astype(str).str.strip().str.lower()
+df["priority"] = df["priority"].astype(str).str.strip().str.lower()
+
+print("\nDataset size:", df.shape)
+
+# =====================================================
+# LABEL ENCODING
+# =====================================================
+category_encoder = LabelEncoder()
+priority_encoder = LabelEncoder()
+
+df["category_label"] = category_encoder.fit_transform(df["category"])
+df["priority_label"] = priority_encoder.fit_transform(df["priority"])
+
+pickle.dump(category_encoder, open(MODEL_DIR / "category_encoder.pkl", "wb"))
+pickle.dump(priority_encoder, open(MODEL_DIR / "priority_encoder.pkl", "wb"))
+
+# =====================================================
+# TF-IDF
+# =====================================================
+tfidf = TfidfVectorizer(
     max_features=20000,
     ngram_range=(1, 2),
     min_df=3,
-    max_df=0.8,
+    max_df=0.85,
     stop_words="english",
     sublinear_tf=True
 )
 
-X_train = vectorizer.fit_transform(train["text_clean"])
-X_test = vectorizer.transform(test["text_clean"])
+X = tfidf.fit_transform(df["text_clean"])
+pickle.dump(tfidf, open(MODEL_DIR / "tfidf_vectorizer.pkl", "wb"))
 
-# Labels
-y_train_cat = train["category"]
-y_test_cat = test["category"]
+# =====================================================
+# CATEGORY MODEL
+# =====================================================
+X_train, X_test, y_train, y_test = train_test_split(
+    X, df["category_label"],
+    test_size=0.2,
+    stratify=df["category_label"],
+    random_state=42
+)
 
-y_train_pri = train["priority"]
-y_test_pri = test["priority"]
+category_model = LinearSVC(C=1.5, class_weight="balanced", random_state=42)
+category_model.fit(X_train, y_train)
 
-print("\nCategory distribution (TRAIN):")
-print(y_train_cat.value_counts())
+y_pred = category_model.predict(X_test)
+print("\nCATEGORY MODEL RESULTS")
+print("Accuracy:", round(accuracy_score(y_test, y_pred), 4))
+print(classification_report(y_test, y_pred, target_names=category_encoder.classes_))
 
-# ===================================
-# STEP 3: CATEGORY MODEL → LINEAR SVM
-# ===================================
-print("\nTraining Category Model → Linear SVM")
+pickle.dump(category_model, open(MODEL_DIR / "category_model.pkl", "wb"))
 
-category_model = LinearSVC(
-    C=1.5,                  # tuned for overlap
+# =====================================================
+# PRIORITY MODEL
+# =====================================================
+Xp_train, Xp_test, yp_train, yp_test = train_test_split(
+    X, df["priority_label"],
+    test_size=0.2,
+    stratify=df["priority_label"],
+    random_state=42
+)
+
+priority_model = LogisticRegression(
+    max_iter=1000,
+    n_jobs=-1,
     class_weight="balanced"
 )
 
-category_model.fit(X_train, y_train_cat)
-category_preds = category_model.predict(X_test)
+priority_model.fit(Xp_train, yp_train)
+yp_pred = priority_model.predict(Xp_test)
 
-category_acc = accuracy_score(y_test_cat, category_preds)
-category_f1 = f1_score(y_test_cat, category_preds, average="macro")
+print("\nPRIORITY MODEL RESULTS")
+print("Accuracy:", round(accuracy_score(yp_test, yp_pred), 4))
+print(classification_report(yp_test, yp_pred, target_names=priority_encoder.classes_))
 
-print("\nCategory Accuracy (SVM):", round(category_acc, 4))
-print("Category Macro F1:", round(category_f1, 4))
-print("\nCategory Classification Report:\n")
-print(classification_report(y_test_cat, category_preds))
+pickle.dump(priority_model, open(MODEL_DIR / "priority_model.pkl", "wb"))
 
-with open(base / "models/category_metrics.json", "w") as f:
-    json.dump(
-        {
-            "model": "LinearSVC",
-            "accuracy": round(category_acc, 4),
-            "macro_f1": round(category_f1, 4),
-            "labels": sorted(y_train_cat.unique().tolist()),
-            "notes": "Linear SVM + optimized TF-IDF, noisy categories removed"
-        },
-        f,
-        indent=4
-    )
-
-joblib.dump(
-    category_model,
-    base / "models/category_model.pkl"
-)
-
-# ===================================
-# STEP 4: PRIORITY MODEL → RANDOM FOREST
-# ===================================
-print("\nTraining Priority Model → Random Forest")
-
-priority_model = RandomForestClassifier(
-    n_estimators=300,
-    max_depth=30,
-    class_weight="balanced",
-    random_state=42,
-    n_jobs=-1
-)
-
-priority_model.fit(X_train, y_train_pri)
-priority_preds = priority_model.predict(X_test)
-
-priority_acc = accuracy_score(y_test_pri, priority_preds)
-
-print("Priority Accuracy (RF):", round(priority_acc, 4))
-
-with open(base / "models/priority_metrics.json", "w") as f:
-    json.dump(
-        {
-            "model": "RandomForest",
-            "accuracy": round(priority_acc, 4)
-        },
-        f,
-        indent=4
-    )
-
-joblib.dump(
-    priority_model,
-    base / "models/priority_model.pkl"
-)
-
-# ===================================
-# Save Vectorizer
-# ===================================
-joblib.dump(vectorizer, base / "models/tfidf.pkl")
-
-print("\n✔ Training Complete! (Category: Linear SVM | Priority: Random Forest)")
+print("\n✅ Training complete for CATEGORY and PRIORITY models.")

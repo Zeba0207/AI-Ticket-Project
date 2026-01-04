@@ -1,4 +1,10 @@
 {
-    "model": "RandomForest",
-    "accuracy": 0.9283
+    "model": "RandomForestClassifier",
+    "accuracy": 0.9255,
+    "labels": [
+        "critical",
+        "high",
+        "low",
+        "medium"
+    ]
 }

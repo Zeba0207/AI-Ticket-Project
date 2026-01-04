@@ -1,13 +1,15 @@
 {
     "model": "LinearSVC",
-    "accuracy": 0.5144,
-    "macro_f1": 0.506,
+    "accuracy": 0.4769,
+    "macro_f1": 0.4768,
     "labels": [
-        "Access",
-        "Hardware",
-        "Network",
-        "Security",
-        "Software"
+        "account_access_issue",
+        "hardware_issue",
+        "network_problem",
+        "other",
+        "security",
+        "service_request",
+        "software_bug"
     ],
-    "notes": "Linear SVM + optimized TF-IDF, noisy categories removed"
+    "notes": "Linear SVM with TF-IDF (1,2)-grams, balanced classes"
 }

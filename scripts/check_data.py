@@ -1,12 +1,22 @@
-import pandas as pd
+import re
+from html import unescape
 
-df = pd.read_csv("../data/annotated/milestone1_labeled.csv")
+def clean_text(text: str) -> str:
+    if not isinstance(text, str):
+        return ""
 
-print("\n--- Columns in the dataset ---")
-print(df.columns)
+    text = unescape(text)
+    text = text.lower()
 
-print("\n--- First 5 rows ---")
-print(df.head())
+    # Remove personal info
+    text = re.sub(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', ' ', text)
+    text = re.sub(r'\b\d{10}\b', ' ', text)
+    text = re.sub(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', ' ', text)
 
-print("\n--- Shape of dataset (rows, columns) ---")
-print(df.shape)
+    # Keep letters + numbers
+    text = re.sub(r'[^a-z0-9\s]', ' ', text)
+
+    # Normalize spaces
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    return text

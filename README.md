@@ -1,30 +1,32 @@
 # 🚀 AI-Powered Ticket Creation & Categorization System  
 
-Modern helpdesks receive thousands of IT support messages every day. Most messages are unstructured and require manual reading, classification, and ticket creation by support teams.
+Modern helpdesks receive thousands of IT support messages every day. These messages are often unstructured and require manual effort to read, classify, and convert into support tickets.
 
-This project automates that entire process using **NLP + Machine Learning**, enabling faster and more consistent ticket creation.
+This project automates the entire process using **Natural Language Processing (NLP)** and **Machine Learning**, enabling faster, consistent, and reliable ticket creation with minimal human intervention.
 
 ---
 
 ## 📌 Problem Statement
-Support agents manually read and classify thousands of incoming user messages daily, which results in:
+
+Support agents manually read and classify thousands of incoming user messages daily, which leads to:
 
 - Delays in ticket creation  
-- Human errors  
-- Inconsistent tagging  
-- Increased workload  
+- Human errors and inconsistent tagging  
+- Increased workload for support teams  
 
-### 🎯 Goal  
-Automatically analyze user messages and generate **clean, structured tickets** with **minimum human involvement**.
+### 🎯 Goal
+Automatically analyze user messages and generate **structured IT support tickets** with **minimum human involvement**.
 
 ---
 
 ## 🎯 Objectives
-✔ Classify user messages into predefined categories (e.g., Hardware Issue, Network Issue, Software Bug, etc.)  
-✔ Predict priority level (Low / Medium / High / Critical)  
-✔ Clean & preprocess user text (PII masking + NLP pipeline)  
-✔ Auto-generate ticket fields (category, priority, cleaned text)  
-✔ Allow prediction for new messages (CLI ticket generator)
+
+- Clean and preprocess raw user messages (PII masking + NLP pipeline)  
+- Classify messages into predefined ticket categories  
+- Predict ticket priority (Low / Medium / High)  
+- Extract relevant entities (devices, usernames, error codes)  
+- Generate a complete, structured ticket in JSON-ready format  
+- Enable predictions for new messages using a CLI-based ticket generator  
 
 ---
 
@@ -33,178 +35,191 @@ Automatically analyze user messages and generate **clean, structured tickets** w
 ```bash
 AI-Ticket-Project/
 │── data/
-│   ├── raw/
-│   ├── cleaned/
-│   ├── splits/
-│   └── annotated/
+│   ├── raw/                   # Raw input data
+│   ├── cleaned/               # Final cleaned dataset
+│   ├── splits/                # Train/Validation/Test splits
+│   └── annotated/             # Annotated data from Label Studio
 │
 │── models/
 │   ├── category_model.pkl
 │   ├── priority_model.pkl
-│   ├── tfidf.pkl
-│   ├── category_metrics.json
-│   └── priority_metrics.json
+│   ├── tfidf_vectorizer.pkl
+│   ├── category_encoder.pkl
+│   └── priority_encoder.pkl
 │
 │── scripts/
-│   ├── clean_text.py
-│   ├── preprocess.py
-│   ├── make_splits.py
-│   ├── train_model.py
-│   ├── generate_ticket.py
-│   ├── predict.py
-│   ├── check_vectorizers.py
-│   └── distribution_check.py
+│   ├── clean_text.py          # Text preprocessing module
+│   ├── entity_extraction.py   # Named Entity Extraction (NER)
+│   ├── make_splits.py         # Dataset splitting logic
+│   ├── train_model.py         # Model training & evaluation
+│   ├── generate_ticket.py     # Ticket Generation Engine
+│   └── predict.py             # CLI-based prediction utility
 │
-│── notebooks/
-│── annotation_guidelines/
-│── docs/
+│── notebooks/                 # Exploratory analysis
+│── docs/                      # Documentation and notes
 └── README.md
-```
+---
+📊 Dataset
 
+The dataset contains realistic IT support messages such as:
+
+Hardware issues
+
+Login and access failures
+
+Network connectivity problems
+
+Software/application errors
+
+Purchase and service requests
+
+Dataset Fields
+
+text – Raw user message
+
+text_clean – Cleaned and normalized text
+
+category – Issue category label
+
+priority – Ticket priority level
+
+Dataset annotation was performed using Label Studio following predefined guidelines.
 ---
 
-## 📊 Dataset
-The dataset contains realistic IT support messages including:
+⚖️ Category Distribution & Imbalance Handling
 
-- Hardware issues  
-- Login/access issues  
-- Network failures  
-- System/application errors  
-- Password reset requests  
-- Service requests  
+The dataset showed moderate class imbalance across issue categories.
 
-### Dataset Fields
-- **text** – raw user message  
-- **clean_text** – processed text  
-- **category** – assigned issue category  
-- **priority** – low/medium/high/critical  
+Steps taken to address this:
 
-Annotation was completed using **Label Studio**.
+Class Weights: Applied during model training
 
+Stratified Splits: Used for Train/Validation/Test data
+
+Evaluation Metrics: Precision, Recall, and F1-score monitored per class
+
+No synthetic oversampling (e.g., SMOTE) was applied to avoid introducing artificial text samples.
 ---
-### Category Distribution & Class Imbalance Handling
+🧠 NLP Models Used
+🔹 Feature Extraction
 
-We analyzed the distribution of ticket categories using `category_distribution.csv`.
-The dataset is moderately imbalanced — two categories (such as *service_request* and *hardware_issue*)
-are significantly more frequent than others (e.g., *network_issue*, *access_issue*, etc.).
+TF-IDF Vectorizer
 
-To address this imbalance during model training, the following steps were taken:
+Uni-grams, Bi-grams, Tri-grams
 
-- **Class Weights:** Logistic Regression was trained with `class_weight='balanced'` to give minority classes more influence.
-- **Stratified Splits:** Train/Validation/Test splits were stratified on the category column to preserve class proportion.
-- **Monitoring Metrics:** Precision, recall, and F1 scores were evaluated per class to ensure minority-class performance.
+Stopword removal and sublinear TF scaling
 
-No SMOTE or oversampling was applied at this stage because the TF-IDF + class-weight approach
-already provided stable and meaningful results without introducing synthetic text.
+🔹 Category Classification
 
+Linear Support Vector Machine (LinearSVC)
+
+Hyperparameter tuning using GridSearchCV
+
+Balanced class weights for robustness
+
+🔹 Priority Prediction
+
+Logistic Regression
+
+Balanced class weights
+
+Predicts Low / Medium / High priority
+
+🔹 Named Entity Recognition (NER)
+
+Pattern-based extraction of:
+
+Devices (laptop, mouse, printer, etc.)
+
+User references
+
+Error codes
 ---
-
-## 🧠 Models Used
-
-### 🔹 Text Classification Models
-- **TF-IDF Vectorizer (8000 features)**  
-- **Logistic Regression (balanced class weights)**  
-- Metrics saved as JSON for documentation  
-
-### 🔹 Priority Prediction
-- Logistic Regression model  
-- Uses same TF-IDF features  
-
-### 🔹 Preprocessing & Cleaning
-Performed by:
-- `clean_text.py`
-- `preprocess.py`
-
-Includes:
-- Lowercasing  
-- Special character removal  
-- PII masking (email, phone, IP)  
-- Tokenization  
-- Stopword removal  
-- Lemmatization  
-
----
-
-## 🔁 End-to-End Pipeline
-
-```
+🔁 End-to-End Pipeline
 User Message
      ↓
-Text Preprocessing (clean_text.py)
+Text Cleaning & Normalization
      ↓
-Train/Val/Test Split (make_splits.py)
+TF-IDF Feature Extraction
      ↓
-Model Training (train_model.py)
+Category & Priority Prediction
      ↓
-Category + Priority Prediction
+Entity Extraction (NER)
      ↓
-Ticket Generation (generate_ticket.py)
-```
-
+Structured Ticket Generation (JSON)
 ---
-
 ## 🛠 Technologies Used
 
-| Category         | Tools / Libraries                   |
-|------------------|--------------------------------------|
-| Machine Learning | Scikit-Learn, Logistic Regression    |
-| NLP              | spaCy, Regex, Lemmatization         |
-| Annotation       | Label Studio                        |
-| Programming      | Python, Pandas, NumPy               |
-| Storage          | CSV, JSON                           |
+| Category          | Tools / Libraries                          |
+|-------------------|--------------------------------------------|
+| Programming       | Python                                     |
+| NLP               | Scikit-learn, Regex                        |
+| Machine Learning  | Linear SVM, Logistic Regression            |
+| Data Handling     | Pandas, NumPy                              |
+| Annotation        | Label Studio                               |
+| Evaluation        | Accuracy, Precision, Recall, F1-score     |
+## ✅ Modules Completed
 
----
+| Module   | Description                         | Status        |
+|----------|-------------------------------------|---------------|
+| Module 1 | Data Collection & Preprocessing     | ✅ Completed  |
+| Module 2 | NLP Model Development + NER          | ✅ Completed  |
+| Module 3 | Ticket Generation Engine             | ✅ Completed  |
+| Module 4 | UI & Integration Layer               | ⏳ Planned    |
 
-## 📅 Milestones Completed
+🧪 Current Project Status
 
-### ✅ **Milestone 1 – Dataset & Annotation**
-✔ Folder structure created  
-✔ Raw & sample data explored  
-✔ Label Studio setup  
-✔ Annotation guidelines prepared  
-✔ Labeled dataset exported  
+Dataset cleaned and standardized
 
-### ✅ **Milestone 2 – Preprocessing & Text Cleaning**
-✔ PII masking  
-✔ Lemmatization + stopword removal  
-✔ Cleaned dataset generated  
-✔ Consistency checks performed  
+Models trained and evaluated
 
-### ✅ **Milestone 3 – Model Development & Ticket Prediction**
-✔ TF-IDF vectorizer created  
-✔ Train/Val/Test split  
-✔ Category model trained  
-✔ Priority model trained  
-✔ Evaluation metrics saved  
-✔ Ticket prediction script working  
-✔ Distribution checks added  
+Confusion matrices generated
 
-You have successfully reproduced the full ML pipeline and prediction workflow 🎉
+Hybrid rule-based + ML classification implemented
 
----
+Ticket generation engine validated
 
-## 🧪 Current Status
-✔ Dataset cleaned  
-✔ Train/Val/Test split complete  
-✔ Models trained and evaluated  
-✔ Category & Priority prediction working  
-✔ Ticket generator tested and validated  
+JSON-ready structured ticket output achieved
 
-You now have a **fully functional AI Ticket Classification System**.
+This results in a fully functional AI-powered IT ticketing system.
 
----
+🚀 How to Run the Project
+Train the Models
+python scripts/train_model.py
 
-## 🚀 Future Enhancements
-- BERT / Transformer-based text classifier  
-- Flask/Streamlit UI for real-time predictions  
-- Integration with ServiceNow / Jira  
-- Confusion matrix visualization  
-- Multi-language support  
-- API deployment (FastAPI)  
+Generate a Ticket (CLI)
+python scripts/generate_ticket.py
 
----
+🧾 Example Output (JSON-ready)
+{
+  "title": "Purchase Issue",
+  "category": "purchase",
+  "priority": "low",
+  "entities": {
+    "devices": ["mouse"],
+    "usernames": [],
+    "error_codes": []
+  },
+  "status": "open",
+  "created_at": "2026-01-04T22:34:12"
+}
 
-## 👩‍💻 Author
-**Shaik Zeba**  
-AI Ticket Project – 2025  
+🚀 Future Enhancements
 
+Streamlit / Flask Web UI (Module 4)
+
+Transformer-based models (BERT)
+
+REST API using FastAPI
+
+Database integration (MongoDB / PostgreSQL)
+
+Prediction confidence scores
+
+Multi-language support
+
+👩‍💻 Author
+
+Shaik Zeba
+AI-Powered Ticket Creation & Categorization System
+2025

@@ -59,31 +59,25 @@ AI-Ticket-Project/
 │── docs/                      # Documentation and notes
 └── README.md
 ---
-📊 Dataset
+## 📊 Dataset
 
 The dataset contains realistic IT support messages such as:
 
-Hardware issues
+- Hardware issues  
+- Login and access failures  
+- Network connectivity problems  
+- Software / application errors  
+- Purchase and service requests  
 
-Login and access failures
+### Dataset Fields
 
-Network connectivity problems
+- **text** – Raw user message  
+- **text_clean** – Cleaned and normalized text  
+- **category** – Issue category label  
+- **priority** – Ticket priority level  
 
-Software/application errors
+Dataset annotation was performed using **Label Studio** following predefined guidelines.
 
-Purchase and service requests
-
-Dataset Fields
-
-text – Raw user message
-
-text_clean – Cleaned and normalized text
-
-category – Issue category label
-
-priority – Ticket priority level
-
-Dataset annotation was performed using Label Studio following predefined guidelines.
 ---
 
 ⚖️ Category Distribution & Imbalance Handling

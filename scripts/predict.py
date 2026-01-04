@@ -1,77 +1,80 @@
 import joblib
 from pathlib import Path
-import pandas as pd
+from clean_text import clean_text
 
-# ==============================
-# Load paths & models
-# ==============================
-base = Path(__file__).resolve().parents[1]
+# ======================================
+# BASE PATH
+# ======================================
+BASE_DIR = Path(__file__).resolve().parents[1]
+MODEL_DIR = BASE_DIR / "models"
 
-vectorizer = joblib.load(base / "models" / "tfidf.pkl")
-model = joblib.load(base / "models" / "category_model.pkl")
+# ======================================
+# LOAD MODELS & ENCODERS
+# ======================================
+vectorizer = joblib.load(MODEL_DIR / "tfidf_vectorizer.pkl")
 
-# ==============================
-# Rule-based category detection
-# (DATASET-ALIGNED, ORDER MATTERS)
-# ==============================
-def rule_based_category(text):
-    t = text.lower()
+category_model = joblib.load(MODEL_DIR / "category_model.pkl")
+priority_model = joblib.load(MODEL_DIR / "priority_model.pkl")
 
-    # -------- ACCESS --------
-    if any(k in t for k in [
-        "unable to access", "cannot access", "can't access",
-        "login", "log in", "log into", "signin", "sign in",
-        "access denied", "credentials", "otp"
-    ]):
-        return "Access"
+category_encoder = joblib.load(MODEL_DIR / "category_encoder.pkl")
+priority_encoder = joblib.load(MODEL_DIR / "priority_encoder.pkl")
 
-    # -------- NETWORK --------
-    if any(k in t for k in [
-        "vpn", "wifi", "wi-fi", "internet", "network",
-        "lan", "connection", "disconnect", "slow internet"
-    ]):
-        return "Network"
+print("Models & vectorizer loaded successfully.")
 
-    # -------- HARDWARE --------
-    if any(k in t for k in [
-        "laptop", "desktop", "tablet",
-        "keyboard", "mouse", "screen",
-        "monitor", "printer", "hardware"
-    ]):
-        return "Hardware"
+# ======================================
+# PREDICTION FUNCTION
+# ======================================
+def predict_ticket(text: str):
+    """
+    Predicts category and priority for a ticket description
+    """
 
-    # -------- SOFTWARE --------
-    if any(k in t for k in [
-        "application", "app", "software",
-        "outlook", "zoom", "crm", "portal",
-        "not opening", "fails to load",
-        "crashing", "error"
-    ]):
-        return "Software"
+    # 1️⃣ Clean input text (same as training)
+    cleaned = clean_text(text)
 
-    # -------- SECURITY --------
-    if any(k in t for k in [
-        "virus", "malware", "security",
-        "firewall", "phishing", "ransomware"
-    ]):
-        return "Security"
+    if not cleaned.strip():
+        return {
+            "original_text": text,
+            "cleaned_text": cleaned,
+            "predicted_category": "miscellaneous",
+            "predicted_priority": "low"
+        }
 
-    return None
+    # 2️⃣ Vectorize
+    X = vectorizer.transform([cleaned])
 
-# ==============================
-# Hybrid prediction (Rules + ML)
-# ==============================
-def predict(text):
-    rule_pred = rule_based_category(text)
-    if rule_pred:
-        return rule_pred
+    # 3️⃣ CATEGORY prediction (with safety fallback)
+    scores = category_model.decision_function(X)
 
-    X = vectorizer.transform(pd.Series([text]))
-    return model.predict(X)[0]
+    if scores.max() < 0.2:
+        category = "miscellaneous"
+    else:
+        cat_label = category_model.predict(X)
+        category = category_encoder.inverse_transform(cat_label)[0]
 
-# ==============================
-# CLI test
-# ==============================
+    # 4️⃣ PRIORITY prediction
+    pri_label = priority_model.predict(X)
+    priority = priority_encoder.inverse_transform(pri_label)[0]
+
+    return {
+        "original_text": text,
+        "cleaned_text": cleaned,
+        "predicted_category": category,
+        "predicted_priority": priority
+    }
+
+# ======================================
+# CLI TEST
+# ======================================
 if __name__ == "__main__":
-    t = input("Enter ticket description: ")
-    print("\nPredicted Category:", predict(t))
+    print("\n=== AI Ticket Prediction ===")
+    user_text = input("Enter ticket description: ")
+
+    result = predict_ticket(user_text)
+
+    print("\n--- PREDICTION RESULT ---")
+    print("Original Text :", result["original_text"])
+    print("Cleaned Text  :", result["cleaned_text"])
+    print("Category      :", result["predicted_category"])
+    print("Priority      :", result["predicted_priority"])
+    print("-------------------------\n")

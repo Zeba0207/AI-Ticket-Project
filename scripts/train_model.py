@@ -124,7 +124,7 @@ print("Best SVM parameters:", grid.best_params_)
 
 yc_pred = category_model.predict(Xc_test)
 
-print("\nCATEGORY RESULTS")
+print("\nCATEGORY RESULTS (BEST LINEAR SVM)")
 print("Accuracy:", round(accuracy_score(yc_test, yc_pred), 4))
 print(classification_report(
     yc_test,
@@ -146,7 +146,7 @@ sns.heatmap(
     xticklabels=category_encoder.classes_,
     yticklabels=category_encoder.classes_
 )
-plt.title("Category Confusion Matrix")
+plt.title("Category Confusion Matrix (Linear SVM)")
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.tight_layout()
@@ -209,7 +209,8 @@ plt.show()
 # ==============================
 print("\n--- CATEGORY MODEL COMPARISON ---")
 
-models = {
+comparison_models = {
+    "Linear SVM (Best)": category_model,
     "Logistic Regression": LogisticRegression(
         max_iter=1000,
         class_weight="balanced",
@@ -223,10 +224,9 @@ models = {
     )
 }
 
-for name, model in models.items():
-    print(f"\n{name}")
+for name, model in comparison_models.items():
     model.fit(Xc_train, yc_train)
     preds = model.predict(Xc_test)
-    print("Accuracy:", round(accuracy_score(yc_test, preds), 4))
+    print(f"{name} Accuracy:", round(accuracy_score(yc_test, preds), 4))
 
 print("\n✅ Training complete with tuning, comparison, and confusion matrices.")

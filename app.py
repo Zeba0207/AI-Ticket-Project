@@ -2,136 +2,160 @@ import streamlit as st
 import joblib
 import json
 import uuid
+from pathlib import Path
+from datetime import datetime
+
 from scripts.clean_text import clean_text
+from scripts.entity_extraction import extract_entities
 
-# -----------------------------------
-# Load vectorizer and trained models
-# -----------------------------------
-vectorizer = joblib.load("models/tfidf.pkl")
-category_model = joblib.load("models/category_model_random_forest.pkl")
-priority_model = joblib.load("models/priority_model_random_forest.pkl")
+# =====================================
+# BASE DIRECTORY
+# =====================================
+BASE_DIR = Path(__file__).resolve().parent
 
-# -----------------------------------
-# Allowed labels (consistency)
-# -----------------------------------
-VALID_CATEGORIES = ["Network", "Hardware", "Software", "Billing", "Account", "Other"]
-VALID_PRIORITIES = ["Low", "Medium", "High"]
+# =====================================
+# LOAD MODELS, VECTORIZER, ENCODERS
+# =====================================
+vectorizer = joblib.load(BASE_DIR / "models" / "tfidf_vectorizer.pkl")
+category_model = joblib.load(BASE_DIR / "models" / "category_model.pkl")
+priority_model = joblib.load(BASE_DIR / "models" / "priority_model.pkl")
 
-# -----------------------------------
-# Keyword-based category mapping
-# -----------------------------------
-CATEGORY_MAPPING = {
-    "wifi": "Network",
-    "internet": "Network",
-    "network": "Network",
-    "vpn": "Network",
+category_encoder = joblib.load(BASE_DIR / "models" / "category_encoder.pkl")
+priority_encoder = joblib.load(BASE_DIR / "models" / "priority_encoder.pkl")
 
-    "laptop": "Hardware",
-    "battery": "Hardware",
-    "screen": "Hardware",
-    "keyboard": "Hardware",
-    "printer": "Hardware",
+# =====================================
+# RULE-BASED HELPERS (HIGH CONFIDENCE)
+# =====================================
+def rule_based_category(text: str):
+    t = text.lower()
 
-    "outlook": "Software",
-    "application": "Software",
-    "software": "Software",
-    "email": "Software",
+    # INTENT FIRST (important)
+    if any(k in t for k in ["purchase", "buy", "request", "procure"]):
+        return "purchase"
 
-    "login": "Account",
-    "password": "Account",
-    "account": "Account",
+    if any(k in t for k in ["hr", "leave", "salary", "payroll"]):
+        return "hr support"
 
-    "bill": "Billing",
-    "invoice": "Billing",
-    "payment": "Billing",
-    "charged": "Billing"
-}
+    if any(k in t for k in ["login", "signin", "access denied", "otp", "credential"]):
+        return "access"
 
-# -----------------------------------
-# Streamlit UI
-# -----------------------------------
-st.set_page_config(page_title="AI Ticket Generator")
+    if any(k in t for k in ["vpn", "wifi", "network", "disconnect", "slow internet"]):
+        return "network"
+
+    if any(k in t for k in ["laptop", "mouse", "keyboard", "printer", "screen"]):
+        return "hardware"
+
+    return None
+
+
+def detect_urgent_intent(text: str):
+    urgent_keywords = [
+        "unable to access", "system down", "blocked",
+        "critical", "immediately", "asap", "not working",
+        "urgent", "failure", "crash"
+    ]
+    return any(k in text.lower() for k in urgent_keywords)
+
+
+# =====================================
+# STREAMLIT UI
+# =====================================
+st.set_page_config(page_title="AI Ticket Generator", layout="centered")
+
 st.title("🎫 AI-Powered Ticket Generation System")
+st.write(
+    "Automatically converts user issues into structured IT support tickets "
+    "using NLP and Machine Learning."
+)
 
 user_input = st.text_area(
     "Describe your issue:",
-    placeholder="e.g. My office WiFi keeps disconnecting every 10 minutes"
+    placeholder="e.g. Laptop not turning on after Windows update, urgent for client demo"
 )
 
-# -----------------------------------
-# Ticket generation
-# -----------------------------------
+# =====================================
+# BUTTON ACTION
+# =====================================
 if st.button("Generate Ticket"):
 
-    if user_input.strip() == "":
+    # ---------------- INPUT VALIDATION ----------------
+    if not user_input.strip():
         st.warning("Please enter an issue description.")
         st.stop()
 
-    # Clean text
-    cleaned_text = clean_text(user_input)
-
-    # Edge-case handling
-    if len(cleaned_text.split()) < 3:
+    if len(user_input.split()) < 4:
         st.warning(
-            "Please provide more details about the issue for accurate ticket generation."
+            "Please provide more details (issue + context + urgency) for accurate prediction."
         )
         st.stop()
 
-    # Vectorize
-    vectorized_text = vectorizer.transform([cleaned_text])
+    # ---------------- PREPROCESS ----------------
+    cleaned_text = clean_text(user_input)
 
-    # ML Predictions
-    category = category_model.predict(vectorized_text)[0]
-    priority = priority_model.predict(vectorized_text)[0]
+    if not cleaned_text.strip():
+        st.warning("Input text could not be processed.")
+        st.stop()
 
-    # Confidence scores
-    category_probs = category_model.predict_proba(vectorized_text)[0]
-    priority_probs = priority_model.predict_proba(vectorized_text)[0]
+    # ---------------- VECTORIZE ----------------
+    X = vectorizer.transform([cleaned_text])
 
-    category_confidence = max(category_probs)
-    priority_confidence = max(priority_probs)
+    # ---------------- CATEGORY ----------------
+    rule_cat = rule_based_category(cleaned_text)
 
-    # -----------------------------------
-    # Rule-based category correction
-    # -----------------------------------
-    for keyword, mapped_category in CATEGORY_MAPPING.items():
-        if keyword in cleaned_text:
-            category = mapped_category
-            break
+    if rule_cat:
+        category = rule_cat
+        confidence = 1.0
+    else:
+        scores = category_model.decision_function(X)
+        confidence = float(scores.max())
 
-    # Final safety check
-    if category not in VALID_CATEGORIES:
-        category = "Other"
+        category = category_encoder.inverse_transform(
+            category_model.predict(X)
+        )[0]
 
-    if priority not in VALID_PRIORITIES:
-        priority = "Medium"
+    # ---------------- PRIORITY ----------------
+    priority = priority_encoder.inverse_transform(
+        priority_model.predict(X)
+    )[0]
 
-    # -----------------------------------
-    # Structured JSON Ticket (Module 3)
-    # -----------------------------------
+    # Urgent intent override
+    if detect_urgent_intent(user_input):
+        priority = "high"
+
+    # ---------------- ENTITY EXTRACTION ----------------
+    entities = extract_entities(user_input)
+
+    # ---------------- TICKET JSON ----------------
     ticket = {
         "ticket_id": str(uuid.uuid4())[:8],
-        "title": f"{category} Issue",
+        "title": f"{category.capitalize()} Issue",
         "description": user_input,
+        "cleaned_description": cleaned_text,
         "category": category,
         "priority": priority,
-        "category_confidence": round(category_confidence, 2),
-        "priority_confidence": round(priority_confidence, 2)
+        "confidence_score": round(confidence, 3),
+        "entities": entities,
+        "status": "open",
+        "created_at": datetime.now().isoformat()
     }
 
-    # -----------------------------------
-    # UI Output
-    # -----------------------------------
-    st.success("Ticket Generated Successfully ✅")
+    # =====================================
+    # DISPLAY OUTPUT
+    # =====================================
+    st.success("Ticket generated successfully ✅")
 
+    st.subheader("📌 Ticket Summary")
     st.write("**Category:**", category)
     st.write("**Priority:**", priority)
-    st.write("**Category Confidence:**", f"{category_confidence:.2f}")
-    st.write("**Priority Confidence:**", f"{priority_confidence:.2f}")
+    st.write("**Confidence Score:**", round(confidence, 3))
 
-    st.subheader("📄 Generated Ticket (JSON)")
+    st.subheader("🧾 Generated Ticket (JSON)")
     st.json(ticket)
 
-    # Optional: save ticket locally
-    with open("generated_ticket.json", "w") as f:
-        json.dump(ticket, f, indent=4)
+    # Optional download
+    st.download_button(
+        label="📥 Download Ticket as JSON",
+        data=json.dumps(ticket, indent=4),
+        file_name="generated_ticket.json",
+        mime="application/json"
+    )

@@ -1,33 +1,79 @@
-# 🚀 AI-Powered Ticket Creation & Categorization System
+# 🚀 AI-Powered Ticket Management System
 
-Modern helpdesks receive thousands of IT support messages every day. These messages are often unstructured and require manual effort to read, classify, and convert into support tickets.
+Modern IT helpdesks receive thousands of unstructured support requests every day.  
+Manually reading, classifying, prioritizing, and tracking these requests leads to delays, human errors, and SLA breaches.
 
-This project automates the entire process using **Natural Language Processing (NLP)** and **Machine Learning**, enabling faster, consistent, and reliable ticket creation with minimal human intervention.
+This project implements a **full-stack AI-powered helpdesk system** that automatically converts free-text user issues into **structured, persistent support tickets** and provides a **real-world support team dashboard** to manage the complete ticket lifecycle.
 
 ---
 
 ## 📌 Problem Statement
 
-Support agents manually read and classify thousands of incoming user messages daily, which leads to:
+Support teams manually read and classify thousands of incoming user messages daily, which leads to:
 
-* Delays in ticket creation
-* Human errors and inconsistent tagging
-* Increased workload for support teams
-
-### 🎯 Goal
-
-Automatically analyze user messages and generate **structured IT support tickets** with **minimum human involvement**.
+- ⏳ Delays in ticket creation  
+- ❌ Human errors and inconsistent categorization  
+- 📈 Increased workload for support engineers  
 
 ---
 
-## 🎯 Objectives
+## 🎯 Goal
 
-* Clean and preprocess raw user messages (PII masking + NLP pipeline)
-* Classify messages into predefined ticket categories
-* Predict ticket priority (Low / Medium / High)
-* Extract relevant entities (devices, usernames, error codes)
-* Generate a complete, structured ticket in JSON-ready format
-* Enable predictions for new messages using a CLI-based ticket generator
+To automatically analyze user messages and generate structured IT support tickets with:
+
+- Minimal human intervention  
+- AI-based categorization and priority detection  
+- Persistent storage and lifecycle tracking  
+
+---
+
+## 🧠 What This Application Does
+
+### 👤 For Users
+- Secure registration and login
+- Submit support issues using natural language
+- Tickets are automatically:
+  - Categorized (Hardware, Network, HR, Access, etc.)
+  - Assigned priority (Low / Medium / High)
+- Track ticket status
+
+### 🧑‍💻 For Support Teams
+- View all tickets in a central dashboard
+- Monitor SLA timers with color-coded alerts
+- Update ticket status through the lifecycle:
+Open → In Progress → Resolved → Closed
+- Inspect tickets in JSON format (Developer Mode)
+- View analytics and workload distribution
+
+> All tickets are persistently stored in the database and never disappear on refresh.
+
+---
+
+## 🏗️ System Architecture
+
+User Input  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+
+Streamlit User Interface  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+
+Text Cleaning & NLP Processing  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+
+Machine Learning Models  
+(Category Classification & Priority Prediction)  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+
+SQLite Database  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+
+Dashboard & SLA Monitoring
+
 
 ---
 
@@ -35,200 +81,201 @@ Automatically analyze user messages and generate **structured IT support tickets
 
 ```bash
 AI-Ticket-Project/
-│── data/
-│   ├── raw/                   # Raw input data
-│   ├── cleaned/               # Final cleaned dataset
-│   ├── splits/                # Train/Validation/Test splits
-│   └── annotated/             # Annotated data from Label Studio
 │
-│── models/
+├── app.py                      # Main Streamlit entry point
+│
+├── pages/
+│   ├── dashboard.py            # Ticket analytics dashboard
+│   ├── create_ticket.py        # Ticket creation page
+│   ├── active_tickets.py       # Active tickets (support team)
+│   ├── closed_tickets.py       # Closed tickets archive
+│   ├── login.py                # Login page
+│   ├── register.py             # User registration
+│   └── profile.py              # User profile
+│
+├── scripts/
+│   ├── db.py                   # SQLite database operations
+│   ├── auth.py                 # Authentication logic
+│   ├── ai_logic.py             # Category & priority prediction
+│   ├── clean_text.py           # NLP preprocessing
+│   └── entity_extraction.py    # Named Entity Recognition
+│
+├── models/
 │   ├── category_model.pkl
 │   ├── priority_model.pkl
 │   ├── tfidf_vectorizer.pkl
 │   ├── category_encoder.pkl
 │   └── priority_encoder.pkl
 │
-│── scripts/
-│   ├── clean_text.py          # Text preprocessing module
-│   ├── entity_extraction.py   # Named Entity Extraction (NER)
-│   ├── make_splits.py         # Dataset splitting logic
-│   ├── train_model.py         # Model training & evaluation
-│   ├── generate_ticket.py     # Ticket Generation Engine
-│   └── predict.py             # CLI-based prediction utility
+├── assets/
+│   └── style.css               # Custom UI styling
 │
-│── notebooks/                 # Exploratory analysis
-│── docs/                      # Documentation and notes
+├── tickets.db                  # SQLite database
+├── requirements.txt
 └── README.md
+
 ```
 
 ---
+## 🧠 NLP & Machine Learning Models
 
-## 📊 Dataset
+This section describes the Natural Language Processing and Machine Learning techniques used to automatically analyze, categorize, and prioritize support tickets.
 
-The dataset contains realistic IT support messages such as:
-
-* Hardware issues
-* Login and access failures
-* Network connectivity problems
-* Software / application errors
-* Purchase and service requests
-
-### Dataset Fields
-
-* **text** – Raw user message
-* **text_clean** – Cleaned and normalized text
-* **category** – Issue category label
-* **priority** – Ticket priority level
-
-Dataset annotation was performed using **Label Studio** following predefined guidelines.
-
----
-
-## ⚖️ Category Distribution & Imbalance Handling
-
-The dataset showed moderate class imbalance across issue categories.
-
-Measures taken:
-
-* **Class Weights** applied during model training
-* **Stratified Splits** for Train / Validation / Test sets
-* **Evaluation Metrics**: Precision, Recall, F1-score monitored per class
-
-> No synthetic oversampling (e.g. SMOTE) was applied to avoid generating artificial text samples.
-
----
-
-## 🧠 NLP Models Used
-
-### 🔹 Feature Extraction
-
-* TF-IDF Vectorizer
-* Uni-grams, Bi-grams, Tri-grams
-* Stopword removal + sublinear TF scaling
+### 🔹 Feature Engineering
+- TF-IDF Vectorization (Unigrams + Bigrams)
+- Stopword removal
+- Text normalization
 
 ### 🔹 Category Classification
-
-* Linear Support Vector Machine (LinearSVC)
-* Hyperparameter tuning using GridSearchCV
-* Balanced class weights
+- Linear Support Vector Machine (LinearSVC)
+- Balanced class weights
+- Rule-based overrides for critical keywords
 
 ### 🔹 Priority Prediction
+- Logistic Regression
+- Predicts **Low / Medium / High**
+- Urgent keywords trigger escalation (e.g., *urgent, ASAP, system down*)
 
-* Logistic Regression
-* Balanced class weights
-* Predicts **Low / Medium / High** priority
-
-### 🔹 Named Entity Recognition (NER)
-
-Pattern-based extraction of:
-
-* Devices (laptop, mouse, printer, etc.)
-* User references
-* Error codes
+### 🔹 Entity Extraction
+- Device names (laptop, printer, keyboard)
+- Error-related keywords
+- User references
 
 ---
 
-## 🔁 End-to-End Pipeline
+💾 Database Design (SQLite)
+
+Each ticket is stored as a row in the database:
+```text
++-------------+-----------------------------------------------+
+| Field       | Description                                   |
++-------------+-----------------------------------------------+
+| id          | Auto-increment primary key                    |
+| title       | Short summary of the issue                    |
+| description | Original user input (free text)               |
+| category    | AI-predicted ticket category                  |
+| priority    | AI-predicted priority (Low / Medium / High)   |
+| status      | Open / In Progress / Resolved / Closed         |
+| created_at  | Ticket creation timestamp                     |
+| updated_at  | Last status update timestamp                  |
++-------------+-----------------------------------------------+
 
 ```
-User Message
-     ↓
-Text Cleaning & Normalization
-     ↓
-TF-IDF Feature Extraction
-     ↓
-Category & Priority Prediction
-     ↓
-Entity Extraction (NER)
-     ↓
-Structured Ticket Generation (JSON)
+
+Users are stored in a separate table with hashed passwords.
+
+
+
+---
+## ⏱ SLA Monitoring
+
+🟢 Green → Less than 2 hours
+
+🟡 Yellow → 2–6 hours
+
+🔴 Red → More than 6 hours
+
+This simulates enterprise-grade SLA enforcement.
+
+
+---
+
+## 📊 Dashboard Analytics
+
+Support teams can monitor:
+
+- Total tickets
+- Open tickets
+- High-priority tickets
+- Closed tickets
+
+All metrics update dynamically.
+
+
+
+---
+
+## 🧪 Example Ticket (JSON View)
 ```
-
----
-
-## 🛠 Technologies Used
-
-| Category         | Tools / Libraries               |
-| ---------------- | ------------------------------- |
-| Programming      | Python                          |
-| NLP              | Scikit-learn, Regex             |
-| Machine Learning | Linear SVM, Logistic Regression |
-| Data Handling    | Pandas, NumPy                   |
-| Annotation       | Label Studio                    |
-| Evaluation       | Precision, Recall, F1-score     |
-
----
-
-## ✅ Modules Completed
-
-| Module   | Description                     | Status      |
-| -------- | ------------------------------- | ----------- |
-| Module 1 | Data Collection & Preprocessing | ✅ Completed |
-| Module 2 | NLP Model Development + NER     | ✅ Completed |
-| Module 3 | Ticket Generation Engine        | ✅ Completed |
-| Module 4 | UI & Integration Layer          | ⏳ Planned   |
-
----
-
-## 🧪 Current Project Status
-
-* Dataset cleaned and standardized
-* Models trained and evaluated
-* Confusion matrices generated
-* Hybrid rule-based + ML classification implemented
-* Ticket generation engine validated
-* JSON-ready structured ticket output achieved
-
----
-
-## 🚀 How to Run the Project
-
-### Train the Models
-
-```bash
-python scripts/train_model.py
-```
-
-### Generate a Ticket (CLI)
-
-```bash
-python scripts/generate_ticket.py
-```
-
----
-
-## 🧾 Example Output (JSON-ready)
-
-```json
 {
-  "title": "Purchase Issue",
-  "category": "purchase",
-  "priority": "low",
-  "entities": {
-    "devices": ["mouse"],
-    "usernames": [],
-    "error_codes": []
-  },
-  "status": "open",
-  "created_at": "2026-01-04T22:34:12"
+  "id": 8,
+  "description": "VPN disconnects every 10 minutes while working remotely",
+  "category": "Network",
+  "priority": "High",
+  "status": "In Progress",
+  "created_at": "2026-01-21 17:03:30"
 }
 ```
+---
+
+
+## 🧑‍💻 Support Team Workflow
+
+1. User submits a support request
+2. AI classifies and prioritizes the ticket
+3. Ticket is stored in the database
+4. Support team processes the ticket
+5. Status is updated through the ticket lifecycle
+6. Resolved tickets are archived
 
 ---
 
-## 🚀 Future Enhancements
+## 🚀 How to Run Locally
+```
+pip install -r requirements.txt
+streamlit run app.py
+```
+---
+## 📦 Requirements
 
-* Streamlit / Flask Web UI
-* Transformer-based models (BERT)
-* REST API using FastAPI
-* Database integration (MongoDB / PostgreSQL)
-* Prediction confidence scores
-* Multi-language support
+Core dependencies:
+- streamlit
+- pandas
+- numpy
+- scikit-learn
+- joblib
+- sqlite3
+
+All dependencies are listed in `requirements.txt`.
+
+---
+## 🌍 Deployment
+- Recommended
+  - Streamlit Community Cloud (best for demos)
+  - SQLite is sufficient for demo and evaluation
+
+- Production-Ready Upgrade
+  - PostgreSQL instead of SQLite
+  - Role-based access (Admin / Support Agent)
+  - FastAPI backend
 
 ---
 
+### Streamlit Deployment Notes
+
+- Entry file: `app.py`
+- Python version: 3.9+
+- Ensure all `.pkl` model files are committed
+- SQLite database initializes automatically
+---
+
+🔮 Future Enhancements
+
+-Agent assignment
+
+-Notification system for high-priority tickets
+
+-Chat-based ticket creation
+
+-Transformer-based NLP models (BERT)
+
+-REST API integration
+
+-Multi-language support
+
+---
 ## 👩‍💻 Author
 
-**Shaik Zeba**
-AI-Powered Ticket Creation & Categorization System
-2025
+**Shaik Zeba**  
+AI-Powered Ticket Management System  
+© 2026

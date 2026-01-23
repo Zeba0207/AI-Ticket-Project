@@ -3,97 +3,107 @@ from pathlib import Path
 from scripts.clean_text import clean_text
 
 # =====================================
-# BASE DIRECTORY (PROJECT ROOT)
+# PROJECT ROOT
 # =====================================
 BASE_DIR = Path(__file__).resolve().parent.parent
+MODELS_DIR = BASE_DIR / "models"
 
 # =====================================
-# LOAD MODELS (ONCE AT STARTUP)
+# HELPER: LOAD MODEL WITH FALLBACK
+# =====================================
+def load_model(primary, fallback):
+    path_primary = MODELS_DIR / primary
+    path_fallback = MODELS_DIR / fallback
+
+    if path_primary.exists():
+        return joblib.load(path_primary)
+    elif path_fallback.exists():
+        return joblib.load(path_fallback)
+    else:
+        raise FileNotFoundError(
+            f"Missing model files: {primary} or {fallback}"
+        )
+
+# =====================================
+# LOAD MODELS
 # =====================================
 try:
-    vectorizer = joblib.load(BASE_DIR / "models" / "tfidf_vectorizer.pkl")
-    category_model = joblib.load(BASE_DIR / "models" / "category_model.pkl")
-    priority_model = joblib.load(BASE_DIR / "models" / "priority_model.pkl")
+    vectorizer = load_model(
+        "tfidf_vectorizer.pkl",
+        "tfidf_vectorizer_final.pkl"
+    )
 
-    category_encoder = joblib.load(BASE_DIR / "models" / "category_encoder.pkl")
-    priority_encoder = joblib.load(BASE_DIR / "models" / "priority_encoder.pkl")
+    category_model = load_model(
+        "category_model.pkl",
+        "category_model_final.pkl"
+    )
 
-except FileNotFoundError as e:
+    priority_model = load_model(
+        "priority_model.pkl",
+        "priority_model_final.pkl"
+    )
+
+    category_encoder = joblib.load(MODELS_DIR / "category_encoder.pkl")
+    priority_encoder = joblib.load(MODELS_DIR / "priority_encoder.pkl")
+
+except Exception as e:
     raise RuntimeError(
-        f"❌ Model file not found. Please check the models folder.\n{e}"
+        f"❌ Model file not found or failed to load.\n{e}"
     )
 
 # =====================================
-# RULE-BASED CATEGORY (FALLBACK LOGIC)
+# RULE-BASED CATEGORY
 # =====================================
 def rule_based_category(text: str):
-    """
-    Uses keyword-based rules for faster and more accurate classification
-    in obvious cases.
-    """
-    t = text.lower()
+    text = text.lower()
 
-    if any(k in t for k in ["purchase", "buy", "request"]):
+    if any(k in text for k in ["purchase", "buy", "order"]):
         return "purchase"
-    if any(k in t for k in ["hr", "leave", "salary"]):
+    if any(k in text for k in ["hr", "leave", "salary"]):
         return "hr support"
-    if any(k in t for k in ["login", "signin", "otp"]):
+    if any(k in text for k in ["login", "otp", "password"]):
         return "access"
-    if any(k in t for k in ["vpn", "wifi", "network"]):
+    if any(k in text for k in ["vpn", "wifi", "network"]):
         return "network"
-    if any(k in t for k in ["laptop", "keyboard", "printer"]):
+    if any(k in text for k in ["laptop", "keyboard", "printer"]):
         return "hardware"
 
     return None
 
-
 # =====================================
-# URGENT INTENT DETECTION
+# URGENCY DETECTION
 # =====================================
 def detect_urgent_intent(text: str) -> bool:
     urgent_keywords = [
-        "urgent", "immediately", "asap",
-        "system down", "not working", "critical"
+        "urgent", "asap", "critical", "system down", "not working"
     ]
     return any(k in text.lower() for k in urgent_keywords)
 
-
 # =====================================
-# MAIN PREDICTION FUNCTION
+# MAIN PREDICTION
 # =====================================
 def predict_ticket(text: str):
-    """
-    Predicts ticket category and priority using:
-    - Text cleaning
-    - Rule-based classification
-    - ML model (fallback)
-    - Urgency override
-    """
-
-    if not text or not text.strip():
+    if not isinstance(text, str) or not text.strip():
         raise ValueError("Ticket description cannot be empty")
 
-    # Clean text
     cleaned_text = clean_text(text)
-
-    # Vectorize
     X = vectorizer.transform([cleaned_text])
 
-    # Category prediction
+    # Category
     rule_cat = rule_based_category(cleaned_text)
     if rule_cat:
         category = rule_cat
     else:
-        category = category_encoder.inverse_transform(
-            category_model.predict(X)
-        )[0]
+        cat_pred = category_model.predict(X)[0]
+        category = category_encoder.inverse_transform([cat_pred])[0]
 
-    # Priority prediction
-    priority = priority_encoder.inverse_transform(
-        priority_model.predict(X)
-    )[0]
+    # Priority (safe handling)
+    pr_pred = priority_model.predict(X)[0]
+    if isinstance(pr_pred, str):
+        priority = pr_pred.capitalize()
+    else:
+        priority = priority_encoder.inverse_transform([pr_pred])[0]
 
-    # Urgency override
     if detect_urgent_intent(text):
         priority = "High"
 

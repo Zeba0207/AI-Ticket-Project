@@ -10,6 +10,7 @@ from sklearn.metrics import classification_report, accuracy_score
 from sklearn.preprocessing import LabelEncoder
 import joblib
 
+
 # =====================================================
 # PATH SETUP
 # =====================================================
@@ -19,6 +20,7 @@ MODEL_DIR = BASE_DIR / "models"
 
 MODEL_DIR.mkdir(exist_ok=True)
 
+
 # =====================================================
 # TEXT CLEANING FUNCTION (DEPLOYMENT SAFE)
 # =====================================================
@@ -26,18 +28,20 @@ def clean_text(text: str) -> str:
     if not isinstance(text, str):
         return ""
 
+    # Decode HTML & lowercase
     text = unescape(text).lower()
 
     # Remove emails, phone numbers, IPs
-    text = re.sub(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', ' ', text)
-    text = re.sub(r'\b\d{10}\b', ' ', text)
-    text = re.sub(r'\b(?:\d{1,3}\.){3}\d{1,3}\b', ' ', text)
+    text = re.sub(r"\b[\w\.-]+@[\w\.-]+\.\w+\b", " ", text)
+    text = re.sub(r"\b\d{10}\b", " ", text)
+    text = re.sub(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", " ", text)
 
     # Remove special characters
-    text = re.sub(r'[^a-z0-9\s]', ' ', text)
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
 
     return text
+
 
 # =====================================================
 # LOAD DATASET
@@ -49,23 +53,26 @@ print("Dataset shape:", df.shape)
 if "SNO" in df.columns:
     df.drop(columns=["SNO"], inplace=True)
 
+
 # =====================================================
 # CLEAN TEXT
 # =====================================================
 df["clean_text"] = df["text"].apply(clean_text)
 
+
 # =====================================================
-# ENCODE CATEGORY LABELS (IMPORTANT)
+# ENCODE CATEGORY LABELS
 # =====================================================
 label_encoder = LabelEncoder()
 df["category_encoded"] = label_encoder.fit_transform(df["category"])
 
 print("\nCategory mapping:")
 for idx, label in enumerate(label_encoder.classes_):
-    print(idx, "→", label)
+    print(f"{idx} → {label}")
+
 
 # =====================================================
-# TRAIN TEST SPLIT
+# TRAIN–TEST SPLIT
 # =====================================================
 X = df["clean_text"]
 y = df["category_encoded"]
@@ -77,6 +84,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42,
     stratify=y
 )
+
 
 # =====================================================
 # TF-IDF VECTORIZATION
@@ -92,11 +100,13 @@ vectorizer = TfidfVectorizer(
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec = vectorizer.transform(X_test)
 
+
 # =====================================================
 # TRAIN LINEAR SVM
 # =====================================================
 model = LinearSVC(C=1.0)
 model.fit(X_train_vec, y_train)
+
 
 # =====================================================
 # EVALUATION
@@ -113,11 +123,12 @@ print(
     )
 )
 
+
 # =====================================================
-# SAVE MODELS (DEPLOYMENT FRIENDLY NAMES)
+# SAVE MODELS (DEPLOYMENT-STANDARD NAMES)
 # =====================================================
-joblib.dump(model, MODEL_DIR / "category_model_final.pkl")
-joblib.dump(vectorizer, MODEL_DIR / "tfidf_vectorizer_final.pkl")
+joblib.dump(model, MODEL_DIR / "category_model.pkl")
+joblib.dump(vectorizer, MODEL_DIR / "tfidf_vectorizer.pkl")
 joblib.dump(label_encoder, MODEL_DIR / "category_encoder.pkl")
 
 print("\n✅ Category model training completed successfully")

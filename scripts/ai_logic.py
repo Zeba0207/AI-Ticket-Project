@@ -5,8 +5,9 @@ from scripts.clean_text import clean_text
 # =====================================
 # PROJECT ROOT & MODELS DIR
 # =====================================
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parents[1]
 MODELS_DIR = BASE_DIR / "models"
+
 
 # =====================================
 # SAFE MODEL LOADER WITH FALLBACK
@@ -24,6 +25,7 @@ def load_model(primary_name: str, fallback_name: str):
     raise FileNotFoundError(
         f"Missing model files: {primary_name} OR {fallback_name}"
     )
+
 
 # =====================================
 # LOAD MODELS ONCE (STREAMLIT SAFE)
@@ -52,24 +54,30 @@ except Exception as e:
         f"❌ Model file not found or failed to load.\n{e}"
     )
 
+
 # =====================================
 # RULE-BASED CATEGORY (FAST PATH)
 # =====================================
 def rule_based_category(text: str):
     t = text.lower()
 
-    if any(k in t for k in ["purchase", "buy", "order", "request"]):
-        return "purchase"
-    if any(k in t for k in ["hr", "leave", "salary"]):
-        return "hr support"
-    if any(k in t for k in ["login", "password", "otp", "signin"]):
-        return "access"
+    if any(k in t for k in ["purchase", "buy", "order", "procure", "request"]):
+        return "Purchase"
+
+    if any(k in t for k in ["hr", "leave", "salary", "payroll"]):
+        return "HR Support"
+
+    if any(k in t for k in ["login", "password", "otp", "signin", "access"]):
+        return "Access"
+
     if any(k in t for k in ["vpn", "wifi", "network", "internet"]):
-        return "network"
+        return "Network"
+
     if any(k in t for k in ["laptop", "keyboard", "printer", "mouse"]):
-        return "hardware"
+        return "Hardware"
 
     return None
+
 
 # =====================================
 # URGENCY DETECTION
@@ -86,6 +94,7 @@ def detect_urgent_intent(text: str) -> bool:
     ]
     return any(k in text.lower() for k in urgent_keywords)
 
+
 # =====================================
 # MAIN PREDICTION FUNCTION
 # =====================================
@@ -93,10 +102,14 @@ def predict_ticket(text: str):
     if not isinstance(text, str) or not text.strip():
         raise ValueError("Ticket description cannot be empty")
 
-    # Clean text
+    # -----------------------
+    # CLEAN TEXT
+    # -----------------------
     cleaned_text = clean_text(text)
 
-    # Vectorize
+    # -----------------------
+    # VECTORIZE
+    # -----------------------
     X = vectorizer.transform([cleaned_text])
 
     # -----------------------
@@ -111,11 +124,10 @@ def predict_ticket(text: str):
         category = category_encoder.inverse_transform([cat_pred])[0]
 
     # -----------------------
-    # PRIORITY (SAFE MODE)
+    # PRIORITY
     # -----------------------
     pr_pred = priority_model.predict(X)[0]
 
-    # If model already outputs string labels
     if isinstance(pr_pred, str):
         priority = pr_pred.capitalize()
     else:

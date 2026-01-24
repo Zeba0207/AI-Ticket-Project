@@ -1,2 +1,5 @@
-models/*.pkl
+# Ignore pickle files everywhere
 *.pkl
+
+# BUT allow trained ML models in models/
+!models/*.pkl
